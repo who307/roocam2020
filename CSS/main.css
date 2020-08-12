@@ -8,6 +8,10 @@ p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h
 	/* 합친부분 */
 	list-style : none;
 }
+
+div{
+	display : block;
+}
 footer {
 	position: relative;
 	width: 100%;
@@ -26,20 +30,39 @@ footer {
 	align-items: center;
 	width: 100%;
 }
+
 header {
 	min-width: 1082px;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100px;
+	height: 80px;
 	background: 0 0;
-	z-index: 300;
+	z-index: 3;
 	text-align: center;
+}
+.down{
+	background: hsla(0,0%,100%,.6);
+
+}
+.down:hover{
+	background-color: white;
+
+}
+	
+.service .adown {
+	color: #313131;
+    border: 1px solid #313131;
+}
+
+
+.inner_cf {
+	height : 90px;
 }
 
 .header_logo{
-	margin: 25px 0 0;
+	margin: 10px 0 0 0;
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -155,7 +178,9 @@ header {
 	width : 240px;
 	height: 390px;
 	background-color: lightgreen;
-	margin : auto;
+	margin :auto;
+	
+	
 }
 .content_box .icon01{
 	width : 240px;
@@ -167,7 +192,7 @@ header {
 	height : 240px;
 	background-color: mediumblue;
 }
-.icon03{
+.content_box .icon03{
 	width : 240px;
 	height : 240px;
 	background-color: mediumblue;
