@@ -12,27 +12,18 @@ p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h
 div{
 	display : block;
 }
-footer {
-	position: relative;
-	width: 100%;
-	min-width: 1082px;
-	min-height: 310px;
-	background: #e9edf2;
-	outline-style: solid;
-}
 /* Who Start */
 .main {
+	width: 100%;
 	height: 742px;
 	background-color: mediumpurple;
 	background-size: cover;
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
-	width: 100%;
 }
-
 header {
-	min-width: 1082px;
+	min-width: 1080px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -57,18 +48,16 @@ header {
 
 }
 
-
-.inner_cf {
-	height : 90px;
-}
-
 .header_logo{
+	width:100%;
 	margin: 10px 0 0 0;
 	position: absolute;
 	top: 0;
-	left: 50%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
+	
+}
+.header_logo a{
+	margin : auto;
+	
 }
 
 .header_menu {
@@ -79,7 +68,6 @@ header {
 	margin : 20px 85px 10px 43px;
 	font-weight: 500;
 }
-
 .service a{
 	display: inline-block;
 	width: 140px;
@@ -93,6 +81,11 @@ header {
 	padding: 8px 25px 7px;
 	
 }
+
+.header_sidebar{
+	width: 0px;
+	height: 0px;
+}
 .main_visual {
 	display: flex;
 	text-align: center;
@@ -105,7 +98,6 @@ header {
 	-webkit-box-align: center;
 	margin-top: 100px;
 }
-
 .main_visual p{
 	width :700px;
 	height : 124px;
@@ -113,7 +105,6 @@ header {
 	color: #fff;
 	line-height: 1.3;
 	font-weight: 700;
-	
 }
 .main_visual ul{
 	width: 650px;
@@ -122,7 +113,6 @@ header {
 	padding: 0px;
 	background-color: mediumslateblue;
 	display: flex;
-	
 }
 .main_visual ul li {
 	margin : 0 auto;
@@ -181,8 +171,6 @@ header {
 	height: 390px;
 	background-color: lightgreen;
 	margin :auto;
-	
-	
 }
 .content_box .icon01{
 	width : 240px;
@@ -244,21 +232,30 @@ li{
 	font-size: 18px;
 }
 a{text-decoration:none}
+
+footer {
+	position: relative;
+	width: 100%;
+	min-width: 1080px;
+	min-height: 310px;
+	background: #e9edf2;
+	outline-style: solid;
+}
 footer .footer_menu {
 	width: 100%;
-	min-width: 1082px;
+	min-width: 1080px;
 	min-height: 90px;
 	background: #fff;
 }
 footer>div>.inner {
 	position: relative;
-	width: 1082px;
+	width: 1080px;
 	margin: 0 auto;
 	background-color: darkgray;
 }
 footer>div>.innercf {
 	position: relative;
-	width: 1082px;
+	width: 1080px;
 	height: 326px;
 	margin: 0 auto;
 	background-color: royalblue;
@@ -282,7 +279,7 @@ footer>div>.innercf {
 footer .corp_info {
 	width: 100%;
 	height: 326px;
-	min-width: 1082px;
+	min-width: 1080px;
 	padding: 33px 0 48px;
 }
 /* Footer End */
@@ -297,7 +294,7 @@ footer .corp_info {
 	margin : auto;
 	/* 가로세로정렬End */
 	height: 309px;
-	width: 1082px;
+	width: 1080px;
 	background-color: tan;
 	text-align: center;
 }
@@ -308,7 +305,6 @@ footer .corp_info {
 	width: 100%;
 	height: 976px;
 	background: #e9edf2;
-	outline-style: solid;
 }
 .st2{
 	display: flex;
@@ -326,21 +322,40 @@ footer .corp_info {
   top: 295px;
 	width: 383px;
 	height: 250px;
-	background-color: violet;
+	background-color: chartreuse;
 }
 .st2_2{
 	height: 671px;
-	width: 85%;
+	width: 81%;
   position: absolute;
   top: 110px;
   left: 445px;
 	padding-bottom: 65px;
 	background-color: violet;
 }
-.slide1{
-	position: absolute;
-	margin-right: 20px;
+.swiper-container {
+	width: 100%;
 	height: 100%;
-	width: 487px;
-	background-color: cadetblue;
 }
+.swiper-slide {
+	margin-top: 60px;
+	min-width: 487px;
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+/* Section2 End */
+
