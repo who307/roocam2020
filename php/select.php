@@ -19,9 +19,7 @@
 <?php
 	 $con = mysqli_connect("localhost", "roocam", "DB_PASSWORD_REMOVED", "roocam") or die("MySQL 안들어가짐!!");
 
-$sql = "
-SELECT * FROM roocam
-";
+$sql = "SELECT * FROM roocam";
 $ret = mysqli_query($con, $sql);
 
 if($ret) {
@@ -42,21 +40,23 @@ echo "</tr>";
 
 while($row = mysqli_fetch_array($ret)) {
     echo "<tr>";
-    echo "<td class=\"column100 column1\">", $row['userID'], "</TD>";
-		echo "<td>", $row['id'], "</TD>";
-		echo "<td>", $row['name'], "</TD>";
-    echo "<td>", $row['pw'], "</TD>";
+    // echo "<td class=\"column100 column1\">", $row['userID'], "</TD>";
+		echo "<td>", $row['userID'], "</TD>";
+		echo "<td>", $row['userName'], "</TD>";
+    echo "<td>", $row['userPW'], "</TD>";
     echo "<td>", $row['addr'], "</TD>";
     echo "<td>", $row['gender'], "</TD>";
     echo "<td>", $row['email'], "</TD>";
-    echo "<td>", $row['mDate'], "</TD>";
+		echo "<td>", $row['mDate'], "</TD>";
+		echo "<td>", "<a href= '../php/update.php?userID=", $row['userID'], "'>수정 </a></td>";
+    echo "<td>", "<a href= '../php/delete.php?userID=", $row['userID'], "'>삭제 </a></td>";
     echo"</tr>";
 }
 
 mysqli_close($con);
 echo "</table>";
 
-
+echo "<br> <a href='../index.html'> <--돌아가기</a> ";
 
 ?>
 

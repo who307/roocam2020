@@ -1,15 +1,15 @@
 <?php
 	 $con = mysqli_connect("localhost", "roocam", "DB_PASSWORD_REMOVED", "roocam") or die("MySQL 안들어가짐!!");
 
-   $id = $_POST["id"];
-   $pw = $_POST["pw"];
-   $name = $_POST["name"];
+   $userID = $_POST["userID"];
+   $userPW = $_POST["userPW"];
+   $userName = $_POST["userName"];
    $addr = $_POST["addr"];
    $gender = $_POST["gender"];
    $email = $_POST["email"];
 	 $mDate = date("Y-m-j"); //가입일
    
-   $sql =" INSERT INTO roocam VALUES('".$id."','".$pw."','".$name."','".$addr."','".$gender."','".$email."','".$mDate."')";
+   $sql =" INSERT INTO roocam VALUES('".$userID."','".$userPW."','".$userName."','".$addr."','".$gender."','".$email."','".$mDate."')";
    
    $ret = mysqli_query($con, $sql);
  
@@ -22,5 +22,7 @@
 	   echo "실패 원인 :".mysqli_error($con);
    } 
 	 mysqli_close($con);   
+
+   echo "<br> <a href='../index.html'> <--돌아가기</a> ";
 
 ?>

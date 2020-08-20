@@ -4,9 +4,9 @@
     $sql ="
         CREATE TABlE IF NOT EXISTS roocam
         (
-						id VARCHAR(100) NOT NULL PRIMARY KEY,
-						pw INT NOT NULL,
-						name VARCHAR(100) NOT NULL,
+						userID VARCHAR(100) NOT NULL PRIMARY KEY,
+						userPW INT NOT NULL,
+						userName VARCHAR(100) NOT NULL,
 						addr VARCHAR(100) NOT NULL,
 						gender VARCHAR(100) NOT NULL,
 						email VARCHAR(100) NOT NULL,  
