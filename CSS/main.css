@@ -5,25 +5,32 @@ p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h
 	color: #313131;
 	font-size: 14px;
 	letter-spacing: -.5px;
-	/* 합친부분 */
 	list-style : none;
 }
 p {
 	-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
 }
-
 div{
 	display : block;
 }
-/* Who Start */
-.main {
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@font-face { font-family: 'SCDream8';  src: url('../Font/S-Core_Dream_OTF/SCDream8.otf');}
+@font-face { font-family: 'SCDream4';  src: url('../Font/S-Core_Dream_OTF/SCDream4.otf');}
+@font-face { font-family: 'YoonMingukB';  src: url('../Font/YoonDokripManse/YoonMingukB.otf');}
+@font-face { font-family: 'YoonMingukR';  src: url('../Font/YoonDokripManse/YoonMingukR.otf');}
+@font-face { font-family: '닉스곤폰트M';  src: url('../Font/닉스곤폰트/NIXGONFONTSm.otf');}
+
+
+
+.section1 {
 	width: 1920px;
 	height: 900px;
 	background-size: cover;
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
-	background-image : url("../img/main1.jpg");
+	background-image : url("../img/main1.png");
 }
 header {
 	min-width: 1080px;
@@ -36,12 +43,19 @@ header {
 	z-index: 3;
 	text-align: center;
 }
+.header_section {
+	width : 1597px;
+	height : 100px;
+	float : right;
+}
 .down{
 	background: hsla(0,0%,100%,.6);
+	
 
 }
 .down:hover{
 	background-color: white;
+	background-size: cover;
 
 }
 	
@@ -51,26 +65,19 @@ header {
 
 }
 
-.header_logo{
-	width:1920px;
-	margin: 0;
-	position: absolute;
-	top: 0;
-	
-}
-.header_logo a{
-	margin : auto;
-	
+.header_sidebar{
+	display :none;
 }
 
 .header_menu {
 	float: right;
 	position: relative;
 }
+
 .service {
 	margin : 30px 85px 10px 43px;
-	font-weight: 500;
 }
+
 .service a{
 	display: inline-block;
 	width: 140px;
@@ -82,13 +89,11 @@ header {
 	border-radius: 30px;
 	margin-right: 5px;
 	padding: 10px 25px 7px;
+	font-family: 'NanumSquare', sans-serif;
+	font-weight: bold;
 	
 }
 
-.header_sidebar{
-	width: 0px;
-	height: 0px;
-}
 .main_visual {
 	display: flex;
 	text-align: center;
@@ -105,11 +110,14 @@ header {
 	font-size: 50px;
 	color: #fff;
 	font-weight: bold;
+	font-family: 'SCDream8';
+
 }
 .main_visual .sub_p{
 	font-size: 34px;
 	color: #fff;
 	font-weight: lighter;
+	font-family: 'SCDream4';
 }
 .main_visual ul{
 	width: 650px;
@@ -139,6 +147,7 @@ header {
 }
 .main_visual ul li a div {
 	margin-top : 6px;
+	font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
 }
 	
 .main_visual ul li div {
@@ -162,6 +171,7 @@ header {
 	outline: none;
 	cursor: pointer;
 	box-shadow: 0 27px 26px -5px rgba(0,0,0,.2);
+	font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
 }
 .main_visual .textdiv{
 	position:  relative;
@@ -169,23 +179,29 @@ header {
 	left : 650px;
 }
 .main_visual p span {
+	font-family: 'YoonMingukR';
 	font-size : 25px;
 	color : #55c54a;
+	
 }
 .main_visual p #bold {
+	font-family: 'YoonMingukB';
 	font-weight: bold;
+	
 }
 .main_visual #p2 {
+	font-family: 'YoonMingukB';
 	font-weight: bold;
 	font-size :19px;
 	color : #55c54a;
 	margin-left: 180px;
 }
+
 .main_visual2{
 	width: 1920px;
-	height : 700px;
+	height : 200px;
 	background: #fff;
-	padding-top :200px;
+	padding-top :100px;
 }
 .content_box{
 	width: 1920px;
@@ -218,27 +234,33 @@ header {
 	height : 240px;
 	background-color: mediumblue;
 }
-.main_visual3{
-	width : 1920px;
+.content_box li .info {
+	width: 240px;
+	background-color: lightgreen;
+
 }
-.main_visual3 .inner{
+
+.section2{
+	width : 1920px;
+	background-color : #D2DAE3;
+}
+.section2 .inner{
 	min-width: 1920px;
 	height: 732px;
-	background: #d2dae3;
 	position: relative;
 }
-.main_visual3 .inner .bg_wrap {
+.section2 .inner .bg_wrap {
 	width: calc(100% - 300px);
-	max-width: 1520px;
-	min-width: 1080px;
+	max-width: 1400px;
 	height: 750px;
 	position: absolute;
-	top: -128px;
+	top: -160px;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 	border-radius: 6px;
-	background-image : url("../img/Section3.png");
+	border: 15px solid white;
+	
 }
 .text_wrap{
 	width : 550px;
@@ -250,44 +272,134 @@ header {
 	z-index: 10;
 	text-align: left;
 }
-.text_wrap .text{
+.text_wrap img {
+	float : right;
+	padding : 10px 10px 0 0;
+}
+.textdiv1{
+	position: absolute;
+	top : 150px;
+	left : 50px;
+
+}
+
+.text_wrap .text1{
 	color :white;
 	font-weight: bolder;
 	font-size : 30px;
-	position: absolute;
-	top: 90px;
-	left : 40px
+	margin-bottom: 40px;
+	font-family: "SCDream8";
+	
+	
 }
 .text_wrap .text2{
 	color :white;
 	font-weight: lighter;
 	font-size : 17px;
-	position: absolute;
-	top: 250px;
-	left : 120px
+	margin-bottom: 30px;
+	
 }
-.btn_div2{
-	position : absolute;
-	top : 350px;
-	left : 150px;
-}
+
 .btn_02{
-	min-width: 250px;
-	height: 70px;
-	line-height: 70px;
-	background: #DCF1FF;
-	color: black;
+	min-width: 200px;
+	height: 25px;
+	line-height: 25px;
+	background:#5B6063;
+	color: white;
 	border-radius: 64px;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 15px;
 	border-style: none;
 	outline: none;
 	cursor: pointer;
 	box-shadow: 0 27px 26px -5px rgba(0,0,0,.2);
+	font-family: '닉스곤폰트M';
 }
-/* Who End */
+.swiper-container2 {
+	width: 1400px;
+	height: 750px;
+	margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
 
-/* Footer Start */
+.section3{
+	width: 1920px;
+	height: 900px;
+	background-image : url("../img/part3.png");
+	margin-top : 250px;
+}
+.btn_ServiceStart{
+	margin: 570px 0px 0px 44%;
+}
+.btn_ServiceStart:hover{
+	cursor: pointer;
+}
+.section4{
+	/* padding-top:200px; */
+	width: 1920px;
+	height: 880px;
+	background: #ffffff;
+	padding : 250px 0;
+}
+.st2{
+	margin: 0 auto;
+	min-width: 1080px;
+	-webkit-box-pack: justify;
+	background: #fff;
+}
+
+.swiper-container {
+	height: 880px;
+	width: 1260px;
+	display: flex;
+	float: right;
+	background: #fff;
+}
+.swiper-slide {
+	width: 400px;
+	height: 100%;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.section5{
+	width : 1920px;
+	height : 500px;
+	background: #4a6688;
+
+}
+.dbox{
+	width : 1920px;
+	height : 500px;
+	position: relative;
+}
+.st1{
+	height: 300px;
+	width: 1080px;
+	background-color: tan;
+	text-align: center;
+	position : absolute;
+	top : 100px;
+	left : 420px;
+}
+/* footer start */
 ul{
 	list-style:none;
 	display: flex;
@@ -349,85 +461,4 @@ footer .corp_info {
 }
 /* Footer End */
 
-/* Section1 Start */
-.section1{
-	width : 1920px;
-	height : 500px;
-	background: #4a6688;
-
-}
-.dbox{
-	width : 1920px;
-	height : 500px;
-	position: relative;
-}
-.st1{
-	height: 300px;
-	width: 1080px;
-	background-color: tan;
-	text-align: center;
-	position : absolute;
-	top : 100px;
-	left : 420px;
-}
-/* Section1 End */
-
-/* Section2 Start */
-.section2{
-	width: 1920px;
-	height: 976px;
-	background: #e9edf2;
-}
-.st2{
-	display: flex;
-	margin: 0 auto;
-	width: calc(1920px - 300px);	
-	min-width: 1080px;
-	position: relative;
-	-webkit-box-pack: justify;
-  justify-content: space-between;
-	height: 976px;
-	background-color: tomato;
-}
-.st2_1{
-	position: absolute;
-  	top: 295px;
-	width: 383px;
-	height: 250px;
-	background-color: chartreuse;
-}
-.st2_2{
-	height: 671px;
-	width: 81%;
-  position: absolute;
-  top: 110px;
-  left: 445px;
-	padding-bottom: 65px;
-	background-color: violet;
-}
-.swiper-container {
-	width: 100%;
-	height: 100%;
-}
-.swiper-slide {
-	margin-top: 60px;
-	min-width: 487px;
-	text-align: center;
-	font-size: 18px;
-	background: #fff;
-	/* Center slide text vertically */
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	align-items: center;
-}
-/* Section2 End */
 
