@@ -1,4 +1,5 @@
-@media(max-width :375px) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+
 	.section1 {
 		width: 375px;
 		height: 500px;
@@ -26,12 +27,14 @@
 		float : right;
 	} 
 	
-	.header_section .logo{
-		visibility :hidden;
+	.header_section .ahide{
+		visibility: hidden;
 	}
-	.header_section img{
-		width: 80px;
-		height : 60px;
+	.header_section .alogo {
+		visibility: hidden;
+	}
+	.header_section .logo{
+		visibility :visible;
 	}
 	.down{
 		background: hsla(0,0%,100%,.6);
@@ -51,7 +54,24 @@
 	}
 	
 	.header_sidebar{
-		display :none;
+		display: inline;
+		position: absolute;
+		top :10px;
+		left : 10px;
+	}
+	.header_sidebar .line .linecolor{
+		background:#55c54a;
+
+	}
+	.line {
+		background:#ffffff;
+		margin-top:3px;
+		margin-bottom:3px;
+		width:20px;
+		height:3px; 
+		border-radius:2px;
+		box-shadow:0 1px 3px rgba(0,0,0,.5);
+		
 	}
 	
 	.header_menu {
@@ -60,7 +80,7 @@
 	}
 	
 	.service {
-		margin : 20px 15px 10px 0px;
+		margin : 10px 15px 10px 0px;
 	}
 	
 	.service a{
@@ -107,7 +127,7 @@
 	.main_visual ul{
 		width: 375px;
 		height : 110px;
-		margin : 40px 0 0;
+		margin : 20px 0 0;
 		padding: 0px;
 		display: flex;
 	}
@@ -115,7 +135,7 @@
 		margin : 0 auto;
 		padding: 0px 0;
 	}
-	.main_visual a{  
+	.main_visual ul li a{  
 		display: inline-block;
 		min-width: 80px;
 		height: 75px;
@@ -129,6 +149,7 @@
 		padding-top :10px;
 		-webkit-box-shadow: 5px 7px 11px 1px rgba(0,0,0,.3);
 		box-shadow: 5px 7px 11px 1px rgba(0,0,0,.3);
+		cursor: pointer;
 	}
 	.main_visual ul li a div {
 		margin-top : 6px;
@@ -142,11 +163,13 @@
 	}
 	.btn_div{
 		margin-top : 0px;
+		position: absolute;
+		top : 220px;
 		
 	}
 	.btn_01{
 		display: inline-block;
-		min-width: 100px;
+		width: 100px;
 		height: 40px;
 		line-height: 40px;
 		background: #313131;
@@ -161,10 +184,12 @@
 		font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
 	}
 	.main_visual .textdiv{
-		position:  relative;
-		top : 10px;
-		left : 60px;
+		position: absolute;
+		top: 270px;
+		right: 5px;
+	
 	}
+	
 	.main_visual p span {
 		font-family: 'YoonMingukR';
 		font-size : 8px;
@@ -321,24 +346,57 @@
 	.section3{
 		width: 375px;
 		height: 500px;
-		background-color :khaki;
-		background-size : 375px 500px;
+		background-image : url("../img/Section3.png");
 		margin-top : 100px;
 	}
-	.btn_ServiceStart{
+	.section3 .bg_wrap{
+		width : 340px;
+		height : 200px;
+		background-color: rgba(255, 255, 255, 0.8);
+		margin : auto;
 		position: relative;
-		top : 570px;
-		left : 100px;
+		top : 240px;
 	}
-	.btn_ServiceStart:hover{
+	.section3 .bg_wrap .text1 {
+		font-size : 14px;
+		font-family: 'SCDREAM8';
+		color :#656161;
+		padding : 10px 0;
+		text-align: center;
+	}
+	.section3 .bg_wrap .text1 #red {
+		color :red;
+	}
+	.section3 .bg_wrap .text1 #green {
+		color :green;
+	}
+	.section3 .bg_wrap .text2 {
+		width : 350px;
+		font-size : 5px;
+		color :#656161;
+		text-align: left;
+		position: relative;
+		left : 45px;
+		
+	}
+	.section3 .bg_wrap .text2 span {
+		color :red;
+	}
+	.btn_ServiceStart{
+		width: 120px;
+		height : 40px;
 		cursor: pointer;
+		position: relative;
+		top: 15px;
+		left : 110px;
+
 	}
 	.section4{
 		/* padding-top:200px; */
 		width: 375px;
-		height: 880px;
+		height: 600px;
 		background: #ffffff;
-		padding : 250px 0;
+		padding : 100px 0;
 	}
 	.st2{
 		margin: 0 auto;
@@ -375,83 +433,158 @@
 	
 	.section5{
 		width : 375px;
-		height : 500px;
-		background: #4a6688;
-	
+		height : 600px;
+		background-image: url("../img/section_5.png");
 	}
 	.dbox{
 		width : 375px;
-		height : 500px;
+		height : 600px;
 		position: relative;
+		
 	}
 	.st1{
-		height: 300px;
-		width: 1080px;
-		background-color: tan;
-		text-align: center;
-		position : absolute;
+		height: 500px;
+		width: 375px;
+		position: absolute;
 		top : 100px;
-		left : 420px;
+			
 	}
+	.st1 p {
+		margin-bottom: 30px;
+		text-align: center;
+		position: relative;
+		top : 150px;
+		color : white;
+		font-family: 'SCDREAM5';
+		font-weight: bold;
+	}
+	.st1 .text1 {
+		font-size : 15px;
+	}
+	.st1 .text2 {
+		font-size : 24px;
+	}
+	.st1 .text3 {
+		font-size : 12px;
+	}
+	.btns{
+		width : 375px;
+		margin : auto;
+		padding-top : 150px;
+	}
+	.btns button {
+		width : 100px;
+		height : 50px;
+		border : 1px solid white;
+		border-radius: 50px;
+		background-color : rgba(255, 255, 255, 0);
+		outline: none;
+		cursor: pointer;
+		font-size : 20px;
+		line-height: 50px;
+		font-family: '닉스곤폰트M';
+		color : white;
+		margin-left : 20px;
+		
+	} 
 	/* footer start */
-	ul{
-		list-style:none;
-		display: flex;
-		line-height: 90px;
-	}
-	li{
-		margin-left: 10%;
-		font-size: 18px;
-	}
-	a{text-decoration:none}
-	
 	footer {
 		position: relative;
 		width: 375px;
-		min-width: 1080px;
-		min-height: 310px;
-		background: #e9edf2;
+		height: 400px;
+		background: #C7FFD6;
+		margin-top : 100px;
+		font-family: 'SCDream5';
 	}
-	footer .footer_menu {
-		width: 375px;
-		min-width: 1080px;
-		min-height: 90px;
-		background: #fff;
-	}
+	
 	footer>div>.inner {
 		position: relative;
-		width: 1080px;
+		width: 375px;
 		margin: 0 auto;
-		background-color: darkgray;
+		
 	}
 	footer>div>.innercf {
 		position: relative;
-		width: 1080px;
-		height: 326px;
+		width: 375px;
+		height: 350px;
 		margin: 0 auto;
-		background-color: royalblue;
+		position :relative;
+		top : 40px;
+	
 	}
 	.fl_l {
-		margin-top: 40px;
-		float: left;
-		width: 552px;
-		height: 242px;
-		background-color: slateblue;
-		text-align: center;
+		margin-top: 10px;
+		width: 205px;
+		height: 200px;
+		font-size : 12px;
+		
+		
+	}
+	.fl_1 table {
+		width: 205px;
+		margin: 0;
+		padding: 0;
+		border-spacing: 0;
+		border: 0;
+		border-collapse: collapse;
+		word-break: break-all;
+		
+	}
+	table td{
+		padding: 7px 0;
+		
+	}
+	
+	.fl_l table .label {
+		width : 100px;
+		color :#707070;
+	
+	}
+	.fl_1 table .info {
+		color :black;
 	}
 	.fl_2 {
-		margin-top: 40px;
-		float: right;
-		width: 450px;
-		height: 242px;
-		background-color: skyblue;
-		text-align: center;
+		margin-top: 10px;
+		float: left;
+		width: 170px;
+		height: 200px;
+		position: relative;
+		top: 10px;
+		left: 40px;
+		
 	}
-	footer .corp_info {
-		width: 375px;
-		height: 326px;
-		min-width: 1080px;
-		padding: 33px 0 48px;
+	.fl_2 .greenbar {
+		width : 10px;
+		height : 50px;
+		background-color : #5CC154;
+		float :left;
+		margin-right : 0px;
+	}
+	.fl_2 table td{
+		padding : 0;
+	}
+	.fl_2 table tr .label {
+		width : 100px;
+		font-size : 15px;
+		color :#707070;
+		position: relative;
+		left: 40px;
+	}
+	.fl_2 table tr .info {
+		width: 130px;
+		font-size : 12px;
+		position: relative;
+		top: 20px;
+		right : 40px;
+		
+	}
+	.fl_3 {
+		width :375px;
+		height : 87px;
+		font-size : 10px;	
+		display :flex;
+		position: relative;
+		top :0px;
 	}
 	/* Footer End */
 	
