@@ -13,57 +13,43 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 	<link rel="stylesheet" href="CSS/main.css" />
-	<link rel="stylesheet" href="CSS/mobile375px.css" />
+	<!-- <link rel="stylesheet" href="CSS/mobile375px.css" />-->
+	<link rel="stylesheet" href="CSS/jong377.css" />
 	<script type="text/javascript" src="JS/scroll.js"></script>
 
 	<script>
-		setInterval(() => {
-			$(function () {
-				$(".select").on("click", function () {
-
-					$(".btn_01").animate({
-						zoom: 1.1
-					},
-						400);
-					$(".btn_01").animate({
-						zoom: 1
-					},
-						400);
-				});
-			});
-		}, 0);
 		$(function () {
 			$(".select1").click(function () {
-				$(".select1").css("background-color", "lightcyan");
-				$(".select2").css("background-color", "white");
-				$(".select3").css("background-color", "white");
+				$(".select1").addClass("select");
+				$(".select2").removeClass("select");
+				$(".select3").removeClass("select");
+				$(".btn_01").addClass("trans");
 
 			});
 			$(".select2").click(function () {
-				$(".select2").css("background-color", "lightcyan");
-				$(".select1").css("background-color", "white");
-				$(".select3").css("background-color", "white");
+				$(".select2").addClass("select");
+				$(".select1").removeClass("select");
+				$(".select3").removeClass("select");
+				$(".btn_01").addClass("trans");
 
 			});
 			$(".select3").click(function () {
-				$(".select3").css("background-color", "lightcyan");
-				$(".select1").css("background-color", "white");
-				$(".select2").css("background-color", "white");
-
+				$(".select3").addClass("select");
+				$(".select2").removeClass("select");
+				$(".select1").removeClass("select");
+				$(".btn_01").addClass("trans");
 			});
 		});
-
-
-
 	</script>
+
 
 	<title>루캠</title>
 
 </head>
 
 <body>
-
-	<div id="_Layout">
+	<div class="Mobile"></div>
+	<div class="lay">
 		<section class="section1">
 			<header>
 				<div class="header_sidebar">
@@ -72,11 +58,11 @@
 					<div class="line"></div>
 				</div>
 				<div class="header_section">
-					<a class="ahide" href="index.html"><img class="alogo" src="img/logo.png" ;></a>
+					<a class="ahide" href="index.html"><img class="alogo" src="img/web/logo.png" ;></a>
 
 					<div class="header_menu">
 						<div class="service">
-							<a href="kakao/myservice.html">내 서비스</a>
+							<a class="service1" href="kakao/myservice.html">내 서비스</a>
 						</div>
 					</div>
 				</div>
@@ -91,19 +77,22 @@
 				<p class="sub_p">견적부터 시공, 사후 서비스까지 한번에 해결하세요!</p>
 
 				<ul>
-					<li><a class="select select1"><img src="img/아파트.png" style="height: 45px">
+					<li><a class="select1" id="sel1" onclick="goselect1();"><img src="img/web/아파트.png"
+								style="height: 40px">
 							<div>아파트</div>
 						</a></li>
-					<li><a class="select select2"><img src="img/빌라.png" style="height: 45px">
+					<li><a class="select2" id="sel2" onclick="goselect2();"><img src="img/web/빌라.png"
+								style="height: 40px">
 							<div>빌라</div>
 						</a></li>
-					<li><a class="select select3"><img src="img/주택.png" style="height: 45px">
+					<li><a class="select3" id="sel3" onclick="goselect3();"><img src="img/web/주택.png"
+								style="height: 40px">
 							<div>주택</div>
 						</a></li>
 				</ul>
 
-				<div class="btn_div">
-					<button class="btn_01">
+				<div class="btn_div " id="btnid">
+					<button class="btn_01 ">
 						견적 알아보기
 					</button>
 				</div>
@@ -118,6 +107,7 @@
 				</div>
 			</section>
 		</section>
+		
 
 		<section class="main_visual2">
 			<div class="content_box">
@@ -149,12 +139,11 @@
 				</ul> -->
 			</div>
 		</section>
-
 		<section class="section2">
 			<div class="inner">
 				<div class="bg_wrap">
 					<div class="text_wrap">
-						<img src="img/icon1.png">
+						<img src="img/web/icon1.png">
 						<div class="textdiv1" data-aos="fade-up">
 							<p class="text1">우리아이에게 더 좋은 환경을 <br>
 								만들어주고 싶으신가요?
@@ -173,9 +162,15 @@
 
 					<div class="swiper-container2">
 						<div class="swiper-wrapper">
-							<div class="swiper-slide"><img src="img/Section3_1.png"></div>
-							<div class="swiper-slide"><img src="img/Section3_2.png"></div>
-							<div class="swiper-slide"><img src="img/Section3_3.png"></div>
+							<div class="swiper-slide">
+								<div class="pic1"></div>
+							</div>
+							<div class="swiper-slide">
+								<div class="pic2"></div>
+							</div>
+							<div class="swiper-slide">
+								<div class="pic3"></div>
+							</div>
 						</div>
 						<!-- Add Pagination -->
 						<br><br>
@@ -189,13 +184,32 @@
 		</section>
 
 		<section class="section3">
+			<div class="st2">
+				<img src="img/web/slider1_0.png">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="pic1"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="pic2"></div>
+						</div>
+						<div class="swiper-slide">
+							<div class="pic3"></div>
+						</div>
+						<div class="swiper-slide"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section4">
 			<div class="bg_wrap">
-				<p class = "text1">
+				<p class="text1">
 					아이를 위한 엄마의 탁월한 선택!<br>
 					오래된 창문을 확인하세요!<br>
-					정부지원 <span id ="green">그린리모델링</span> <span id ="red">60개월 무이자 혜택</span>
+					정부지원 <span id="green">그린리모델링</span> <span id="red">60개월 무이자 혜택</span>
 				</p>
-				<p class = "text2">
+				<p class="text2">
 					우리 가족에게 더 좋은 환경을 만들어주고 싶은데,<br>
 					목돈 마련이 걱정 되시나요? 망설이지 마세요!<br>
 					목돈 안 들이고 <span>60개월 분할 최저가</span> 시공하세요!!<br>
@@ -203,25 +217,10 @@
 					Window Care Plus+에서 가장 합리적인 가격으로 비교해보세요!!
 
 				</p>
-				<a href="#"><img src="img/btn_ServiceStart.png" class="btn_ServiceStart"></a>
+				<a href="#"><img src="img/web/btn_ServiceStart.png" class="btn_ServiceStart"></a>
 
 			</div>
 		</section>
-
-		<section class="section4">
-			<div class="st2">
-				<img src="img/slider1_0.png">
-				<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<img class="swiper-slide" src="img/slider1_1.png">
-						<img class="swiper-slide" src="img/slider1_2.png">
-						<img class="swiper-slide" src="img/slider1_3.png">
-						<div class="swiper-slide"></div>
-					</div>
-				</div>
-			</div>
-		</section>
-
 		<section class="section5">
 			<div class="dbox">
 				<div data-aos="fade-up" class="st1">
@@ -238,6 +237,17 @@
 			</div>
 		</section>
 
+		<div class="footer_menu">
+			<div class="inner">
+				<ul class="cf">
+					<li><a href="/about">회사 소개<span>ㅣ</span> </a></li>
+					<li><a href="/terms">이용 약관<span>ㅣ</span></a></li>
+					<li><a href="/alliance">제휴 및 광고 문의<span>ㅣ</span> </a></li>
+					<li><a href="/recruits">인테리어 구인</a></li>
+
+				</ul>
+			</div>
+		</div>
 		<footer>
 			<div class="corp_info">
 				<div class="innercf">
@@ -282,12 +292,30 @@
 				</div>
 			</div>
 		</footer>
-	</div>
 
 	<!-- Script -->
 	<script type="text/javascript" src="JS/swiper.js"></script>
 	<script>AOS.init()</script>
+	<script type="text/javascript">
 
+		var btnid = document.getElementById('btnid');
+
+		function goselect1() {
+			btnid.addEventListener('click', function () {
+				location.href = "naver1.com";
+			})
+		}
+		function goselect2() {
+			btnid.addEventListener('click', function () {
+				location.href = "naver2.com";
+			})
+		}
+		function goselect3() {
+			btnid.addEventListener('click', function () {
+				location.href = "naver3.com";
+			})
+		}
+	</script>
 </body>
 
 </html>

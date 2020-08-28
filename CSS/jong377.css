@@ -1,0 +1,12 @@
+@media (max-width:377px) {
+	.lay{
+		display: none
+	}
+	.Mobile{
+		width: 377px;
+		height: 1171px;
+		background-image: url("../img/mobile/group123.png");
+		background-size : cover;
+		/* z-index: 999; */
+	}
+}

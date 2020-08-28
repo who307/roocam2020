@@ -9,9 +9,7 @@ p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h
 p {
 	-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
 }
-div{
-	display : block;
-}
+
 a{text-decoration:none}
 
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
@@ -22,23 +20,27 @@ a{text-decoration:none}
 @font-face { font-family: 'YoonMingukB';  src: url('../Font/YoonDokripManse/YoonMingukB.otf');}
 @font-face { font-family: 'YoonMingukR';  src: url('../Font/YoonDokripManse/YoonMingukR.otf');}
 @font-face { font-family: '닉스곤폰트M';  src: url('../Font/닉스곤폰트/NIXGONFONTSm.otf');}
+@font-face { font-family: 'SpoqaHanSansB';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Bold.ttf');}
+@font-face { font-family: 'SpoqaHanSansL';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Light.ttfld.ttf');}
+@font-face { font-family: 'SpoqaHanSansR';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Regular.ttf.ttf');}
+
 
 
 .section1 {
-	width: 1920px;
+	width: 100%;
 	height: 900px;
 	background-size: cover;
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
-	background-image : url("../img/main1.png");
+	background-image : url("../img/web/main1.png");
 }
 header {
 	min-width: 1080px;
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 1920px;
+	width: 100%;
 	height: 120px;
 	background: 0 0;
 	z-index: 3;
@@ -49,12 +51,10 @@ header {
 	height : 100px;
 	float : right;
 } 
-.header_section .ahide{
+.header_section .ahide, .alogo{
 	visibility: hidden;
 }
-.header_section .alogo {
-	visibility: hidden;
-}
+
 .header_section .logo{
 	visibility :visible;
 }	
@@ -120,7 +120,7 @@ header {
 .main_visual {
 	display: flex;
 	text-align: center;
-	width: 1920px;
+	width: 100%;
 	height: 450px;
 	flex-direction: column;
 	align-items: center;
@@ -151,7 +151,10 @@ header {
 }
 .main_visual ul li {
 	margin :auto;
+	background : white;
+	border-radius: 10px;
 }
+
 .main_visual ul li a{  
 	display: inline-block;
     min-width: 170px;
@@ -159,7 +162,6 @@ header {
     line-height: 1;
     border-radius: 10px;
     border: none;
-    background: #fff;
     text-align: center;
     font-size: 20px;
 	position: relative;
@@ -177,11 +179,13 @@ header {
 	font-size : 15px;
 	
 }
+.select {
+	background : rgb(224, 255, 224);
+}
 .btn_div{
 	margin-top : 0px;
 	position: absolute;
 	top : 380px;
-
 }
 
 .btn_01{
@@ -199,6 +203,14 @@ header {
 	box-shadow: 0 27px 26px -5px rgba(0,0,0,.2);
 	font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
 }
+@keyframes zoom{0%{-webkit-transform:scale(1);transform:scale(1)}
+25%{-webkit-transform:scale(1.1);transform:scale(1.1)}
+50%{-webkit-transform:scale(1);transform:scale(1)}
+75%{-webkit-transform:scale(1.1);transform:scale(1.1)}to{-webkit-transform:scale(1);transform:scale(1)}}
+.trans {
+	animation: zoom 1.7s infinite;
+}
+
 .main_visual .textdiv{
 	position: absolute;
 	top: 460px;
@@ -229,13 +241,13 @@ header {
 }
 
 .main_visual2{
-	width: 1920px;
-	height : 200px;
+	width: 100%;
+	height : 0px;
 	background: #fff;
 	padding-top :100px;
 }
 .content_box{
-	width: 1920px;
+	width: 100%;
 	background: #fff;
 	
 }
@@ -271,12 +283,14 @@ header {
 
 }
 
+
 .section2{
-	width : 1920px;
+	width : 100%;
 	background-color : #D2DAE3;
+	margin-top : 200px;
 }
 .section2 .inner{
-	min-width: 1920px;
+	min-width: 100%;
 	height: 732px;
 	position: relative;
 }
@@ -357,59 +371,29 @@ header {
     padding: 0;
     z-index: 1;
 }
+.swiper-container2 .pic1{
+	width : 1400px;
+	height: 750px;
+	background-image : url("../img/web/Section2_1.png");
 
-.section3{
-	width: 1920px;
-	height: 900px;
-	background-image : url("../img/Section3.png");
-	margin-top : 250px;
 }
-.section3 .bg_wrap{
-	width : 700px;
-	height : 420px;
-	background-color: rgba(255, 255, 255, 0.8);
-	margin : auto;
-	position: relative;
-	top : 240px;
-}
-.section3 .bg_wrap .text1 {
-	font-size : 32px;
-	font-family: 'SCDREAM8';
-	color :#656161;
-	padding : 30px;
-	text-align: center;
-}
-.section3 .bg_wrap .text1 #red {
-	color :red;
-}
-.section3 .bg_wrap .text1 #green {
-	color :green;
-}
-.section3 .bg_wrap .text2 {
-	width : 430px;
-	font-size : 15px;
-	color :#656161;
-	text-align: left;
-	position: relative;
-	left : 145px;
+.swiper-container2 .pic2{
+	width : 1400px;
+	height: 750px;
+	background-image : url("../img/web/Section2_2.png");
+
+}.swiper-container2 .pic3{
+	width : 1400px;
+	height: 750px;
+	background-image : url("../img/web/Section2_3.png");
 	
 }
-.section3 .bg_wrap .text2 span {
-	color :red;
-}
-.btn_ServiceStart{
-	cursor: pointer;
-	position: relative;
-	top : 40px;
-	left :226px;
-}
-
-.section4{
+.section3{
 	/* padding-top:200px; */
-	width: 1920px;
+	width: 100%;
 	height: 880px;
 	background: #ffffff;
-	padding : 250px 0;
+	padding : 200px 0;
 }
 .st2{
 	margin: 0 auto;
@@ -424,6 +408,26 @@ header {
 	display: flex;
 	float: right;
 	background: #fff;
+}
+.swiper-container .pic1{
+	width : 400px;
+	height: 880px;
+	background-image : url("../img/web/slider1_1.png");
+	background-size : 400px 880px;
+	
+}
+.swiper-container .pic2{
+	width : 400px;
+	height: 880px;
+	background-image : url("../img/web/slider1_2.png");
+	background-size : 400px 880px;
+	
+}.swiper-container .pic3{
+	width : 400px;
+	height: 880px;
+	background-image : url("../img/web/slider1_3.png");
+	background-size : 400px 880px;
+	
 }
 .swiper-slide {
 	width: 400px;
@@ -443,26 +447,68 @@ header {
 	-webkit-align-items: center;
 	align-items: center;
 }
+.section4{
+	width: 100%;
+	height: 900px;
+	background-image : url("../img/web/Section3.png");
+	margin-bottom: 200px;
+}
+.section4 .bg_wrap{
+	width : 700px;
+	height : 420px;
+	background-color: rgba(255, 255, 255, 0.8);
+	margin : auto;
+	position: relative;
+	top : 240px;
+}
+.section4 .bg_wrap .text1 {
+	font-size : 32px;
+	font-family: 'SCDREAM8';
+	color :#656161;
+	padding : 30px;
+	text-align: center;
+}
+.section4 .bg_wrap .text1 #red {
+	color :red;
+}
+.section4 .bg_wrap .text1 #green {
+	color :green;
+}
+.section4 .bg_wrap .text2 {
+	width : 430px;
+	font-size : 15px;
+	color :#656161;
+	text-align: left;
+	position: relative;
+	left : 145px;
+	
+}
+.section4 .bg_wrap .text2 span {
+	color :red;
+}
+.btn_ServiceStart{
+	cursor: pointer;
+	position: relative;
+	top : 40px;
+	left :226px;
+}
 
 .section5{
-	width : 1920px;
+	width : 100%;
 	height : 700px;
-	background-image: url("../img/section_5.png");
+	background-image: url("../img/web/section_5.png");
 }
 .dbox{
-	width : 1920px;
+	width : 100%;
 	height : 700px;
 	position: relative;
 	
 }
 .st1{
 	height: 500px;
-	width: 1920px;
+	width: 100%;
 	position: absolute;
 	top : 100px;
-	
-	
-	
 }
 .st1 p {
 	margin-bottom: 60px;
@@ -505,14 +551,42 @@ header {
 	
 } 
 /* footer start */
-
+.footer_menu{
+	width: 100%;
+    min-width: 1082px;
+    min-height: 90px;
+	background: #fff;
+	font-family: 'SpoqaHanSansR';
+}
+.footer_menu .inner {
+	position: relative;
+    width: 1500px;
+    margin: 0 auto;
+}
+.footer_menu ul li {
+	float: left;
+    height: 90px;
+	line-height: 88px;
+	
+   
+}
+.footer_menu ul li a{
+	font-size: 20px;
+    font-weight: 500;
+	position: relative;
+	color : black;
+}
+.footer_menu ul li span{
+	font-size : 25px;
+	color: #999999;
+	margin : 0 15px;
+}
 
 footer {
 	position: relative;
-	width: 1920px;
+	width: 100%;
 	height: 700px;
 	background: #C7FFD6;
-	margin-top : 100px;
 	font-family: 'SCDream5';
 }
 
