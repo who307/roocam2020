@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+	<title>Document</title>
+</head>
+
+<body>
+	<input type="button" id="button1" onclick="logout();" value="로그아웃" />
+
+
+	<script type="text/javascript">
+
+		Kakao.init('567c101359e55460b34ac6538bd648c4')
+
+		var kt = Kakao.Auth.getAccessToken();
+
+		if (kt) {
+			Kakao.API.request({
+				url: '/v2/user/me',
+				success: function (res) {
+					console.log(res);
+					var id = res.id; //데이터베이스의 primary Key값 속성 즉 기본키의 식별성
+					var email = res.kakao_account.email;
+					var name = res.properties.nickname;
+					var html = '<BR>이름 : ' + name + '<BR>이메일 : ' + email + '<BR>아이디값 :' + id;
+					$('body').append(html);
+				}
+			})
+		}
+		else {
+			location.href = "kktest.html"
+		}
+
+		function logout() {  // 토큰삭제 후 연결된 계정 끊기  ==> 로그아웃
+					// if (!Kakao.Auth.getAccessToken()) {
+					// 	console.log('Not logged in.');
+					// 	return;
+					// }
+					Kakao.Auth.logout(function () {
+						console.log(Kakao.Auth.getAccessToken()); //토큰 값을 삭제
+						Kakao.API.request({
+							url: '/v1/user/unlink',   //연결을 unlink로 끊음 
+							success: function (response) {
+								console.log(response);
+							},
+							fail: function (error) {
+								console.log(error);
+							},
+						}, location.href="../index.html")
+					});
+				}
+	</script>
+</body>
+
+</html>

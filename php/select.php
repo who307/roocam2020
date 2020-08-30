@@ -35,24 +35,19 @@ else {
 echo"<h1> 회원 검색 결과<h1>";
 echo"<table border=1>";
 echo "<tr>";
-echo"<th>아이디</th> <th>이름</th> <th>비밀번호</th> <th>지역</th> <th>성별</th> <th>이메일</th> <th>가입일</th> <th>수정</th> <th>삭제</th>";
+echo"<th>전화번호</th> <th>이름</th> <th>지역</th> <th>보낸날짜</th> <th>수정</th> <th>삭제</th>";
 echo "</tr>";
 
 while($row = mysqli_fetch_array($ret)) {
     echo "<tr>";
-    // echo "<td class=\"column100 column1\">", $row['userID'], "</TD>";
-		echo "<td>", $row['userID'], "</TD>";
+		echo "<td>", $row['userNumber'], "</TD>";
 		echo "<td>", $row['userName'], "</TD>";
-    echo "<td>", $row['userPW'], "</TD>";
-    echo "<td>", $row['addr'], "</TD>";
-    echo "<td>", $row['gender'], "</TD>";
-    echo "<td>", $row['email'], "</TD>";
+    echo "<td>", $row['userAddr'], "</TD>";
 		echo "<td>", $row['mDate'], "</TD>";
-		echo "<td>", "<a href= '../php/update.php?userID=", $row['userID'], "'>수정 </a></td>";
-    echo "<td>", "<a href= '../php/delete.php?userID=", $row['userID'], "'>삭제 </a></td>";
+		echo "<td>", "<a href= '../php/update.php?userNumber=", $row['userNumber'], "'>수정 </a></td>";
+    echo "<td>", "<a href= '../php/delete.php?userNumber=", $row['userNumber'], "'>삭제 </a></td>";
     echo"</tr>";
 }
-
 mysqli_close($con);
 echo "</table>";
 

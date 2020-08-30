@@ -5,14 +5,15 @@ p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h
 	color: #313131;
 	letter-spacing: -.5px;
 	list-style : none;
+	word-break: break-all;
 }
-p {
+*{
 	-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
 }
-
 a{text-decoration:none}
 
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 @font-face { font-family: 'SCDream8';  src: url('../Font/S-Core_Dream_OTF/SCDream8.otf');}
 @font-face { font-family: 'SCDream4';  src: url('../Font/S-Core_Dream_OTF/SCDream4.otf');}
@@ -21,21 +22,11 @@ a{text-decoration:none}
 @font-face { font-family: 'YoonMingukR';  src: url('../Font/YoonDokripManse/YoonMingukR.otf');}
 @font-face { font-family: '닉스곤폰트M';  src: url('../Font/닉스곤폰트/NIXGONFONTSm.otf');}
 @font-face { font-family: 'SpoqaHanSansB';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Bold.ttf');}
-@font-face { font-family: 'SpoqaHanSansL';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Light.ttfld.ttf');}
-@font-face { font-family: 'SpoqaHanSansR';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Regular.ttf.ttf');}
+@font-face { font-family: 'SpoqaHanSansL';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Light.ttf');}
+@font-face { font-family: 'SpoqaHanSansR';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Regular.ttf');}
 
-
-
-.section1 {
-	width: 100%;
-	height: 900px;
-	background-size: cover;
-	display: flex;
-	-webkit-box-align: center;
-	align-items: center;
-	background-image : url("../img/web/main1.png");
-}
 header {
+	width: 100%;
 	min-width: 1080px;
 	position: fixed;
 	top: 0;
@@ -46,16 +37,23 @@ header {
 	z-index: 3;
 	text-align: center;
 }
-.header_section {
-	width : 1597px;
-	height : 100px;
-	float : right;
-} 
-.header_section .ahide, .alogo{
-	visibility: hidden;
+
+.section1 {
+	width: 100%;
+	min-width: 1080px;
+	height: 900px;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	background: url("../img/web/main1.png")center/cover;
+	
 }
 
-.header_section .logo{
+.ahide, .alogo{
+	visibility: hidden;	
+}
+
+.logo{
 	visibility :visible;
 }	
 .down{
@@ -79,10 +77,7 @@ header {
 	display: none;
 	
 }
-.header_sidebar .linecolor{
-	background:#72d469;
 
-}
 .line {
 	background:#ffffff;
 	margin-top:6px;
@@ -93,13 +88,12 @@ header {
 	box-shadow:0 1px 3px rgba(0, 0, 0, 0.5);
 	
 }
-.header_menu {
-	float: right;
-	position: relative;
-}
 
 .service {
-	margin : 40px 85px 10px 43px;
+	margin : 40px 0px 10px 0px;
+	display: inline-block;
+	position: absolute;
+	right : 30px;
 }
 
 .service a{
@@ -121,6 +115,7 @@ header {
 	display: flex;
 	text-align: center;
 	width: 100%;
+	min-width: 1080px;
 	height: 450px;
 	flex-direction: column;
 	align-items: center;
@@ -132,14 +127,12 @@ header {
 .main_visual .main_p{
 	font-size: 50px;
 	color: #fff;
-	font-weight: bold;
 	font-family: 'SCDream8';
 
 }
 .main_visual .sub_p{
 	font-size: 34px;
 	color: #fff;
-	font-weight: lighter;
 	font-family: 'SCDream4';
 }
 .main_visual ul{
@@ -180,7 +173,7 @@ header {
 	
 }
 .select {
-	background : rgb(224, 255, 224);
+	background : rgb(197, 247, 197);
 }
 .btn_div{
 	margin-top : 0px;
@@ -192,17 +185,18 @@ header {
 	width: 250px;
 	height: 70px;
 	line-height: 70px;
-	background: #313131;
+	background: #4B524B;
 	color: #fff;
 	border-radius: 64px;
 	font-weight: 500;
-	font-size: 24px;
+	font-size: 20px;
 	border-style: none;
 	outline: none;
 	cursor: pointer;
 	box-shadow: 0 27px 26px -5px rgba(0,0,0,.2);
-	font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+	font-family: 'Spoqa Han Sans JP', 'Sans-serif';
 }
+
 @keyframes zoom{0%{-webkit-transform:scale(1);transform:scale(1)}
 25%{-webkit-transform:scale(1.1);transform:scale(1.1)}
 50%{-webkit-transform:scale(1);transform:scale(1)}
@@ -240,7 +234,7 @@ header {
 	margin-left: 180px;
 }
 
-.main_visual2{
+/* .main_visual2{
 	width: 100%;
 	height : 0px;
 	background: #fff;
@@ -281,22 +275,25 @@ header {
 	width: 240px;
 	background-color: lightgreen;
 
-}
-
+} */
 
 .section2{
 	width : 100%;
+	min-width: 1080px;
 	background-color : #D2DAE3;
 	margin-top : 200px;
 }
 .section2 .inner{
-	min-width: 100%;
+	width: 100%;
+	min-width: 1080px;
+
 	height: 732px;
 	position: relative;
 }
 .section2 .inner .bg_wrap {
 	width: calc(100% - 300px);
 	max-width: 1400px;
+	min-width: 1080px;
 	height: 750px;
 	position: absolute;
 	top: -160px;
@@ -334,15 +331,14 @@ header {
 	font-size : 30px;
 	margin-bottom: 40px;
 	font-family: "SCDream8";
-	
-	
+
 }
 .text_wrap .text2{
 	color :white;
 	font-weight: lighter;
 	font-size : 17px;
 	margin-bottom: 30px;
-	
+	font-family: 'NanumSquare', sans-serif;
 }
 
 .btn_02{
@@ -361,7 +357,8 @@ header {
 	font-family: '닉스곤폰트M';
 }
 .swiper-container2 {
-	width: 1400px;
+	width : 100%;
+	min-width: 700px;
 	height: 750px;
 	margin-left: auto;
     margin-right: auto;
@@ -369,75 +366,85 @@ header {
     overflow: hidden;
     list-style: none;
     padding: 0;
-    z-index: 1;
+	z-index: 1;
 }
 .swiper-container2 .pic1{
 	width : 1400px;
 	height: 750px;
-	background-image : url("../img/web/Section2_1.png");
+	-webkit-box-align: center;
+	align-items: center;
+	background: url("../img/web/Section2_1.png")center/cover;
 
 }
 .swiper-container2 .pic2{
 	width : 1400px;
-	height: 750px;
-	background-image : url("../img/web/Section2_2.png");
+	height: 750px;;
+	background : url("../img/web/Section2_2.png")center/cover;
 
 }.swiper-container2 .pic3{
 	width : 1400px;
 	height: 750px;
-	background-image : url("../img/web/Section2_3.png");
+	background : url("../img/web/Section2_3.png")center/cover;
 	
 }
 .section3{
-	/* padding-top:200px; */
 	width: 100%;
 	height: 880px;
 	background: #ffffff;
 	padding : 200px 0;
 }
-.st2{
-	margin: 0 auto;
-	min-width: 1080px;
-	-webkit-box-pack: justify;
-	background: #fff;
+.sectiondiv{
+	width: 100%;
+    min-width: 1080px;
+    height: 976px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.sectiondiv .img1{
+	min-width : 500px; 
+	margin-right: 50px;
+	height :880px;
+	background : url("../img/web/slider1_0.png");
+
 }
 
 .swiper-container {
 	height: 880px;
-	width: 1260px;
-	display: flex;
-	float: right;
+	width: 85%;
 	background: #fff;
 }
 .swiper-container .pic1{
-	width : 400px;
+	min-width : 400px;
 	height: 880px;
-	background-image : url("../img/web/slider1_1.png");
-	background-size : 400px 880px;
+	background : url("../img/web/slider1_1.png");
 	
 }
 .swiper-container .pic2{
-	width : 400px;
+	min-width : 400px;
 	height: 880px;
-	background-image : url("../img/web/slider1_2.png");
-	background-size : 400px 880px;
+	background: url("../img/web/slider1_2.png");
 	
 }.swiper-container .pic3{
-	width : 400px;
+	min-width : 400px;
 	height: 880px;
-	background-image : url("../img/web/slider1_3.png");
-	background-size : 400px 880px;
+	background : url("../img/web/slider1_3.png");
 	
 }
 .swiper-slide {
 	width: 400px;
+	min-width: 400px;
 	height: 100%;
 	background: #fff;
 	/* Center slide text vertically */
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
-	display: flex;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	-webkit-justify-content: center;
@@ -449,9 +456,11 @@ header {
 }
 .section4{
 	width: 100%;
+	min-width: 1080px;
 	height: 900px;
-	background-image : url("../img/web/Section3.png");
-	margin-bottom: 200px;
+	background : url("../img/web/Section3.png") center/cover;
+	margin-bottom: 100px;
+	display: flex;
 }
 .section4 .bg_wrap{
 	width : 700px;
@@ -459,7 +468,6 @@ header {
 	background-color: rgba(255, 255, 255, 0.8);
 	margin : auto;
 	position: relative;
-	top : 240px;
 }
 .section4 .bg_wrap .text1 {
 	font-size : 32px;
@@ -481,7 +489,7 @@ header {
 	text-align: left;
 	position: relative;
 	left : 145px;
-	
+	font-family: 'NanumSquare', sans-serif;
 }
 .section4 .bg_wrap .text2 span {
 	color :red;
@@ -495,18 +503,21 @@ header {
 
 .section5{
 	width : 100%;
+	min-width: 1080px;
 	height : 700px;
-	background-image: url("../img/web/section_5.png");
+	background: url("../img/web/section_5.png")center/cover;
 }
 .dbox{
 	width : 100%;
 	height : 700px;
+	min-width : 1080px;
 	position: relative;
 	
 }
 .st1{
 	height: 500px;
 	width: 100%;
+	min-width: 1080px;
 	position: absolute;
 	top : 100px;
 }
@@ -520,18 +531,18 @@ header {
 	font-weight: bold;
 }
 .st1 .text1 {
-	font-size : 40px;
-}
-.st1 .text2 {
-	font-size : 60px;
-}
-.st1 .text3 {
 	font-size : 30px;
 }
+.st1 .text2 {
+	font-size : 50px;
+}
+.st1 .text3 {
+	font-size : 25px;
+}
 .btns{
-	width : 1200px;
-	margin : auto;
+	min-width: 900px;
 	padding-top : 50px;
+	text-align: center;
 }
 .btns button {
 	width : 250px;
@@ -545,10 +556,7 @@ header {
 	line-height: 80px;
 	font-family: '닉스곤폰트M';
 	color : white;
-	margin-left : 110px;
-
-	
-	
+	margin:0 30px;	
 } 
 /* footer start */
 .footer_menu{
@@ -585,37 +593,35 @@ header {
 footer {
 	position: relative;
 	width: 100%;
+	min-width : 1080px;
 	height: 700px;
 	background: #C7FFD6;
 	font-family: 'SCDream5';
 }
 
-footer>div>.inner {
-	position: relative;
-	width: 1080px;
-	margin: 0 auto;
-	
+footer .webinfo {
+	width: 100%;
+	min-width : 1080px;
+	height: 700px;
+	display: flex;
 }
-footer>div>.innercf {
-	position: relative;
-	width: 1500px;
-	height: 550px;
-	margin: 0 auto;
-	position :relative;
-	top : 150px;
-
+.infodiv{
+	min-width : 1080px;
+	height : 400px;
+	position: absolute;
+	top : 50px;
+	left : 200px;
 }
 .fl_l {
 	margin-top: 40px;
+	min-width: 600px;
+	height: 200px;
+	font-size : 20px;
 	float: left;
-	width: 700px;
-	height: 300px;
-	font-size : 30px;
-
-
+	margin-right : 200px;
 }
 .fl_1 table {
-	width: 900px;
+	width: 400px;
 	margin: 0;
     padding: 0;
     border-spacing: 0;
@@ -638,10 +644,10 @@ table td{
 	color :black;
 }
 .fl_2 {
+	width : 500px;
+	float: left;
 	margin-top: 40px;
-	float: right;
-	width: 800px;
-	height: 242px;
+	height: 150px;
 	text-align: center;
 }
 .fl_2 .greenbar {
@@ -655,20 +661,20 @@ table td{
 	padding : 0;
 }
 .fl_2 table tr .label {
-	width : 280px;
-	font-size : 47px;
+	width :200px;
+	font-size : 25px;
 	color :#707070;
 }
 .fl_2 table tr .info {
-	font-size : 54px;
+	font-size : 30px;
 }
 .fl_3 {
-	width :1040px;
-	height : 87px;
 	font-size : 20px;	
-	display :flex;
-	position: relative;
-	top :90px;
+	position: absolute;
+	bottom : 100px;
+	left: 200px;
+
+	
 }
 /* Footer End */
 

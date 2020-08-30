@@ -6,15 +6,10 @@
 
 <h1> 회원가입 </h1>
 <FORM METHOD="post"  ACTION="insert_result.php">
-	아이디 : <INPUT TYPE ="text" NAME="userID"> <br>
-	비밀번호 : <INPUT TYPE = "password" NAME="userPW"> <br>
-	비밀번호확인 :<INPUT TYPE = "password" NAME="userPW2"> <br>
-	이름 : <INPUT TYPE ="text" NAME="userName"> <br> 
-	지역 : <INPUT TYPE ="text" NAME="addr"> <br>
-	<!-- 성별<input type="radio" NAME="gender" value="man"> 남자 
-  		<input type="radio" NAME="gender" value="woman"> 여자  <br> -->
-	성별 : <INPUT TYPE ="text" NAME="gender"> <br>
-	E-mail : <INPUT TYPE ="text" NAME="email"> <br>
+	이름 : <INPUT TYPE ="text" NAME="userName"> <br>
+	전화번호 : <INPUT TYPE = "text" NAME="userNumber"> <br>
+	지역 : <INPUT TYPE ="text" NAME="userAddr"> <br>
+	이메일 : <INPUT TYPE ="text" NAME="email"> <br>
 	<BR><BR>
 	<INPUT TYPE="submit"  VALUE="회원 입력">
 </FORM>

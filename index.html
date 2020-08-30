@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -17,59 +17,28 @@
 	<link rel="stylesheet" href="CSS/jong377.css" />
 	<script type="text/javascript" src="JS/scroll.js"></script>
 
-	<script>
-		$(function () {
-			$(".select1").click(function () {
-				$(".select1").addClass("select");
-				$(".select2").removeClass("select");
-				$(".select3").removeClass("select");
-				$(".btn_01").addClass("trans");
-
-			});
-			$(".select2").click(function () {
-				$(".select2").addClass("select");
-				$(".select1").removeClass("select");
-				$(".select3").removeClass("select");
-				$(".btn_01").addClass("trans");
-
-			});
-			$(".select3").click(function () {
-				$(".select3").addClass("select");
-				$(".select2").removeClass("select");
-				$(".select1").removeClass("select");
-				$(".btn_01").addClass("trans");
-			});
-		});
-	</script>
-
-
 	<title>루캠</title>
 
 </head>
 
-<body>
+<body style="overflow-x :hidden; overflow-y : auto;">
 	<div class="Mobile"></div>
 	<div class="lay">
-		<section class="section1">
-			<header>
-				<div class="header_sidebar">
-					<div class="line"></div>
-					<div class="line"></div>
-					<div class="line"></div>
-				</div>
-				<div class="header_section">
-					<a class="ahide" href="index.html"><img class="alogo" src="img/web/logo.png" ;></a>
-
-					<div class="header_menu">
-						<div class="service">
-							<a class="service1" href="kakao/myservice.html">내 서비스</a>
-						</div>
+		<header>
+			<div class="header_sidebar">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<a class="ahide" href="index.html"><img class="alogo" src="img/web/logo.png" ;></a>
+			
+					<div class="service">
+						<a class="service1" href="kakao/myservice.html">내 서비스</a>
 					</div>
-				</div>
 
-			</header>
-
-			<section class="main_visual">
+		</header>
+		<section class="section1">
+			<div class="main_visual">
 				<p class="main_p">
 					창호를 고르는 현명한 방법!
 				</p>
@@ -91,8 +60,8 @@
 						</a></li>
 				</ul>
 
-				<div class="btn_div " id="btnid">
-					<button class="btn_01 ">
+				<div class="btn_div " id="btnid" onclick="Alert();">
+					<button class="btn_01">
 						견적 알아보기
 					</button>
 				</div>
@@ -105,9 +74,9 @@
 						Save The Energy, Save The Health.
 					</p>
 				</div>
-			</section>
+			</div>
 		</section>
-		
+
 
 		<section class="main_visual2">
 			<div class="content_box">
@@ -139,6 +108,7 @@
 				</ul> -->
 			</div>
 		</section>
+
 		<section class="section2">
 			<div class="inner">
 				<div class="bg_wrap">
@@ -184,8 +154,8 @@
 		</section>
 
 		<section class="section3">
-			<div class="st2">
-				<img src="img/web/slider1_0.png">
+			<div class="sectiondiv">
+				<div class="img1"> </div>
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
@@ -249,8 +219,8 @@
 			</div>
 		</div>
 		<footer>
-			<div class="corp_info">
-				<div class="innercf">
+			<div class="webinfo">
+				<div class = "infodiv">
 					<div class="fl_l">
 						<table>
 							<tr>
@@ -276,6 +246,7 @@
 						</table>
 					</div>
 
+
 					<div class="fl_2">
 						<div class="greenbar"></div>
 						<table>
@@ -285,37 +256,20 @@
 							</tr>
 						</table>
 					</div>
+				</div>
+
 					<div class="fl_3">주식회사 루프탑 캠핑은 통신판매 중개자 및 플랫폼 사업자로서, 고객님과 시공업체 사장님들이 연결되도록 돕습니다. <br>
 						따라서 시공업체에서 제공하는 일련의 견적 상담과 시공 서비스에 대해서는 책임을 지지 않음을 알려드립니다. <br>
 						ⓒ 2020 Rooftop Camping Corp., All rights reserved.
 					</div>
-				</div>
 			</div>
 		</footer>
 
-	<!-- Script -->
-	<script type="text/javascript" src="JS/swiper.js"></script>
-	<script>AOS.init()</script>
-	<script type="text/javascript">
+		<!-- Script -->
+		<script type="text/javascript" src="JS/swiper.js"></script>
+		<script>AOS.init()</script>
+		<script type="text/javascript" src="JS/select.js"></script>
 
-		var btnid = document.getElementById('btnid');
-
-		function goselect1() {
-			btnid.addEventListener('click', function () {
-				location.href = "naver1.com";
-			})
-		}
-		function goselect2() {
-			btnid.addEventListener('click', function () {
-				location.href = "naver2.com";
-			})
-		}
-		function goselect3() {
-			btnid.addEventListener('click', function () {
-				location.href = "naver3.com";
-			})
-		}
-	</script>
 </body>
 
 </html>

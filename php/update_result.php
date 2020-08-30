@@ -1,17 +1,18 @@
 <?php
 	 $con = mysqli_connect("localhost", "roocam", "DB_PASSWORD_REMOVED", "roocam") or die("MySQL 안들어가짐!!");
 
-   $userID = $_POST["userID"];
-   $userPW = $_POST["userPW"];
+   $userNumber = $_POST["userNumber"];
    $userName = $_POST["userName"];
-   $addr = $_POST["addr"];
-   $gender = $_POST["gender"];
-   $email = $_POST["email"];
+   $userAddr = $_POST["userAddr"];
 	 $mDate = $_POST["mDate"]; 
 
-   $sql ="UPDATE roocam SET userName='".$userName;
-   $sql = $sql."', addr='".$addr."', gender='".$gender."',email='".$email;
-   $sql = $sql."', mDate='".$mDate."' WHERE userID='".$userID."'";
+  //  $sql ="UPDATE roocam SET userName='".$userName;
+  //  $sql = $sql."', addr='".$addr."', gender='".$gender."',email='".$email;
+	//  $sql = $sql."', mDate='".$mDate."' WHERE userID='".$userID."'";
+	 
+	 $sql ="UPDATE roocam SET userName='".$userName;
+	 $sql = $sql."', userAddr='".$userAddr."', mDate='".$mDate."', userNumber='".$userNumber."'";
+
 
    $ret = mysqli_query($con, $sql);
  

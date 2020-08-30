@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+	<title>Document</title>
+</head>
+
+<body>
+	<a id="create-kakao-login-btn"></a>
+
+	<div id="create-channel-add-button"></div>
+
+
+	
+	<script type="text/javascript">
+		Kakao.init('567c101359e55460b34ac6538bd648c4')
+
+		Kakao.Channel.createAddChannelButton({
+    container: '#create-channel-add-button',
+    channelPublicId: '@roocam02',
+  });
+
+		Kakao.Auth.createLoginButton({
+			container: '#create-kakao-login-btn',
+			success: function (authObj) {
+				location.href="../index.html"
+				alert('로그인이 되었습니다.')
+			}, fail: function (err) {
+				alert(JSON.stringify(err))
+			},
+		});
+	</script>
+
+</body>
+
+</html>
