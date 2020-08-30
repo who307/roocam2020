@@ -10,6 +10,7 @@ p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h
 *{
 	-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
 }
+
 a{text-decoration:none}
 
 
@@ -25,23 +26,22 @@ a{text-decoration:none}
 @font-face { font-family: 'SpoqaHanSansL';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Light.ttf');}
 @font-face { font-family: 'SpoqaHanSansR';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Regular.ttf');}
 
+
 header {
 	width: 100%;
 	min-width: 1080px;
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
 	height: 120px;
 	background: 0 0;
 	z-index: 3;
 	text-align: center;
 }
-
 .section1 {
 	width: 100%;
 	min-width: 1080px;
-	height: 900px;
+	height: 940px;
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
@@ -75,8 +75,8 @@ header {
 
 .header_sidebar{
 	display: none;
-	
 }
+
 
 .line {
 	background:#ffffff;
@@ -96,7 +96,7 @@ header {
 	right : 30px;
 }
 
-.service a{
+.service div{
 	display: inline-block;
 	width: 140px;
 	height: 20px;
@@ -109,19 +109,70 @@ header {
 	padding: 10px 25px 7px;
 	font-family: 'NanumSquare', sans-serif;
 	font-weight: bold;
-	
+	cursor: pointer;
 }
+.modal{
+	position: fixed; 
+    left: 0; 
+    top: 0; 
+ 	width: 100%; 
+	height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    visibility: hidden; 
+    transform: scale(1.1); 
+	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+	z-index: 99;
+}
+.modal_contents {
+	position: absolute; 
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%); 
+	background-color: white; 
+	padding: 50px; 
+	width: 400px; 
+	height: 600px;
+	border-radius: 50px;
+}
+.show_modal{
+	visibility: visible;
+	opacity: 1;
+	transform: scale(1.0); 
+	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.closebtn {
+	width : 60px;
+	height: 30px;
+	border-radius: 15px;
+	outline :0;
+	cursor: pointer;
+	position: absolute;
+	right:50px;
+	top: 50px;
+}
+.closebtn:hover{
+	transform: scale(1.2); 
+	background : rgb(197, 247, 197)
+}
+.scrollhidden{
+	overflow-y: hidden;
+}
+
+
 .main_visual {
 	display: flex;
 	text-align: center;
 	width: 100%;
 	min-width: 1080px;
-	height: 450px;
+	height: 600px;
 	flex-direction: column;
 	align-items: center;
 	-webkit-box-align: center;
 	position : absolute;
-	top: 350px;
+	top: 370px;
+	margin : auto;
+	
 	
 }
 .main_visual .main_p{
@@ -141,6 +192,7 @@ header {
 	margin : 40px 0 40px 0;
 	padding: 0px;
 	display: flex;
+
 }
 .main_visual ul li {
 	margin :auto;
@@ -207,7 +259,7 @@ header {
 
 .main_visual .textdiv{
 	position: absolute;
-	top: 460px;
+	bottom : 45px;
 	right: 30px;
 
 }
@@ -218,8 +270,6 @@ header {
 	font-family: 'YoonMingukR';
 	font-size : 25px;
 	color : #55c54a;
-	
-	
 }
 .main_visual p #bold {
 	font-family: 'YoonMingukB';
@@ -406,8 +456,8 @@ header {
     justify-content: space-between;
 }
 
-.sectiondiv .img1{
-	min-width : 500px; 
+.sectiondiv .img1{ 
+	min-width : 465px;
 	margin-right: 50px;
 	height :880px;
 	background : url("../img/web/slider1_0.png");
@@ -420,18 +470,18 @@ header {
 	background: #fff;
 }
 .swiper-container .pic1{
-	min-width : 400px;
+	width : 400px;
 	height: 880px;
 	background : url("../img/web/slider1_1.png");
 	
 }
 .swiper-container .pic2{
-	min-width : 400px;
+	width : 400px;
 	height: 880px;
 	background: url("../img/web/slider1_2.png");
 	
 }.swiper-container .pic3{
-	min-width : 400px;
+	width : 400px;
 	height: 880px;
 	background : url("../img/web/slider1_3.png");
 	
@@ -594,34 +644,34 @@ footer {
 	position: relative;
 	width: 100%;
 	min-width : 1080px;
-	height: 700px;
+	height: 600px;
 	background: #C7FFD6;
 	font-family: 'SCDream5';
 }
 
 footer .webinfo {
 	width: 100%;
-	min-width : 1080px;
-	height: 700px;
+	height: 600px;
 	display: flex;
 }
 .infodiv{
-	min-width : 1080px;
-	height : 400px;
-	position: absolute;
-	top : 50px;
-	left : 200px;
+	width: 1500px;
+	height : 450px;
+	margin-left :auto;
+	margin-right: auto;
+	position: relative;
+	top : 100px;
+	
 }
-.fl_l {
-	margin-top: 40px;
-	min-width: 600px;
+
+.fl_1 {
+	width: 550px;
 	height: 200px;
 	font-size : 20px;
 	float: left;
-	margin-right : 200px;
+	
 }
 .fl_1 table {
-	width: 400px;
 	margin: 0;
     padding: 0;
     border-spacing: 0;
@@ -635,8 +685,8 @@ table td{
 	
 }
 
-.fl_l table .label {
-	width : 400px;
+.fl_1 table .label {
+	width : 350px;
 	color :#707070;
 
 }
@@ -645,10 +695,9 @@ table td{
 }
 .fl_2 {
 	width : 500px;
-	float: left;
-	margin-top: 40px;
 	height: 150px;
 	text-align: center;
+	float: right;
 }
 .fl_2 .greenbar {
 	width : 22px;
@@ -671,8 +720,7 @@ table td{
 .fl_3 {
 	font-size : 20px;	
 	position: absolute;
-	bottom : 100px;
-	left: 200px;
+	bottom: 40px;
 
 	
 }
