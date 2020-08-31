@@ -157,18 +157,16 @@ header {
 
 .main_visual {
 	display: flex;
-	text-align: center;
-	width: 100%;
-	min-width: 1082px;
-	height: 500px;
-	flex-direction: column;
-	align-items: center;
-	-webkit-box-align: center;
-	position : absolute;
-	bottom : 100px;
-	margin : auto;
-	
-	
+    text-align: center;
+    width: 100%;
+    min-width: 1082px;
+    height: 600px;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-align: center;
+    position: absolute;
+    top: 370px;
+    margin: auto;
 }
 .main_visual .main_p{
 	font-size: 50px;
@@ -192,7 +190,7 @@ header {
 
 .main_visual .textdiv{
 	position: absolute;
-	bottom : 200px;
+	bottom : 280px;
 
 }
 .main_visual p{
@@ -293,24 +291,26 @@ header {
 /* 서비스 이용약관 */
 
 .terms_section{
-    width : 100%;
-    height : 100%;
+	width : 100%;
     padding : 100px 0;
 }
 .terms_header {
+	min-width : 1080px;
     text-align: center;
 }
 .terms_title{
+	min-width : 1080px;
     text-align: center;
-    font-size: 50px;
+    font-size: 35px;
     font-family: 'YoonMingukB';
 }
 .terms_list{
+	min-width : 800px;
     display : flex;
     text-align: center;
-    font-size : 30px;
+    font-size : 20px;
     justify-content: space-between;
-	padding : 100px 100px;
+	padding : 100px 300px;
 }
 .terms_list li  {
 	cursor: pointer;
@@ -319,43 +319,45 @@ header {
 	color :#55c54a;
 }
 .terms1 .contents {
-    width: 1500px;
-    height : 2000px;
+	width : 100%;
+	min-width: 1080px;
+    height : 1500px;
     margin-top : 20px;
-    padding : 20px  100px;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    
+    padding : 20px  100px;    
 }
 .terms1 .contents .terms_div {
+	width : 1300px;
+	height : 1500px;
     padding-top : 20px;
-    margin-left : 100px;
-    height : 2000px;
+    margin : auto;
+	overflow-y: auto;
+    overflow-x: hidden;
 }
 .terms1 .main_title{
     height : 80px;
     font-family: "SpoqaHanSansR";
-    font-size : 30px;
-    margin-left : 100px;
+    font-size : 25px;
+    margin-left : 300px;
 }   
 .terms1 .sub_title {
+	min-width : 1080px;
     padding : 30px 0;
-    font-size : 30px;
+    font-size : 25px;
     font-family: "SpoqaHanSansR";
 }
 .contents .sub_contents{
-    width : 1500px;
     min-width : 1080px;
     padding : 0 20px;
-    font-size : 25px;
+    font-size : 20px;
     font-family: 'SpoqaHanSansL' ;
 }
 .terms_date {
+	min-width : 1080px;
     height : 80px;
     font-family: "SpoqaHanSansR";
     font-size : 25px;
     margin-top : 80px;
-    margin-left : 200px;
+    margin-left : 300px;
 }
 
 /* 서비스 이용약관 end*/
@@ -366,8 +368,8 @@ header {
 .terms3 .main_title {
     height : 80px;
     font-family: "SpoqaHanSansR";
-    font-size : 35px;
-    margin-left : 100px;
+    font-size : 25px;
+    margin-left : 300px;
 }
 .terms3 .contents{
     width: 1500px;
@@ -377,19 +379,19 @@ header {
 }
 .terms3 .terms3_div{
     padding-top : 20px;
-    margin-left : 100px;
+    margin-left : 300px;
     height : 900px;
 }
 .terms3 .sub_title{
     padding : 30px 0;
-    font-size : 30px;
+    font-size : 25px;
     font-family: "SpoqaHanSansR";
 }
 .terms3 .sub_contents{
     width : 1500px;
     min-width : 1080px;
     padding : 0 20px;
-    font-size : 25px;
+    font-size : 20px;
     font-family: 'SpoqaHanSansL' ;
 }
 
@@ -405,8 +407,8 @@ header {
 .terms4 .main_title {
     height : 80px;
     font-family: "SpoqaHanSansR";
-    font-size : 35px;
-    margin-left : 100px;
+    font-size : 25px;
+    margin-left : 300px;
 }
 .terms4 .contents{
     width: 100%;
@@ -414,12 +416,13 @@ header {
     margin-top : 20px;
 }
 .terms4 .terms4_div {
-    width : 1500px;
+	width : 100%;
     padding-top :50px;
     margin : auto;
 }
 .terms4 table{
-    width: 1600px;
+	width: 1300px;
+	margin : auto;
     border-left : 1px solid #bebebe;
     border-right : 1px solid #bebebe;
     border-top : 3px solid #000000;
@@ -433,14 +436,14 @@ header {
 }
 .terms4 th {
     font-family: "SpoqaHanSansR";
-    font-size : 30px;
-    padding : 20px 40px;
+    font-size : 25px;
+    padding : 20px 20px;
 }
 .terms4 td {
     text-align: center;
     font-family: "SpoqaHanSansL";
-    font-size : 25px;
-    padding : 40px;
+    font-size : 20px;
+    padding : 20px;
 
 }
 

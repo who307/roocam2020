@@ -1,0 +1,447 @@
+p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, html, label, legend, li, ol, pre, table, td, th, ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: #313131;
+	letter-spacing: -.5px;
+	list-style : none;
+	word-break: break-all;
+}
+*{
+	-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
+}
+
+a{text-decoration:none}
+
+
+
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@font-face { font-family: 'SCDream8';  src: url('../Font/S-Core_Dream_OTF/SCDream8.otf');}
+@font-face { font-family: 'SCDream4';  src: url('../Font/S-Core_Dream_OTF/SCDream4.otf');}
+@font-face { font-family: 'SCDream5';  src: url('../Font/S-Core_Dream_OTF/SCDream5.otf');}
+@font-face { font-family: 'YoonMingukB';  src: url('../Font/YoonDokripManse/YoonMingukB.otf');}
+@font-face { font-family: 'YoonMingukR';  src: url('../Font/YoonDokripManse/YoonMingukR.otf');}
+@font-face { font-family: '닉스곤폰트M';  src: url('../Font/닉스곤폰트/NIXGONFONTSm.otf');}
+@font-face { font-family: 'SpoqaHanSansB';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Bold.ttf');}
+@font-face { font-family: 'SpoqaHanSansL';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Light.ttf');}
+@font-face { font-family: 'SpoqaHanSansR';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Regular.ttf');}
+
+
+header {
+	width: 100%;
+	min-width: 1082px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 120px;
+	background: 0 0;
+	z-index: 3;
+	text-align: center;
+}
+
+
+.ahide, .alogo{
+	visibility: hidden;	
+}
+
+.logo{
+	visibility :visible;
+}	
+.down{
+	background: hsla(0,0%,100%,.6);
+	
+
+}
+.down:hover{
+	background-color: white;
+	background-size: cover;
+
+}
+	
+.service .adown {
+	color: #313131;
+	border: 1px solid #313131;
+
+}
+
+.header_sidebar{
+	display: none;
+}
+
+
+.line {
+	background:#ffffff;
+	margin-top:6px;
+	margin-bottom:6px;
+	width:56px;
+	height:7px; 
+	border-radius:2px;
+	box-shadow:0 1px 3px rgba(0, 0, 0, 0.5);
+	
+}
+
+.service {
+	margin : 40px 0px 10px 0px;
+	display: inline-block;
+	position: absolute;
+	right : 30px;
+}
+
+.service div{
+	display: inline-block;
+	width: 140px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 16px;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 30px;
+	margin-right: 5px;
+	padding: 10px 25px 7px;
+	font-family: 'NanumSquare', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+.modal{
+	position: fixed; 
+    left: 0; 
+    top: 0; 
+ 	width: 100%; 
+	height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    visibility: hidden; 
+    transform: scale(1.1); 
+	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+	z-index: 99;
+}
+.modal_contents {
+	position: absolute; 
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%); 
+	background-color: white; 
+	padding: 50px; 
+	width: 400px; 
+	height: 600px;
+	border-radius: 50px;
+}
+.show_modal{
+	visibility: visible;
+	opacity: 1;
+	transform: scale(1.0); 
+	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.closebtn {
+	width : 60px;
+	height: 30px;
+	border-radius: 15px;
+	outline :0;
+	cursor: pointer;
+	position: absolute;
+	right:50px;
+	top: 50px;
+}
+.closebtn:hover{
+	transform: scale(1.2); 
+	background : rgb(197, 247, 197)
+}
+.scrollhidden{
+	overflow-y: hidden;
+}
+
+/* inputinner Start */
+input {
+ outline: none;
+}
+.inputmain {
+	width: 100%;
+	min-width: 1082px;
+	height: 900px;
+	-webkit-box-align: center;
+	align-items: center;
+	background: url("../img/web/inputpage1/inputmain.png");
+}
+.inputinner {
+	margin:0 auto;
+	margin-top: -450px;
+	width: 1820px;
+	height: 1594px;
+	margin-bottom: 50px;
+	background: url("../img/web/inputpage1/bg.png");
+}
+.inputinner .p_tag{
+	padding-top:80px;
+	text-align: center;
+	font-size: 67px;
+}
+
+.inner_menu1{
+	margin-top:50px;
+}
+.inputinner .p_tag1{
+	font-size: 37px;
+	margin-left: 150px;
+}
+.build{
+	width: 130px;
+	margin:30px 0 0 180px;
+	
+}
+label{
+	margin-top : 7px;
+	float: right;
+
+}
+.div1, .div2, .div3 {
+	padding : 10px 10px;
+	
+}
+.inner_menu1 .size{
+	margin: 30px 0 0 200px;
+}
+
+.font_size{
+	font-family: 'SpoqaHanSans';
+	font-size: 25px;
+}
+.font_size1{
+	font-family: 'YoonMinguk';
+	font-weight: bold;
+	font-size: 25px;
+}
+.build2{
+	width: 200px;
+	margin:30px 0 0 180px;
+}
+.build2 .div1, .build2 .div2, .build2 .div3 {
+	padding : 10px 10px;
+	
+}
+
+
+input[type=radio]{
+	background-color: #FFFF;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	vertical-align: middle;
+	border: 1px solid rgb(216, 216, 216);
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+}
+
+  input[type="radio"]:checked{
+	background-color: rgb(25, 118, 248);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border: none;
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+}
+
+
+/* button */
+.btn_div{
+	margin-left: 38%;
+}
+.btn_01{
+	position:flex;
+	margin:0 auto;
+	margin-top:60px;
+	width: 419px;
+	height: 100px;
+	line-height: 70px;
+	background: #4B524B;
+	color: #fff;
+	border-radius: 64px;
+	font-weight: 500;
+	font-size: 55px;
+	border-style: none;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0 27px 26px -5px rgba(0,0,0,.2);
+	font-family: 'Spoqa Han Sans JP', 'Sans-serif';
+}
+/* inputinner End */
+
+
+
+
+.section5{
+	width : 100%;
+	min-width: 1082px;
+	height : 700px;
+	background: url("../img/web/section_5.png")center/cover;
+}
+.dbox{
+	width : 100%;
+	height : 700px;
+	min-width : 1082px;
+	position: relative;
+	
+}
+.st1{
+	height: 500px;
+	width: 100%;
+	min-width: 1082px;
+	position: absolute;
+	top : 100px;
+}
+.st1 p {
+	margin-bottom: 60px;
+	text-align: center;
+	position: relative;
+	top : 50px;
+	color : white;
+	font-family: 'SCDREAM5';
+	font-weight: bold;
+}
+.st1 .text1 {
+	font-size : 30px;
+}
+.st1 .text2 {
+	font-size : 50px;
+}
+.st1 .text3 {
+	font-size : 25px;
+}
+.btns{
+	min-width: 900px;
+	padding-top : 50px;
+	text-align: center;
+}
+.btns button {
+	width : 250px;
+	height : 80px;
+	border : 3px solid white;
+	border-radius: 50px;
+	background-color : rgba(255, 255, 255, 0);
+	outline: none;
+	cursor: pointer;
+	font-size : 40px;
+	line-height: 80px;
+	font-family: '닉스곤폰트M';
+	color : white;
+	margin:0 30px;	
+} 
+/* footer start */
+.footer_menu{
+	width: 100%;
+    min-width: 1082px;
+    min-height: 90px;
+	background: #fff;
+	font-family: 'SpoqaHanSansR';
+}
+.footer_menu .inner {
+	position: relative;
+    width: 1500px;
+    margin: 0 auto;
+}
+.footer_menu ul li {
+	float: left;
+    height: 90px;
+	line-height: 88px;
+	
+   
+}
+.footer_menu ul li a{
+	font-size: 20px;
+    font-weight: 500;
+	position: relative;
+	color : black;
+}
+.footer_menu ul li span{
+	font-size : 25px;
+	color: #999999;
+	margin : 0 15px;
+}
+
+footer {
+	position: relative;
+	width: 100%;
+	min-width : 1082px;
+	height: 600px;
+	background: #C7FFD6;
+	font-family: 'SCDream5';
+}
+
+footer .webinfo {
+	width: 100%;
+	height: 600px;
+	display: flex;
+}
+.infodiv{
+	width: 1500px;
+	height : 450px;
+	margin-left :auto;
+	margin-right: auto;
+	position: relative;
+	top : 100px;
+	
+}
+
+.fl_1 {
+	width: 550px;
+	height: 200px;
+	font-size : 20px;
+	float: left;
+	
+}
+.fl_1 table {
+	margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    border: 0;
+    border-collapse: collapse;
+	word-break: break-all;
+	
+}
+table td{
+	padding: 7px 0;
+	
+}
+
+.fl_1 table .label {
+	width : 350px;
+	color :#707070;
+
+}
+.fl_1 table .info {
+	color :black;
+}
+.fl_2 {
+	width : 500px;
+	height: 150px;
+	text-align: center;
+	float: right;
+}
+.fl_2 .greenbar {
+	width : 22px;
+	height : 128px;
+	background-color : #5CC154;
+	float :left;
+	margin-right : 35px;
+}
+.fl_2 table td{
+	padding : 0;
+}
+.fl_2 table tr .label {
+	width :200px;
+	font-size : 25px;
+	color :#707070;
+}
+.fl_2 table tr .info {
+	font-size : 30px;
+}
+.fl_3 {
+	font-size : 20px;	
+	position: absolute;
+	bottom: 40px;
+
+	
+}
+/* Footer End */
+
+
