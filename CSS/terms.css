@@ -312,8 +312,11 @@ header {
     justify-content: space-between;
 	padding : 100px 100px;
 }
-.terms_list li {
+.terms_list li  {
 	cursor: pointer;
+}
+.terms_list a:hover{
+	color :#55c54a;
 }
 .terms1 .contents {
     width: 1500px;
