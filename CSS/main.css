@@ -29,7 +29,7 @@ a{text-decoration:none}
 
 header {
 	width: 100%;
-	min-width: 1080px;
+	min-width: 1082px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -40,7 +40,7 @@ header {
 }
 .section1 {
 	width: 100%;
-	min-width: 1080px;
+	min-width: 1082px;
 	height: 940px;
 	display: flex;
 	-webkit-box-align: center;
@@ -164,7 +164,7 @@ header {
 	display: flex;
 	text-align: center;
 	width: 100%;
-	min-width: 1080px;
+	min-width: 1082px;
 	height: 600px;
 	flex-direction: column;
 	align-items: center;
@@ -329,21 +329,19 @@ header {
 
 .section2{
 	width : 100%;
-	min-width: 1080px;
+	min-width: 1082px;
 	background-color : #D2DAE3;
 	margin-top : 200px;
 }
 .section2 .inner{
 	width: 100%;
-	min-width: 1080px;
-
+	min-width: 1082px;
 	height: 732px;
 	position: relative;
 }
 .section2 .inner .bg_wrap {
-	width: calc(100% - 300px);
-	max-width: 1400px;
-	min-width: 1080px;
+	width: 1400px;
+	min-width: 1082px;
 	height: 750px;
 	position: absolute;
 	top: -160px;
@@ -421,10 +419,7 @@ header {
 .swiper-container2 .pic1{
 	width : 1400px;
 	height: 750px;
-	-webkit-box-align: center;
-	align-items: center;
 	background: url("../img/web/Section2_1.png")center/cover;
-
 }
 .swiper-container2 .pic2{
 	width : 1400px;
@@ -445,7 +440,7 @@ header {
 }
 .sectiondiv{
 	width: 100%;
-    min-width: 1080px;
+    min-width: 1082px;
     height: 976px;
     position: relative;
     display: -webkit-box;
@@ -506,7 +501,7 @@ header {
 }
 .section4{
 	width: 100%;
-	min-width: 1080px;
+	min-width: 1082px;
 	height: 900px;
 	background : url("../img/web/Section3.png") center/cover;
 	margin-bottom: 100px;
@@ -553,21 +548,21 @@ header {
 
 .section5{
 	width : 100%;
-	min-width: 1080px;
+	min-width: 1082px;
 	height : 700px;
 	background: url("../img/web/section_5.png")center/cover;
 }
 .dbox{
 	width : 100%;
 	height : 700px;
-	min-width : 1080px;
+	min-width : 1082px;
 	position: relative;
 	
 }
 .st1{
 	height: 500px;
 	width: 100%;
-	min-width: 1080px;
+	min-width: 1082px;
 	position: absolute;
 	top : 100px;
 }
@@ -643,7 +638,7 @@ header {
 footer {
 	position: relative;
 	width: 100%;
-	min-width : 1080px;
+	min-width : 1082px;
 	height: 600px;
 	background: #C7FFD6;
 	font-family: 'SCDream5';

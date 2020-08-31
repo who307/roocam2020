@@ -1,4 +1,3 @@
-
 $(function () {
     $(".select1").click(function () {
         $(".select1").addClass("select");
