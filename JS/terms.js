@@ -10,6 +10,7 @@ $(function () {
         $(".terms2").removeClass("ondisplay");
         $(".terms3").removeClass("ondisplay");
         $(".terms4").removeClass("ondisplay");
+        $(".terms1").addClass("ondisplay");
     });
     
     $(".literms2").click(function () {

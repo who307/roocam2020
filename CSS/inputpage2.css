@@ -1,3 +1,19 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@font-face { font-family: 'SCDream8';  src: url('../Font/S-Core_Dream_OTF/SCDream8.otf');}
+@font-face { font-family: 'SCDream4';  src: url('../Font/S-Core_Dream_OTF/SCDream4.otf');}
+@font-face { font-family: 'SCDream7';  src: url('../Font/S-Core_Dream_OTF/SCDream7.otf');}
+@font-face { font-family: 'SCDream5';  src: url('../Font/S-Core_Dream_OTF/SCDream5.otf');}
+@font-face { font-family: 'YoonMingukB';  src: url('../Font/YoonDokripManse/YoonMingukB.otf');}
+@font-face { font-family: 'YoonMingukR';  src: url('../Font/YoonDokripManse/YoonMingukR.otf');}
+@font-face { font-family: '닉스곤폰트M';  src: url('../Font/닉스곤폰트/NIXGONFONTSm.otf');}
+@font-face { font-family: 'SpoqaHanSansB';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Bold.ttf');}
+@font-face { font-family: 'SpoqaHanSansL';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Light.ttf');}
+@font-face { font-family: 'SpoqaHanSansR';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Regular.ttf');}
+@font-face { font-family: 'InfinitySans-Bold';  src: url('../Font/InfinitySans/InfinitySans-Bold.otf');}
+@font-face { font-family: 'InfinitySans-CondBold';  src: url('../Font/InfinitySans/InfinitySans-CondBold.otf');}
+@font-face { font-family: 'InfinitySansWM-Bold';  src: url('../Font/InfinitySans/InfinitySansWM-Bold.otf');}
+@font-face { font-family: 'InfinitySansWMR-Regular';  src: url('../Font/InfinitySans/IInfinitySansWMR-Regular.otf');}
+
 p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, html, label, legend, li, ol, pre, table, td, th, ul {
 	margin: 0;
 	padding: 0;
@@ -12,20 +28,6 @@ p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h
 }
 
 a{text-decoration:none}
-
-
-
-@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
-@font-face { font-family: 'SCDream8';  src: url('../Font/S-Core_Dream_OTF/SCDream8.otf');}
-@font-face { font-family: 'SCDream4';  src: url('../Font/S-Core_Dream_OTF/SCDream4.otf');}
-@font-face { font-family: 'SCDream5';  src: url('../Font/S-Core_Dream_OTF/SCDream5.otf');}
-@font-face { font-family: 'YoonMingukB';  src: url('../Font/YoonDokripManse/YoonMingukB.otf');}
-@font-face { font-family: 'YoonMingukR';  src: url('../Font/YoonDokripManse/YoonMingukR.otf');}
-@font-face { font-family: '닉스곤폰트M';  src: url('../Font/닉스곤폰트/NIXGONFONTSm.otf');}
-@font-face { font-family: 'SpoqaHanSansB';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Bold.ttf');}
-@font-face { font-family: 'SpoqaHanSansL';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Light.ttf');}
-@font-face { font-family: 'SpoqaHanSansR';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Regular.ttf');}
-
 
 header {
 	width: 100%;
@@ -157,82 +159,76 @@ input {
 .inputmain {
 	width: 100%;
 	min-width: 1082px;
-	height: 900px;
+	height: 440px;
 	-webkit-box-align: center;
 	align-items: center;
 	background: url("../img/web/inputpage1/inputmain.png");
 }
-.inputinner {
+.inputinner1 {
 	margin:0 auto;
-	margin-top: -450px;
-	width: 1820px;
-	height: 1594px;
+	width: 100%;
+	height: 410px;
 	margin-bottom: 50px;
-	background: url("../img/web/inputpage1/bg.png");
+	background: url("../img/web/inputpage1/풍선2.png");
 }
-.inputinner .p_tag{
-	padding-top:80px;
-	text-align: center;
-	font-size: 67px;
-}
-
 .inner_menu1{
 	margin-top:50px;
 }
 .inputinner .p_tag1{
 	font-size: 37px;
-	margin-left: 150px;
+	margin-left: 400px;
+	font-family: 'InfinitySansWMR-Regular';
 }
-.build{
-	width: 130px;
-	margin:30px 0 0 180px;
-	
+.label{
+	vertical-align: auto;
+	font-family: 'InfinitySansWMR-Regular';
+	font-size: 30px;
 }
-label{
-	margin-top : 7px;
-	float: right;
-
+.div1{
+	margin:30px 0 0 450px;
 }
-.div1, .div2, .div3 {
-	padding : 10px 10px;
-	
+.building1, .building2{
+	margin-right: 40px;
+}
+.building3{
+	margin-right: 30px;
 }
 .inner_menu1 .size{
-	margin: 30px 0 0 200px;
+	margin: 30px 0 0 450px;
+	font-family: 'InfinitySansWMR-Regular';
+	font-size: 30px;
+	height: 50px;
 }
-
+.imgplus:hover{
+	cursor: pointer;
+}
 .font_size{
-	font-family: 'SpoqaHanSans';
-	font-size: 25px;
+	font-family: 'InfinitySansWMR-Regular';
+	font-size: 30px;
 }
 .font_size1{
-	font-family: 'YoonMinguk';
-	font-weight: bold;
-	font-size: 25px;
-}
-.build2{
-	width: 200px;
-	margin:30px 0 0 180px;
-}
-.build2 .div1, .build2 .div2, .build2 .div3 {
-	padding : 10px 10px;
-	
+	font-family: 'InfinitySansWMR-Regular';
+	font-size: 30px;
 }
 
-
+input[type=text]{
+	border: 2px solid #72C189;
+}
+select{
+	border: 2px solid #72C189;
+}
 input[type=radio]{
 	background-color: #FFFF;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	vertical-align: middle;
-	border: 1px solid rgb(216, 216, 216);
+	border: 1px solid #72C189;
 	width: 30px;
 	height: 30px;
 	border-radius: 100%;
 }
-
   input[type="radio"]:checked{
-	background-color: rgb(25, 118, 248);
+	background-color: #72C189;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	border: none;
@@ -240,29 +236,34 @@ input[type=radio]{
 	height: 30px;
 	border-radius: 100%;
 }
-
-
 /* button */
 .btn_div{
-	margin-left: 38%;
+	margin-left: 40%;
+	margin-bottom: -40px;
 }
 .btn_01{
 	position:flex;
 	margin:0 auto;
 	margin-top:60px;
-	width: 419px;
-	height: 100px;
+	width: 400px;
+	height: 80px;
 	line-height: 70px;
 	background: #4B524B;
 	color: #fff;
 	border-radius: 64px;
 	font-weight: 500;
-	font-size: 55px;
+	font-size: 45px;
+	font-weight: bold;
 	border-style: none;
 	outline: none;
 	cursor: pointer;
 	box-shadow: 0 27px 26px -5px rgba(0,0,0,.2);
-	font-family: 'Spoqa Han Sans JP', 'Sans-serif';
+	font-family: 'NanumSquare';
+}
+.mint{
+	width: 100%;
+	height: 150px;
+	background-color: #C7FFD6;
 }
 /* inputinner End */
 
@@ -313,19 +314,25 @@ input[type=radio]{
 	text-align: center;
 }
 .btns button {
-	width : 250px;
-	height : 80px;
-	border : 3px solid white;
+	width : 200px;
+	height : 70px;
+	border : 2px solid white;
 	border-radius: 50px;
 	background-color : rgba(255, 255, 255, 0);
 	outline: none;
 	cursor: pointer;
-	font-size : 40px;
-	line-height: 80px;
+	font-size : 30px;
+	line-height: 70px;
 	font-family: '닉스곤폰트M';
 	color : white;
-	margin:0 30px;	
+	margin:0 50px;	
+	transition: all 0.3s;
 } 
+.btns button:hover{
+	border : none;
+	background : #55c54a;
+}
+
 /* footer start */
 .footer_menu{
 	width: 100%;

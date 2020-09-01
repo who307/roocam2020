@@ -1,3 +1,19 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@font-face { font-family: 'SCDream8';  src: url('../Font/S-Core_Dream_OTF/SCDream8.otf');}
+@font-face { font-family: 'SCDream4';  src: url('../Font/S-Core_Dream_OTF/SCDream4.otf');}
+@font-face { font-family: 'SCDream7';  src: url('../Font/S-Core_Dream_OTF/SCDream7.otf');}
+@font-face { font-family: 'SCDream5';  src: url('../Font/S-Core_Dream_OTF/SCDream5.otf');}
+@font-face { font-family: 'YoonMingukB';  src: url('../Font/YoonDokripManse/YoonMingukB.otf');}
+@font-face { font-family: 'YoonMingukR';  src: url('../Font/YoonDokripManse/YoonMingukR.otf');}
+@font-face { font-family: '닉스곤폰트M';  src: url('../Font/닉스곤폰트/NIXGONFONTSm.otf');}
+@font-face { font-family: 'SpoqaHanSansB';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Bold.ttf');}
+@font-face { font-family: 'SpoqaHanSansL';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Light.ttf');}
+@font-face { font-family: 'SpoqaHanSansR';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Regular.ttf');}
+@font-face { font-family: 'InfinitySans-Bold';  src: url('../Font/InfinitySans/InfinitySans-Bold.otf');}
+@font-face { font-family: 'InfinitySans-CondBold';  src: url('../Font/InfinitySans/InfinitySans-CondBold.otf');}
+@font-face { font-family: 'InfinitySansWM-Bold';  src: url('../Font/InfinitySans/InfinitySansWM-Bold.otf');}
+@font-face { font-family: 'InfinitySansWMR-Regular';  src: url('../Font/InfinitySans/IInfinitySansWMR-Regular.otf');}
+
 p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, html, label, legend, li, ol, pre, table, td, th, ul {
 	margin: 0;
 	padding: 0;
@@ -12,20 +28,6 @@ p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h
 }
 
 a{text-decoration:none}
-
-
-
-@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
-@font-face { font-family: 'SCDream8';  src: url('../Font/S-Core_Dream_OTF/SCDream8.otf');}
-@font-face { font-family: 'SCDream4';  src: url('../Font/S-Core_Dream_OTF/SCDream4.otf');}
-@font-face { font-family: 'SCDream5';  src: url('../Font/S-Core_Dream_OTF/SCDream5.otf');}
-@font-face { font-family: 'YoonMingukB';  src: url('../Font/YoonDokripManse/YoonMingukB.otf');}
-@font-face { font-family: 'YoonMingukR';  src: url('../Font/YoonDokripManse/YoonMingukR.otf');}
-@font-face { font-family: '닉스곤폰트M';  src: url('../Font/닉스곤폰트/NIXGONFONTSm.otf');}
-@font-face { font-family: 'SpoqaHanSansB';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Bold.ttf');}
-@font-face { font-family: 'SpoqaHanSansL';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Light.ttf');}
-@font-face { font-family: 'SpoqaHanSansR';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Regular.ttf');}
-
 
 header {
 	width: 100%;
@@ -192,7 +194,6 @@ header {
 	margin : 40px 0 40px 0;
 	padding: 0px;
 	display: flex;
-
 }
 .main_visual ul li {
 	margin :auto;
@@ -214,19 +215,28 @@ header {
     -webkit-box-shadow: 5px 7px 11px 1px rgba(0,0,0,.3);
 	box-shadow: 5px 7px 11px 1px rgba(0,0,0,.3);
 	cursor: pointer;
+	font-family: 'YoonMingukB';
+	font-size : 16px;
+	transition: all 0.3s;
 }
-.main_visual ul li a div {
+
+.color1,.color2,.color3{
 	margin-top : 6px;
-	font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
-}
-	
-.main_visual ul li div {
-	font-size : 15px;
-	
 }
 .select {
-	background : rgb(197, 247, 197);
+	background : rgb(1, 92, 1);
 }
+.whitecolor{
+	color : white;
+}
+.greenimg1,.greenimg2,.greenimg3{
+	position: absolute;
+	display: inline;
+}
+.whiteimg {
+	display: none;
+}
+
 .btn_div{
 	margin-top : 0px;
 	position: absolute;
@@ -404,6 +414,10 @@ header {
 	box-shadow: 0 27px 26px -5px rgba(0,0,0,.2);
 	font-family: '닉스곤폰트M';
 }
+.btn_02:hover {
+		transform : scale(1.1);
+}
+
 .swiper-container2 {
 	width : 100%;
 	min-width: 700px;
@@ -539,12 +553,17 @@ header {
 .section4 .bg_wrap .text2 span {
 	color :red;
 }
-.btn_ServiceStart{
+.btn_ServiceStart {
 	cursor: pointer;
 	position: relative;
 	top : 40px;
 	left :226px;
 }
+.btn_ServiceStart img:hover{
+	transform :scale(1.1);
+	
+}
+
 
 .section5{
 	width : 100%;
@@ -590,19 +609,24 @@ header {
 	text-align: center;
 }
 .btns button {
-	width : 250px;
-	height : 80px;
-	border : 3px solid white;
+	width : 200px;
+	height : 70px;
+	border : 2px solid white;
 	border-radius: 50px;
 	background-color : rgba(255, 255, 255, 0);
 	outline: none;
 	cursor: pointer;
-	font-size : 40px;
-	line-height: 80px;
+	font-size : 30px;
+	line-height: 70px;
 	font-family: '닉스곤폰트M';
 	color : white;
-	margin:0 30px;	
+	margin:0 50px;	
+	transition: all 0.3s;
 } 
+.btns button:hover{
+	border : none;
+	background : #55c54a;
+}
 /* footer start */
 .footer_menu{
 	width: 100%;

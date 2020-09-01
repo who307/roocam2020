@@ -3,21 +3,47 @@ $(function () {
         $(".select1").addClass("select");
         $(".select2").removeClass("select");
         $(".select3").removeClass("select");
+
         $(".btn_01").addClass("trans");
 
+        $(".greenimg1").addClass("whiteimg");
+        $(".greenimg2").removeClass("whiteimg");
+        $(".greenimg3").removeClass("whiteimg");
+
+        $(".color1").addClass("whitecolor");
+        $(".color2").removeClass("whitecolor");
+        $(".color3").removeClass("whitecolor");
+        
     });
     $(".select2").click(function () {
         $(".select2").addClass("select");
         $(".select1").removeClass("select");
         $(".select3").removeClass("select");
+
         $(".btn_01").addClass("trans");
 
+        $(".greenimg2").addClass("whiteimg");
+        $(".greenimg1").removeClass("whiteimg");
+        $(".greenimg3").removeClass("whiteimg");
+
+        $(".color2").addClass("whitecolor");
+        $(".color1").removeClass("whitecolor");
+        $(".color3").removeClass("whitecolor");
     });
     $(".select3").click(function () {
         $(".select3").addClass("select");
         $(".select2").removeClass("select");
         $(".select1").removeClass("select");
+
         $(".btn_01").addClass("trans");
+
+        $(".greenimg3").addClass("whiteimg");
+        $(".greenimg2").removeClass("whiteimg");
+        $(".greenimg1").removeClass("whiteimg");
+
+        $(".color3").addClass("whitecolor");
+        $(".color1").removeClass("whitecolor");
+        $(".color2").removeClass("whitecolor");
     });
 });
 

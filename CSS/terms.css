@@ -1,3 +1,19 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@font-face { font-family: 'SCDream8';  src: url('../Font/S-Core_Dream_OTF/SCDream8.otf');}
+@font-face { font-family: 'SCDream4';  src: url('../Font/S-Core_Dream_OTF/SCDream4.otf');}
+@font-face { font-family: 'SCDream7';  src: url('../Font/S-Core_Dream_OTF/SCDream7.otf');}
+@font-face { font-family: 'SCDream5';  src: url('../Font/S-Core_Dream_OTF/SCDream5.otf');}
+@font-face { font-family: 'YoonMingukB';  src: url('../Font/YoonDokripManse/YoonMingukB.otf');}
+@font-face { font-family: 'YoonMingukR';  src: url('../Font/YoonDokripManse/YoonMingukR.otf');}
+@font-face { font-family: '닉스곤폰트M';  src: url('../Font/닉스곤폰트/NIXGONFONTSm.otf');}
+@font-face { font-family: 'SpoqaHanSansB';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Bold.ttf');}
+@font-face { font-family: 'SpoqaHanSansL';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Light.ttf');}
+@font-face { font-family: 'SpoqaHanSansR';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Regular.ttf');}
+@font-face { font-family: 'InfinitySans-Bold';  src: url('../Font/InfinitySans/InfinitySans-Bold.otf');}
+@font-face { font-family: 'InfinitySans-CondBold';  src: url('../Font/InfinitySans/InfinitySans-CondBold.otf');}
+@font-face { font-family: 'InfinitySansWM-Bold';  src: url('../Font/InfinitySans/InfinitySansWM-Bold.otf');}
+@font-face { font-family: 'InfinitySansWMR-Regular';  src: url('../Font/InfinitySans/IInfinitySansWMR-Regular.otf');}
+
 p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, html, label, legend, li, ol, pre, table, td, th, ul {
 	margin: 0;
 	padding: 0;
@@ -13,18 +29,6 @@ p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h
 
 a{text-decoration:none}
 
-
-
-@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
-@font-face { font-family: 'SCDream8';  src: url('../Font/S-Core_Dream_OTF/SCDream8.otf');}
-@font-face { font-family: 'SCDream4';  src: url('../Font/S-Core_Dream_OTF/SCDream4.otf');}
-@font-face { font-family: 'SCDream5';  src: url('../Font/S-Core_Dream_OTF/SCDream5.otf');}
-@font-face { font-family: 'YoonMingukB';  src: url('../Font/YoonDokripManse/YoonMingukB.otf');}
-@font-face { font-family: 'YoonMingukR';  src: url('../Font/YoonDokripManse/YoonMingukR.otf');}
-@font-face { font-family: '닉스곤폰트M';  src: url('../Font/닉스곤폰트/NIXGONFONTSm.otf');}
-@font-face { font-family: 'SpoqaHanSansB';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Bold.ttf');}
-@font-face { font-family: 'SpoqaHanSansL';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Light.ttf');}
-@font-face { font-family: 'SpoqaHanSansR';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Regular.ttf');}
 
 
 header {
@@ -258,6 +262,8 @@ header {
 	background-color: lightgreen;
 
 } */
+
+
 .terms1{
 	display: block;
 }
@@ -266,16 +272,37 @@ header {
 }
 .terms3{
 	display: none;
+
 }
 .terms4{
 	display: none;
 }
 
+@keyframes fade-in {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+  }
+  
+  @keyframes fade-out {
+	from {
+	  opacity: 1;
+  
+	}
+	to {
+	  opacity: 0;
+	}
+  }
 .ondisplay{
 	display :block;
+	animation: fade-in 1.1s;
 }
 .nodisplay{
 	display : none;
+	animation: fade-in 1.1s;
 }
 .literms1{
 	color :#55c54a;
@@ -292,7 +319,7 @@ header {
 
 .terms_section{
 	width : 100%;
-    padding : 100px 0;
+	padding : 100px 0;
 }
 .terms_header {
 	min-width : 1080px;
@@ -308,29 +335,35 @@ header {
 	min-width : 800px;
     display : flex;
     text-align: center;
-    font-size : 20px;
+    font-size : 22px;
     justify-content: space-between;
-	padding : 100px 300px;
+	padding : 100px 200px;
+	font-family: 'SpoqaHanSansR';	
 }
 .terms_list li  {
 	cursor: pointer;
+	transition: all 0.3s;
 }
-.terms_list a:hover{
+.terms_list a:hover, .terms_list li:hover{
 	color :#55c54a;
+	transform: scale(1.1); 
+
 }
+
 .terms1 .contents {
 	width : 100%;
-	min-width: 1080px;
+	min-width: 800px;
     height : 1500px;
-    margin-top : 20px;
-    padding : 20px  100px;    
+	margin-top : 20px;
+    padding : 20px  100px 0;    
 }
 .terms1 .contents .terms_div {
-	width : 1300px;
+	width : 1200px;
+	min-width : 800px;
 	height : 1500px;
     padding-top : 20px;
     margin : auto;
-	overflow-y: auto;
+	overflow-y: scroll;
     overflow-x: hidden;
 }
 .terms1 .main_title{
@@ -340,13 +373,13 @@ header {
     margin-left : 300px;
 }   
 .terms1 .sub_title {
-	min-width : 1080px;
+	min-width : 800px;
     padding : 30px 0;
     font-size : 25px;
     font-family: "SpoqaHanSansR";
 }
 .contents .sub_contents{
-    min-width : 1080px;
+	min-width : 800px;
     padding : 0 20px;
     font-size : 20px;
     font-family: 'SpoqaHanSansL' ;
@@ -446,10 +479,7 @@ header {
     padding : 20px;
 
 }
-
-
 /* 개인정보 제3자 이용 end */
-
 
 /* footer start */
 
