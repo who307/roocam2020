@@ -2,7 +2,7 @@ $(function(){
   var header = $('header');
   var a = $('.service1'); //헤더를 변수에 넣기 
   var img = $('.alogo');
-  var page = $('.section2, .terms_section, .inputImg, .inputinner'); //색상이 변할 부분
+  var page = $('.section2, .terms_section, .recruits_section, .alliance_section, .about_section,  .inputImg, .inputinner'); //색상이 변할 부분
   var pageOffsetTop = page.offset().top; //색상 변할 부분의 top값 구하기
   $(window).resize(function(){ //반응형을 대비하여 리사이즈시 top값을 다시 계산
     pageOffsetTop = page.offset().top;

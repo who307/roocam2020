@@ -9,10 +9,13 @@
 @font-face { font-family: 'SpoqaHanSansB';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Bold.ttf');}
 @font-face { font-family: 'SpoqaHanSansL';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Light.ttf');}
 @font-face { font-family: 'SpoqaHanSansR';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Regular.ttf');}
-@font-face { font-family: 'InfinitySans-Bold';  src: url('../Font/InfinitySans/InfinitySans-Bold.otf');}
-@font-face { font-family: 'InfinitySans-CondBold';  src: url('../Font/InfinitySans/InfinitySans-CondBold.otf');}
-@font-face { font-family: 'InfinitySansWM-Bold';  src: url('../Font/InfinitySans/InfinitySansWM-Bold.otf');}
-@font-face { font-family: 'InfinitySansWMR-Regular';  src: url('../Font/InfinitySans/IInfinitySansWMR-Regular.otf');}
+@font-face { font-family: 'InfinitySans-Bold';  src: url('../Font/InfinitySans/InfinitySans-Bold.ttf');}
+@font-face { font-family: 'InfinitySans-CondBold';  src: url('../Font/InfinitySans/InfinitySans-CondBold.ttf');}
+@font-face { font-family: 'InfinitySansWM-Bold';  src: url('../Font/InfinitySans/InfinitySansWM-Bold.ttf');}
+@font-face { font-family: 'InfinitySansWMR-Regular';  src: url('../Font/InfinitySans/InfinitySansWM-Bold.ttf');}
+@font-face { font-family: '나눔고딕';  src: url('../Font/나눔고딕/NanumGothic.ttf');}
+@font-face { font-family: '나눔고딕B';  src: url('../Font/나눔고딕/NanumGothicBold.ttf');}
+@font-face { font-family: '나눔고딕L';  src: url('../Font/나눔고딕/NanumGothicLight.ttf');}
 
 p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, html, label, legend, li, ol, pre, table, td, th, ul {
 	margin: 0;
@@ -143,86 +146,86 @@ header {
 /* inputinner Start */
 .inputmain {
 	width: 100%;
-	min-width: 1082px;
-	height: 900px;
+	/* min-width: 1082px; */
+	height: 450px;
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
 	background: url("../img/web/inputpage1/inputmain.png");
 }
 .inputImg{
-	margin-top:-470px;
 	width: 100%;
-	height: 410px;
-	background: url("../img/web/inputpage1/풍선.png");
+	height: 254.88px;
+	margin-top: 80px;
+	background: url("../img/web/inputpage1/풍선1.png");
 }
 .input_menu1{
 	width: 1543px;
 	height: 245.7px;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 150px;
 	background: url("../img/web/inputpage1/1.png");
 }
 .input_menu1 > p{
-	margin-left: 660px;
+	margin-left: 680px;
 	padding-top: 50px;
 	font-family: 'InfinitySansWMR-Regular';
 	font-size: 27px;
+	letter-spacing:-15;
 }
 .input_menu2{
 	width: 1543px;
 	height: 245.7px;
 	margin: 0 auto;
-	margin-top: 70px;
+	margin-top: 80px;
 	background: url("../img/web/inputpage1/2.png");
 }
 .input_menu2 > p{
-	margin-left: 660px;
+	margin-left: 680px;
 	padding-top: 50px;
 	font-family: 'InfinitySansWMR-Regular';
 	font-size: 27px;
+	letter-spacing:-15;
 }
 .input_menu3{
 	width: 1543px;
 	height: 245.7px;
 	margin: 0 auto;
-	margin-top: 70px;
+	margin-top: 80px;
 	background: url("../img/web/inputpage1/3.png");
 }
 .input_menu3 > p{
-	margin-left: 660px;
+	margin-left: 680px;
 	padding-top: 50px;
 	font-family: 'InfinitySansWMR-Regular';
 	font-size: 27px;
+	letter-spacing:-15;
 }
 .side_font{
 	margin-bottom: 120px;
 }
 .side_font .side_tag{
-	margin-left: 870px;
+	margin-left: 890px;
 	font-family: 'InfinitySansWMR-Regular';
 	font-size: 25px;
-	display: inline-block;
 }
-
-
 .btn_div{
+	width: 100%;
+	margin-top: -60px;
+	height: 120px;
 	margin-left: 40%;
-	margin-bottom: -40px;
 }
-
 .btn_01{
 	position:flex;
 	margin:0 auto;
-	margin-top:60px;
-	width: 400px;
-	height: 80px;
+	width: 350px;
+	height: 70px;
 	line-height: 70px;
 	background: #4B524B;
 	color: #fff;
 	border-radius: 64px;
 	font-weight: 500;
-	font-size: 45px;
+	font-size: 40px;
 	font-weight: bold;
 	border-style: none;
 	outline: none;
@@ -240,7 +243,7 @@ header {
 
 
 
-
+/* Section5 Start */
 .section5{
 	width : 100%;
 	min-width: 1082px;
@@ -252,6 +255,7 @@ header {
 	height : 700px;
 	min-width : 1082px;
 	position: relative;
+	
 }
 .st1{
 	height: 500px;
@@ -284,16 +288,16 @@ header {
 	text-align: center;
 }
 .btns button {
-	width : 200px;
-	height : 70px;
-	border : 2px solid white;
+	width : 302px;
+	height : 76px;
+	border : 1px solid white;
 	border-radius: 50px;
-	background-color : rgba(255, 255, 255, 0);
+	background-color : rgba(77, 75, 75, 0.8);
 	outline: none;
 	cursor: pointer;
 	font-size : 30px;
 	line-height: 70px;
-	font-family: '닉스곤폰트M';
+	font-family: 'InfinitySansWMR-Regular';
 	color : white;
 	margin:0 50px;	
 	transition: all 0.3s;
@@ -302,45 +306,53 @@ header {
 	border : none;
 	background : #55c54a;
 }
+
 /* footer start */
+
 .footer_menu{
 	width: 100%;
     min-width: 1082px;
-    min-height: 90px;
+	min-height: 90px;
 	background: #fff;
-	font-family: 'SpoqaHanSansR';
+	font-family: '나눔고딕B';
+	font-size :23px;
+	margin-top :50px;
 }
 .footer_menu .inner {
-	position: relative;
-    width: 1500px;
-    margin: 0 auto;
+	width: 100%;
+	min-width : 1080px;
+}
+.footer_menu ul{
+	width : 1400px;
+	display: flex;
+	justify-content: space-between;
+	margin : auto;
 }
 .footer_menu ul li {
-	float: left;
     height: 90px;
-	line-height: 88px;
-	
-   
+	line-height: 87px;
 }
 .footer_menu ul li a{
 	font-size: 20px;
     font-weight: 500;
 	position: relative;
 	color : black;
+	margin-left :100px;
 }
-.footer_menu ul li span{
+.footer_menu .cf span{
 	font-size : 25px;
 	color: #999999;
-	margin : 0 15px;
+	margin-left : 90px;
+	
 }
 
 footer {
 	position: relative;
 	width: 100%;
-	min-width : 1082px;
+	min-width : 1200px;
 	height: 600px;
 	background: #C7FFD6;
-	font-family: 'SCDream5';
+	font-family: 'InfinitySansWMR-Regular';
 }
 
 footer .webinfo {
@@ -349,7 +361,7 @@ footer .webinfo {
 	display: flex;
 }
 .infodiv{
-	width: 1500px;
+	width: 1200px;
 	height : 450px;
 	margin-left :auto;
 	margin-right: auto;
@@ -359,9 +371,9 @@ footer .webinfo {
 }
 
 .fl_1 {
-	width: 550px;
+	width: 670px;
 	height: 200px;
-	font-size : 20px;
+	font-size : 25px;
 	float: left;
 	
 }
@@ -375,7 +387,7 @@ footer .webinfo {
 	
 }
 table td{
-	padding: 7px 0;
+	padding-bottom: 12px;
 	
 }
 
@@ -388,25 +400,38 @@ table td{
 	color :black;
 }
 .fl_2 {
-	width : 500px;
-	height: 150px;
+	width : 450px;
+	height: 250px;
 	text-align: center;
 	float: right;
+	margin-left : 30px;
+}
+.fl_2 table {
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+.fl_2 img{
+	float: left;
+	margin-right :20px;
 }
 .fl_2 .greenbar {
-	width : 22px;
-	height : 128px;
+	width : 1px;
+	height : 200px;
 	background-color : #5CC154;
 	float :left;
 	margin-right : 35px;
 }
+
 .fl_2 table td{
-	padding : 0;
+	padding-bottom: 10px;
+	display: flex;
 }
 .fl_2 table tr .label {
 	width :200px;
 	font-size : 25px;
 	color :#707070;
+	flex-direction: column;
+	text-align: left;
 }
 .fl_2 table tr .info {
 	font-size : 30px;

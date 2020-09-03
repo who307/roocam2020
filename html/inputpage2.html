@@ -52,29 +52,33 @@
 
 		<section class="inputmain"></section>
 
-		<div class="inputinner1"></div>
+		<div class="inputImg"></div>
+		<div class="box">
+			<p>창호 인테리어</p>
+		</div>
+
 		<section class="inputinner">
 
 			<div class="inner_menu1">
 				<p class="p_tag1">1. 건물 유형을 선택해 주세요</p>
 				<form>
-					<label class="label">
+					<label class="label123">
 						<div class="div1">
-							<input class="building1" type="radio" name="building" value="주택">
+							<input class="building" type="radio" name="building" value="주택">
 							주택
 						</div>
 					</label>
 
-					<label class="label">
+					<label class="label123">
 						<div class="div1">
-							<input class="building2" type="radio" name="building" value="빌라">
+							<input class="building" type="radio" name="building" value="빌라">
 							빌라
 						</div>
 					</label>
 
-					<label class="label">
+					<label class="label123">
 						<div class="div1">
-							<input class="building3" type="radio" name="building" value="아파트">
+							<input class="building" type="radio" name="building" value="아파트">
 							아파트
 						</div>
 					</label>
@@ -83,36 +87,35 @@
 				<div class="inner_menu1">
 					<p class="p_tag1">2. 창호 사이즈</p>
 					<form>
-						<div class="size">
-							1. &nbsp;&nbsp;가로<input style="font-size: 25px; margin:0 20px 80px 20px; width: 200px; height:30px;" type="text"
-								name="horizon" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" Placeholder="" value="">
-							세로<input style="font-size: 25px; margin:0 20px; width: 200px; height:30px;" type="text" name="vertical"
-								onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" Placeholder="" value="">
-							위치<input style="font-size: 25px; margin:0 20px; width: 200px; height:30px;" type="text" name="" Placeholder="" value="">
-						</div>
+							<div class="size JS_list">
+								&nbsp;&nbsp;가로<input id="horizon" style="font-size: 25px; margin:0 20px 80px 20px; width: 200px; height:40px;" type="text" name="horizon" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="">
+								세로<input id="vertical" style="font-size: 25px; margin:0 20px; width: 200px; height:40px;" type="text" name="vertical" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="">
+								위치<input style="font-size: 25px; margin:0 20px; width: 200px; height:40px;" type="text" name="" value="">
+							</div>
+						<div class="Imgplus" ><img src="../img/web/inputpage1/plus.png" onclick="plus(),form_btn(1)"></div>
 					</form>
 				</div>
 
 				<div class="inner_menu1">
 					<p class="p_tag1">3. 공사 희망일</p>
 					<form>
-						<label class="label">
+						<label class="label123">
 							<div class="div1">
-								<input class="building3" type="radio" name="Hope_date" value="">
+								<input class="building" type="radio" name="Hope_date" value="">
 								1 ~ 2개월 이내
 							</div>
 						</label>
 
-						<label class="label">
+						<label class="label123">
 							<div class="div1">
-								<input class="building3" type="radio" name="Hope_date" value="">
+								<input class="building" type="radio" name="Hope_date" value="">
 								3 개월 이후
 							</div>
 						</label>
 
-						<label class="label">
+						<label class="label123">
 							<div class="div1">
-								<input class="building3" type="radio" name="Hope_date" value="">
+								<input class="building" type="radio" name="Hope_date" value="">
 								상담 후 결정
 							</div>
 						</label>
@@ -122,7 +125,7 @@
 				<div class="inner_menu1">
 					<p class="p_tag1">4. 주소</p>
 					<form>
-						<select class="font_size" name=Addr1 size=0 style="margin:30px 0 0 450px; width: 510px; height:48px;">
+						<select class="font_size" name=Addr1 size=0 style="margin:30px 0 0 450px; width: 510px; height:52px;">
 							<option value="" selected>시/도 선택</option>
 							<option value="Seoul">서울특별시</option>
 							<option value="busan">부산광역시</option>
@@ -130,7 +133,7 @@
 							<option value="Seoul">서울특별시</option>
 							<option value="Seoul">서울특별시</option>
 						</select>
-						<select class="font_size" name=Addr2 size=0 style="margin:30px 0 0 30px; width: 510px; height:48px;">
+						<select class="font_size" name=Addr2 size=0 style="margin:30px 0 0 30px; width: 510px; height:52px;">
 							<option value="" selected>시/군/구 선택</option>
 							<option value="Seoul">서울특별시</option>
 							<option value="busan">부산광역시</option>
@@ -138,7 +141,7 @@
 							<option value="Seoul">서울특별시</option>
 							<option value="Seoul">서울특별시</option>
 						</select> <br>
-						<input class="font_size" style="margin:30px 0 0 450px; width: 1049px; height:43px;" type="text" name="Addr3"
+						<input class="font_size" style="margin:30px 0 0 450px; width: 1049px; height:47px;" type="text" name="Addr3"
 							Placeholder="상세 주소를 입력해주세요." value="">
 					</form>
 				</div>
@@ -146,8 +149,8 @@
 				<div class="inner_menu1">
 					<p class="p_tag1">5. 연락처</p>
 					<div class="size font_size1">
-						Mobile<input class="font_size" style="text-align:center;	margin:0 20px; width: 260px; height:43px;" type="text"
-							name="Number" Placeholder="010 - xxxx - xxxx" value="">
+						Mobile<input class="font_size" style="text-align:center;	margin:0 20px; width: 259px; height:52px;"
+							type="text" name="Number" Placeholder="010 - xxxx - xxxx" value="">
 					</div>
 				</div>
 
@@ -177,10 +180,11 @@
 		<div class="footer_menu">
 			<div class="inner">
 				<ul class="cf">
-					<li><a href="/about">회사 소개<span>ㅣ</span> </a></li>
-					<li><a href="terms.html">이용 약관<span>ㅣ</span></a></li>
-					<li><a href="/alliance">제휴 및 광고 문의<span>ㅣ</span> </a></li>
-					<li><a href="/recruits">인테리어 구인</a></li>
+
+					<li><span>ㅣ</span><a href="../html/about.html">회사 소개 </a><span>ㅣ</span></li>
+                    <li><a href="../html/terms.html">이용 약관</a><span>ㅣ</span></li>
+                    <li><a href="../html/alliance.html">제휴 및 광고 문의 </a><span>ㅣ</span></li>
+                    <li><a href="../html/recruits.html">인테리어 구인</a><span>ㅣ</span></li>
 				</ul>
 			</div>
 		</div>
@@ -191,7 +195,7 @@
 						<table>
 							<tr>
 								<td class="label">상호명</td>
-								<td class="info">Rooftop Camping</td>
+								<td class="info">주식회사 루캠</td>
 							</tr>
 							<tr>
 								<td class="label">대표이사</td>
@@ -199,7 +203,7 @@
 							</tr>
 							<tr>
 								<td class="label">사업자등록번호</td>
-								<td class="info">000-00-00000</td>
+								<td class="info">870-81-01178</td>
 							</tr>
 							<tr>
 								<td class="label">통신판매업신고번호</td>
@@ -207,17 +211,27 @@
 							</tr>
 							<tr>
 								<td class="label">주소</td>
-								<td class="info">경기도 군포 대야미</td>
+								<td class="info">경기도 군포시 군포첨단산업2로</br>
+									22번길 5, 창업지원센터 607호</td>
 							</tr>
 						</table>
 					</div>
 
+
 					<div class="fl_2">
 						<div class="greenbar"></div>
 						<table>
+							<img src="../img/web/고객센터.png">
 							<tr>
-								<td class="label">문의 번호</td>
+								<td class="label">고객센터</td>
 								<td class="info">010-0000-0000</td>
+							</tr>
+						</table>
+						<table>
+							<img src="../img/web/업무시간.png">
+							<tr>
+								<td class="label">업무시간</td>
+								<td class="info">0:00~ 0:00</td>
 							</tr>
 						</table>
 					</div>
@@ -231,11 +245,15 @@
 		</footer>
 	</div>
 	<!-- Script -->
+
+
 	<script type="text/javascript" src="../JS/swiper.js"></script>
 	<script>AOS.init()</script>
 	<script type="text/javascript" src="../JS/select.js"></script>
 	<script type="text/javascript" src="../JS/modal.js"></script>
 	<script type="text/javascript" src="../JS/kakao.js"></script>
+	<script type="text/javascript" src="../JS/plus.js"></script>
+
 
 
 
