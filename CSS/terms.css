@@ -49,11 +49,13 @@ header {
 .section1 {
 	width: 100%;
 	min-width: 1082px;
-	height: 800px;
+	height: 900px;
 	display: flex;
 	-webkit-box-align: center;
-	align-items: center;
-	background: url("../img/web/메인배경.png")center/cover;
+	align-items: center; 
+	background: url("../img/web/메인배경.png");
+	background-size : 100% 100%;
+
 	
 }
 
@@ -72,31 +74,44 @@ header {
 .down:hover{
 	background-color: white;
 	background-size: cover;
+
 }
+	
 .service .adown {
 	color: #313131;
 	border: 1px solid #313131;
-}
-.header_sidebar{
-	display: none;
-}
 
-.line {
-	background:#ffffff;
-	margin-top:6px;
-	margin-bottom:6px;
-	width:56px;
-	height:7px; 
-	border-radius:2px;
-	box-shadow:0 1px 3px rgba(0, 0, 0, 0.5);
-	
 }
 
 .service {
 	margin : 40px 0px 10px 0px;
 	display: inline-block;
 	position: absolute;
-	right : 30px;
+	right : 80px;
+}
+
+.service div{
+	display: inline-block;
+	width: 140px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 16px;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 30px;
+	margin-right: 5px;
+	padding: 10px 25px 7px;
+	font-family: 'NanumSquare', sans-serif;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+
+.service {
+	margin : 40px 0px 10px 0px;
+	display: inline-block;
+	position: absolute;
+	right : 80px;
 }
 
 .service div{
@@ -329,7 +344,7 @@ header {
 }
 .terms_header {
 	min-width : 1080px;
-    text-align: center;
+	text-align: center;
 }
 .terms_title{
 	min-width : 1080px;
@@ -341,10 +356,10 @@ header {
 	min-width : 800px;
     display : flex;
     text-align: center;
-    font-size : 25px;
-    justify-content: space-between;
-	padding : 100px 320px;
-	font-family: 'SpoqaHanSansR';	
+	font-size : 25px;
+	padding : 120px 0;
+	font-family: 'SpoqaHanSansR';
+	justify-content: space-evenly;
 }
 .terms_list li  {
 	cursor: pointer;
@@ -361,23 +376,23 @@ header {
 	min-width: 800px;
     height : 1500px;
 	margin-top : 20px;
-    padding : 20px  0px 0;    
 }
 .terms1 .contents .terms_div {
 	width : 1250px;
 	min-width : 800px;
 	height : 1500px;
-    padding-top : 20px;
     margin : auto;
 	overflow-y: scroll;
-    overflow-x: hidden;
+	overflow-x: hidden;
 }
 .terms1 .main_title{
-    height : 80px;
+	width : 1450px;
+	height : 100px;
+	text-align: left;
+	margin : auto;
 	font-family: "SpoqaHanSansR";
 	font-weight: bold;
-    font-size : 33px;
-    margin-left : 320px;
+	font-size : 33px;
 }   
 .terms1 .sub_title {
 	min-width : 800px;
@@ -404,28 +419,30 @@ header {
 
 
 /* 개인정보 취급방침 */
+
 .terms2 .contents {
 	width : 100%;
 	min-width: 800px;
     height : 1500px;
-	margin-top : 40px;
-    padding : 30px  0px 50px 0;    
+	margin-top : 20px;  
 }
 .terms2 .contents .terms2_div {
 	width : 1250px;
 	min-width : 800px;
 	height : 1500px;
-    padding-top : 20px;
+	padding-top : 30px;
     margin : auto;
 	overflow-y: scroll;
     overflow-x: hidden;
 }
 .terms2 .main_title{
-    height : 80px;
+    width : 1450px;
+	height : 100px;
+	text-align: left;
+	margin : auto;
 	font-family: "SpoqaHanSansR";
 	font-weight: bold;
-    font-size : 33px;
-    margin-left : 320px;
+	font-size : 33px;
 }  
 .terms2 .title_text{
 	font-size: 20px;
@@ -457,22 +474,27 @@ header {
 
 /* 사업제휴,광고 이용 */
 
+.terms_section .terms3 {
+	width: 100%;
+}
 .terms3 .main_title {
-    height : 80px;
+	width : 1450px;
+	height : 100px;
+	text-align: left;
+	margin : auto;
 	font-family: "SpoqaHanSansR";
 	font-weight: bold;
-    font-size : 33px;
-    margin-left : 320px;
+	font-size : 33px;
 }
 .terms3 .contents{
-    width: 1500px;
+	width: 100%;
+	margin : auto;
     height : 900px;
     margin-top : 20px;
-    padding : 20px  100px;
 }
 .terms3 .terms3_div{
-    padding-top : 20px;
-    margin-left : 220px;
+	width : 1250px;
+	margin : auto;
     height : 900px;
 }
 .terms3 .sub_title{
@@ -498,11 +520,14 @@ header {
 }
 
 .terms4 .main_title {
-    height : 80px;
+    width : 1450px;
+	height : 100px;
+	text-align: left;
+	margin : auto;
 	font-family: "SpoqaHanSansR";
 	font-weight: bold;
-    font-size : 33px;
-    margin-left : 320px;
+	font-size : 33px;
+	margin-bottom : 20px;
 }
 .terms4 .contents{
     width: 100%;
@@ -511,11 +536,10 @@ header {
 }
 .terms4 .terms4_div {
 	width : 100%;
-    padding-top :50px;
     margin : auto;
 }
 .terms4 table{
-	width: 1300px;
+	width: 1250px;
 	margin : auto;
     border-left : 1px solid #bebebe;
     border-right : 1px solid #bebebe;

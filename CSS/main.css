@@ -32,7 +32,9 @@ p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h
 	-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
 }
 
-a{text-decoration:none}
+a{
+	text-decoration:none;
+}
 
 header {
 	width: 100%;
@@ -52,7 +54,9 @@ header {
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center; 
-	background: url("../img/web/메인배경.png")center/cover;
+	background: url("../img/web/메인배경.png");
+	background-size : 100% 100%;
+
 	
 }
 
@@ -84,7 +88,7 @@ header {
 	margin : 40px 0px 10px 0px;
 	display: inline-block;
 	position: absolute;
-	right : 30px;
+	right : 80px;
 }
 
 .service div{
@@ -331,14 +335,14 @@ header {
 
 .section2{
 	width : 100%;
-	min-width: 1082px;
 	background-color : #D2DAE3;
 	margin-top : 200px;
+	min-width: 1082px;
 }
 .section2 .inner{
 	width: 100%;
-	min-width: 1082px;
 	height: 732px;
+	min-width: 1082px;
 	position: relative;
 }
 .section2 .inner .bg_wrap {
@@ -355,7 +359,7 @@ header {
 	
 }
 .text_wrap{
-	width : 450px;
+	width: 450px;
 	height: 750px;
 	background-color: rgba(255, 255, 255, 0.7);
 	position: absolute;
@@ -443,48 +447,56 @@ header {
 .swiper-container2 .pic1{
 	width : 1400px;
 	height: 750px;
-	background: url("../img/web/Section2_1.png")center/cover;
+	background: url("../img/web/Section2_1.png");
+	background-size : 100% 100%;
 }
 .swiper-container2 .pic2{
 	width : 1400px;
 	height: 750px;;
-	background : url("../img/web/Section2_2.png")center/cover;
+	background : url("../img/web/Section2_2.png");
+	background-size : 100% 100%;
 
 }.swiper-container2 .pic3{
 	width : 1400px;
 	height: 750px;
-	background : url("../img/web/Section2_3.png")center/cover;
+	background : url("../img/web/Section2_3.png");
+	background-size : 100% 100%;
 	
 }
 .section3{
 	width: 100%;
 	height: 880px;
+	min-width: 1082px;
+	margin : 200px 0;
 	background: #ffffff;
-	padding : 200px 0;
+	display: flex;
+	border-top : 1px solid #AAA8A8;
 }
 .sectiondiv{
-	width: 100%;
+	width: 1550px;
     min-width: 1082px;
-    height: 976px;
+	height: 976px;
+	margin :auto;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+	-ms-flex-pack: justify;
+	padding-top: 20px;
+
 }
 
 .sectiondiv .img1{ 
 	min-width : 465px;
-	margin-right: 10px;
+	margin-right: 50px;
 	height :880px;
 	background : url("../img/web/섹션3.png");
 }
 .swiper-container {
 	height: 650px;
-	width: 1200px;
+	width: 1050px;
 	background: #fff;
+	position: relative;
 }
 .swiper-container .pic1{
 	width : 314px;
@@ -503,27 +515,33 @@ header {
 	background : url("../img/web/섹션3_3.png");
 	
 }
-.section3 .section3_4{
-	width : 1303px;
+
+.sec3_img{
+	width : 1095px;
 	height :180px;
 	position :absolute;
-	bottom : 100px;
-	right : 135px;
+	bottom : 96px;
+	left : 465px;
+	background-color: #C7FFD6;
+	display: flex;
+	justify-content: space-around;
+	
 }
 .section3 .icon1{
 	position: relative;
-	bottom : 300px;
-	left : 720px;
+	left : 30px;
+	bottom : 40px;
+	
 }
 .section3 .icon2{
 	position: relative;
-	bottom : 300px;
-	left : 1050px;
+	left : 50px;
+	bottom : 40px;
 }
 .section3 .icon3{
 	position: relative;
-	bottom : 300px;
-	left : 1330px;
+	left : 30px;
+	bottom : 40px;
 }
 .swiper-slide {
 	width: 314px;
@@ -550,7 +568,8 @@ header {
 	width: 100%;
 	min-width: 1082px;
 	height: 900px;
-	background : url("../img/web/Section3.png") center/cover;
+	background : url("../img/web/Section3.png");
+	background-size : 100% 100%;
 	margin-bottom: 100px;
 	display: flex;
 }
@@ -577,26 +596,43 @@ header {
 .section4 .bg_wrap .text2 {
 	width : 500px;
 	height: 110px;
-	font-size : 18px;
+	font-size : 15px;
 	color :#656161;
 	text-align: left;
 	position: relative;
-	left : 145px;
+	left : 170px;
 	font-family: 'nanumsquare';
 	line-height: 26px;
 }
 .section4 .bg_wrap .text2 span {
 	color :red;
 }
-.btn_ServiceStart {
+.btn_03{
+	min-width: 230px;
+	height: 50px;
+	line-height: 50px;
+	background:#3DC447;
+	color: white;
+	border-radius: 64px;
+	font-weight: 500;
+	font-size: 20px;
+	border-style: none;
+	outline: none;
 	cursor: pointer;
+	box-shadow: 0 27px 26px -5px rgba(0,0,0,.2);
+	font-family: 'NanumSquare';
+	font-weight: bold;
 	position: relative;
-	top : 40px;
-	left :226px;
+	left: 235px;
+	bottom : -40px;
 }
-.btn_ServiceStart img:hover{
-	transform :scale(1.1);
-	
+.btn_03 .arrowbutton {
+	position: relative;
+	bottom : -5px;
+	left : 10px;
+}
+.btn_03:hover {
+		transform : scale(1.1);
 }
 
 
@@ -604,7 +640,8 @@ header {
 	width : 100%;
 	min-width: 1082px;
 	height : 700px;
-	background: url("../img/web/section_5.png")center/cover;
+	background: url("../img/web/section_5.png");
+	background-size : 100% 100%;
 }
 .dbox{
 	width : 100%;

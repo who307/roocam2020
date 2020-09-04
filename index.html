@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko" class ="html" style="overflow-x :hidden; width:100%">
+<html lang="ko" class="html" style="overflow-x :hidden; width:100%">
 
 <head>
   <meta charset="UTF-8">
@@ -12,7 +12,7 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-	<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+  <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 
   <link rel="stylesheet" href="CSS/main.css" />
   <link rel="stylesheet" href="CSS/mobile375px.css" />
@@ -36,7 +36,7 @@
 
       <div class="service">
         <!-- <a class="service1" href="kakao/myservice.html">내 서비스</a> -->
-        <div class ="service1">내 서비스</div>
+        <div class="service1">내 서비스</div>
       </div>
 
     </header>
@@ -50,14 +50,17 @@
         <p class="sub_p">견적부터 시공, 사후 서비스까지 한번에 해결하세요!</p>
 
         <ul>
-          <li><a class="select1" onclick="goselect1();"><img class = "greenimg1" src="img/web/아파트.png" style="height: 40px"><img src="img/web/아파트1.png" style="height: 40px;">
-            <p class ="color1">아파트</p>
+          <li><a class="select1" onclick="goselect1();"><img class="greenimg1" src="img/web/아파트.png"
+                style="height: 40px"><img src="img/web/아파트1.png" style="height: 40px;">
+              <p class="color1">아파트</p>
             </a></li>
-          <li><a class="select2" onclick="goselect2();"><img class = "greenimg2" src="img/web/빌라.png" style="height: 40px"><img src="img/web/빌라1.png" style="height: 40px;">
-            <p class =" color2">빌라</p>
+          <li><a class="select2" onclick="goselect2();"><img class="greenimg2" src="img/web/빌라.png"
+                style="height: 40px"><img src="img/web/빌라1.png" style="height: 40px;">
+              <p class=" color2">빌라</p>
             </a></li>
-          <li><a class="select3" onclick="goselect3();"><img class = "greenimg3" src="img/web/주택.png" style="height: 40px"><img src="img/web/주택1.png" style="height: 40px;">
-              <p class =" color3" style="margin-right: 4px;">주택</p>
+          <li><a class="select3" onclick="goselect3();"><img class="greenimg3" src="img/web/주택.png"
+                style="height: 40px"><img src="img/web/주택1.png" style="height: 40px;">
+              <p class=" color3" style="margin-right: 4px;">주택</p>
             </a></li>
         </ul>
 
@@ -77,18 +80,18 @@
         </div>
       </div>
     </section>
-    <div class = "modal">
-    <div class="modal_contents">
-      <div>
-        <button class="closebtn">닫기</button>
-        <a id="create-kakao-login-btn"></a>
+    <div class="modal">
+      <div class="modal_contents">
+        <div>
+          <button class="closebtn">닫기</button>
+          <a id="create-kakao-login-btn"></a>
 
-	    <div id="create-channel-add-button"></div>
+          <div id="create-channel-add-button"></div>
+        </div>
       </div>
     </div>
-  </div>
 
-     <!-- <section class="main_visual2">
+    <!-- <section class="main_visual2">
       <div class="content_box"> 
         <ul>
 					<li data-aos="fade-up">
@@ -118,12 +121,12 @@
 				</ul>
       </div>
     </section> -->
-    
+
     <section class="section2">
       <div class="inner">
         <div class="bg_wrap">
           <div class="text_wrap">
-            <img class ="greenblock" src="img/web/그린블럭.png">
+            <img class="greenblock" src="img/web/그린블럭.png">
             <div class="textdiv1" data-aos="fade-up">
               <p class="text1">우리아이에게 더 <span>좋은 환경</span>을 <br>
                 만들어주고 싶으신가요?
@@ -134,10 +137,12 @@
                 Window Care Plus+에서 <br>
                 <span>가장 합리적인 가격</span>으로 서비스를 제공합니다.
               </p>
-              <button class="btn_02">
-                창호 견적 알아보기<img class = "arrowbutton" src="img/web/버튼화살.png">
-							</button>
-							<div class="mint"></div>
+              <a href="html/inputpage2.html">
+                <button class="btn_02">
+                  창호 견적 알아보기<img class="arrowbutton" src="img/web/버튼화살.png">
+                </button>
+              </a>
+              <div class="mint"></div>
             </div>
           </div>
 
@@ -177,13 +182,16 @@
             </div>
           </div>
         </div>
-        <img class ="section3_4"src="img/web/섹션3_4.png">
+
+        <div class ="sec3_img">
+          <img class="icon1" src="img/web/섹션3아이콘1.png">
+          <img class="icon2" src="img/web/섹션3아이콘2.png">
+          <img class="icon3" src="img/web/섹션3아이콘3.png">
+        </div>
+        
       </div>
-      <img class ="icon1"src="img/web/섹션3아이콘1.png">
-        <img class ="icon2" src="img/web/섹션3아이콘2.png">
-        <img class ="icon3" src="img/web/섹션3아이콘3.png">
-		</section>
-		
+    </section>
+
     <section class="section4">
       <div class="bg_wrap">
         <p class="text1">
@@ -199,7 +207,11 @@
           Window Care Plus+에서 가장 합리적인 가격으로 비교해보세요!!
 
         </p>
-        <a href="#" class="btn_ServiceStart" ><img src="img/web/btn_ServiceStart.png"></a>
+        <a href="html/inputpage2.html">
+          <button class="btn_03">
+            서비스 시작<img class="arrowbutton" src="img/web/버튼화살.png">
+          </button>
+        </a>
 
       </div>
     </section>
@@ -222,7 +234,7 @@
     <div class="footer_menu">
       <div class="inner">
         <ul class="cf">
-    
+
           <li><span>ㅣ</span><a href="html/about.html">회사 소개 </a><span>ㅣ</span></li>
           <li><a href="html/terms.html">이용 약관</a><span>ㅣ</span></li>
           <li><a href="html/alliance.html">제휴 및 광고 문의 </a><span>ㅣ</span></li>
@@ -249,7 +261,7 @@
               </tr>
               <tr>
                 <td class="label">통신판매업신고번호</td>
-                <td class="info">000000</td>
+                <td class="info">제 2020-경기군포-0869 호</td>
               </tr>
               <tr>
                 <td class="label">주소</td>
@@ -263,19 +275,19 @@
           <div class="fl_2">
             <div class="greenbar"></div>
             <table>
-                <img src ="img/web/고객센터.png">
-                <tr>
+              <img src="img/web/고객센터.png">
+              <tr>
                 <td class="label">고객센터</td>
                 <td class="info">010-0000-0000</td>
               </tr>
             </table>
             <table>
-              <img src ="img/web/업무시간.png">
+              <img src="img/web/업무시간.png">
               <tr>
-              <td class="label">업무시간</td>
-              <td class="info">0:00~ 0:00</td>
-            </tr>
-          </table>
+                <td class="label">업무시간</td>
+                <td class="info">0:00~ 0:00</td>
+              </tr>
+            </table>
           </div>
 
           <div class="fl_3">주식회사 루프탑 캠핑은 통신판매 중개자 및 플랫폼 사업자로서, 고객님과 시공업체 사장님들이 연결되도록 돕습니다. <br>
@@ -285,18 +297,18 @@
         </div>
       </div>
     </footer>
-    </div>
+  </div>
 
-    <!-- Script -->
-    <script type="text/javascript" src="JS/swiper.js"></script>
-    <script>AOS.init()</script>
-    <script type="text/javascript" src="JS/select.js"></script>
-    <script type="text/javascript" src="JS/modal.js"></script>
-    <script type="text/javascript" src="JS/kakao.js"></script>
+  <!-- Script -->
+  <script type="text/javascript" src="JS/swiper.js"></script>
+  <script>AOS.init()</script>
+  <script type="text/javascript" src="JS/select.js"></script>
+  <script type="text/javascript" src="JS/modal.js"></script>
+  <script type="text/javascript" src="JS/kakao.js"></script>
 
 
 
-  
+
 </body>
 
 </html>

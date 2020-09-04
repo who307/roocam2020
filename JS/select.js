@@ -105,21 +105,21 @@ var select1 = false;
 
 function goselect1() {
     btnid.addEventListener('click', function () {
-        location.href = "https://www.naver.com/";
+        location.href = "http://roocam.cafe24.com/html/inputpage2.html";
     })
     return select1 = true;
 }
 
 function goselect2() {
     btnid.addEventListener('click', function () {
-        location.href = "https://www.google.com/";
+        location.href = "http://roocam.cafe24.com/html/inputpage2.html";
     })
     return select1 = true;
 }
 
 function goselect3() {
     btnid.addEventListener('click', function () {
-        location.href = "https://www.daum.net";
+        location.href = "http://roocam.cafe24.com/html/inputpage2.html";
     })
     return select1 = true;
 }
