@@ -106,29 +106,6 @@ header {
 	cursor: pointer;
 }
 
-
-.service {
-	margin : 40px 0px 10px 0px;
-	display: inline-block;
-	position: absolute;
-	right : 80px;
-}
-
-.service div{
-	display: inline-block;
-	width: 140px;
-	height: 20px;
-	line-height: 20px;
-	font-size: 16px;
-	color: #fff;
-	border: 1px solid #fff;
-	border-radius: 30px;
-	margin-right: 5px;
-	padding: 10px 25px 7px;
-	font-family: 'NanumSquare', sans-serif;
-	font-weight: bold;
-	cursor: pointer;
-}
 .modal{
 	position: fixed; 
     left: 0; 
@@ -374,7 +351,7 @@ header {
 .terms1 .contents {
 	width : 100%;
 	min-width: 800px;
-    height : 1500px;
+    height : 1700px;
 	margin-top : 20px;
 }
 .terms1 .contents .terms_div {
@@ -407,12 +384,11 @@ header {
     font-family: 'SpoqaHanSansL' ;
 }
 .terms_date {
-	min-width : 1080px;
+	width : 1450px;
     height : 80px;
     font-family: "SpoqaHanSansR";
     font-size : 25px;
-    margin-top : 80px;
-	margin-left : 320px;
+  	 margin : auto;
 }
 
 /* 서비스 이용약관 end*/
@@ -423,7 +399,7 @@ header {
 .terms2 .contents {
 	width : 100%;
 	min-width: 800px;
-    height : 1500px;
+    height : 1700px;
 	margin-top : 20px;  
 }
 .terms2 .contents .terms2_div {
@@ -461,10 +437,11 @@ header {
     font-family: 'SpoqaHanSansL' ;
 }
 .terms2 .startDate {
-	font-size: 15px;
-	font-family: 'SpoqaHanSansL';
-	position: relative;
-	left: 350px;
+	width : 1450px;
+	font-size: 25px;
+	font-family: 'SpoqaHanSansB';
+	margin : auto;
+	
 }
 
 

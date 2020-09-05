@@ -1,23 +1,23 @@
 @media (min-width:768px) and (max-width:9999px){
 
-@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
-@font-face { font-family: 'SCDream8';  src: url('../Font/S-Core_Dream_OTF/SCDream8.otf');}
-@font-face { font-family: 'SCDream4';  src: url('../Font/S-Core_Dream_OTF/SCDream4.otf');}
-@font-face { font-family: 'SCDream7';  src: url('../Font/S-Core_Dream_OTF/SCDream7.otf');}
-@font-face { font-family: 'SCDream5';  src: url('../Font/S-Core_Dream_OTF/SCDream5.otf');}
-@font-face { font-family: 'YoonMingukB';  src: url('../Font/YoonDokripManse/YoonMingukB.otf');}
-@font-face { font-family: 'YoonMingukR';  src: url('../Font/YoonDokripManse/YoonMingukR.otf');}
-@font-face { font-family: '닉스곤폰트M';  src: url('../Font/닉스곤폰트/NIXGONFONTSm.otf');}
-@font-face { font-family: 'SpoqaHanSansB';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Bold.ttf');}
-@font-face { font-family: 'SpoqaHanSansL';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Light.ttf');}
-@font-face { font-family: 'SpoqaHanSansR';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Regular.ttf');}
-@font-face { font-family: 'InfinitySans-Bold';  src: url('../Font/InfinitySans/InfinitySans-Bold.ttf');}
-@font-face { font-family: 'InfinitySans-CondBold';  src: url('../Font/InfinitySans/InfinitySans-CondBold.ttf');}
-@font-face { font-family: 'InfinitySansWM-Bold';  src: url('../Font/InfinitySans/InfinitySansWM-Bold.ttf');}
-@font-face { font-family: 'InfinitySansWMR-Regular';  src: url('../Font/InfinitySans/InfinitySansWM-Bold.ttf');}
-@font-face { font-family: '나눔고딕';  src: url('../Font/나눔고딕/NanumGothic.ttf');}
-@font-face { font-family: '나눔고딕B';  src: url('../Font/나눔고딕/NanumGothicBold.ttf');}
-@font-face { font-family: '나눔고딕L';  src: url('../Font/나눔고딕/NanumGothicLight.ttf');}
+	@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+	@font-face { font-family: 'SCDream8';  src: url('../Font/S-Core_Dream_OTF/SCDream8.otf');}
+	@font-face { font-family: 'SCDream4';  src: url('../Font/S-Core_Dream_OTF/SCDream4.otf');}
+	@font-face { font-family: 'SCDream7';  src: url('../Font/S-Core_Dream_OTF/SCDream7.otf');}
+	@font-face { font-family: 'SCDream5';  src: url('../Font/S-Core_Dream_OTF/SCDream5.otf');}
+	@font-face { font-family: 'YoonMingukB';  src: url('../Font/YoonDokripManse/YoonMingukB.otf');}
+	@font-face { font-family: 'YoonMingukR';  src: url('../Font/YoonDokripManse/YoonMingukR.otf');}
+	@font-face { font-family: '닉스곤폰트M';  src: url('../Font/닉스곤폰트/NIXGONFONTSm.otf');}
+	@font-face { font-family: 'SpoqaHanSansB';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Bold.ttf');}
+	@font-face { font-family: 'SpoqaHanSansL';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Light.ttf');}
+	@font-face { font-family: 'SpoqaHanSansR';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Regular.ttf');}
+	@font-face { font-family: 'InfinitySans-Bold';  src: url('../Font/InfinitySans/InfinitySans-Bold.ttf');}
+	@font-face { font-family: 'InfinitySans-CondBold';  src: url('../Font/InfinitySans/InfinitySans-CondBold.ttf');}
+	@font-face { font-family: 'InfinitySansWM-Bold';  src: url('../Font/InfinitySans/InfinitySansWM-Bold.ttf');}
+	@font-face { font-family: 'InfinitySansWMR-Regular';  src: url('../Font/InfinitySans/InfinitySansWM-Bold.ttf');}
+	@font-face { font-family: '나눔고딕';  src: url('../Font/나눔고딕/NanumGothic.ttf');}
+	@font-face { font-family: '나눔고딕B';  src: url('../Font/나눔고딕/NanumGothicBold.ttf');}
+	@font-face { font-family: '나눔고딕L';  src: url('../Font/나눔고딕/NanumGothicLight.ttf');}
 
 p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, html, label, legend, li, ol, pre, table, td, th, ul {
 	margin: 0;
@@ -359,7 +359,7 @@ header {
 	
 }
 .text_wrap{
-	width: 450px;
+	width: 453px;
 	height: 750px;
 	background-color: rgba(255, 255, 255, 0.7);
 	position: absolute;
@@ -372,6 +372,7 @@ header {
 	padding : 10px 10px 0 0;
 	position: relative;
 	top:134px;
+	left: 2px;
 }
 .textdiv1{
 	position: relative;
@@ -398,11 +399,11 @@ header {
 	color :rgb(0, 0, 0);
 	font-weight: lighter;
 	font-size : 20px;
-	margin-bottom: 100px;
-	margin-top : 100px;
 	font-family: 'InfinitySansWMR-Regular';
-}
-.text_wrap .text2 span{
+	position: relative;
+	top: 55px;
+}	
+.text_wrap .text2 .color_red{
 	color : #FF2929;
 }
 .btn_02{
@@ -421,6 +422,7 @@ header {
 	font-family: 'NanumSquare';
 	font-weight: bold;
 	position: relative;
+	top: 150px;
 	left : 55px;
 }
 .arrowbutton {
@@ -661,10 +663,9 @@ header {
 	margin-bottom: 60px;
 	text-align: center;
 	position: relative;
-	top : 50px;
+	top : 0px;
 	color : white;
 	font-family: 'SCDREAM5';
-	font-weight: bold;
 }
 .st1 .text1 {
 	font-size : 30px;
@@ -677,8 +678,8 @@ header {
 }
 .btns{
 	min-width: 900px;
-	padding-top : 50px;
 	text-align: center;
+	padding-top :60px;
 }
 .btns button {
 	width : 302px;

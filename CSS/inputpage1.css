@@ -78,8 +78,9 @@ header {
 	margin : 40px 0px 10px 0px;
 	display: inline-block;
 	position: absolute;
-	right : 30px;
+	right : 80px;
 }
+
 .service div{
 	display: inline-block;
 	width: 140px;
@@ -146,23 +147,25 @@ header {
 /* inputinner Start */
 .inputmain {
 	width: 100%;
-	/* min-width: 1082px; */
+	min-width: 1082px;
 	height: 450px;
 	display: flex;
 	-webkit-box-align: center;
-	background-repeat: no-repeat;
 	align-items: center;
 	background: url("../img/web/inputpage1/inputmain.png")center/cover;
+
 }
 .inputImg{
 	width: 100%;
+	min-width: 1082px;
 	height: 254.88px;
 	margin-top: 80px;
-	background-repeat: no-repeat;
 	background: url("../img/web/inputpage1/풍선1.png")center/cover;
+
 }
 .input_menu1{
 	width: 1543px;
+	min-width: 1082px;
 	height: 245.7px;
 	margin: 0 auto;
 	margin-top: 150px;

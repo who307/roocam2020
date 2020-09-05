@@ -16,7 +16,6 @@
 @font-face { font-family: '나눔고딕';  src: url('../Font/나눔고딕/NanumGothic.ttf');}
 @font-face { font-family: '나눔고딕B';  src: url('../Font/나눔고딕/NanumGothicBold.ttf');}
 @font-face { font-family: '나눔고딕L';  src: url('../Font/나눔고딕/NanumGothicLight.ttf');}
-
 p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, html, label, legend, li, ol, pre, table, td, th, ul {
 	margin: 0;
 	padding: 0;
@@ -85,7 +84,7 @@ header {
 	margin : 40px 0px 10px 0px;
 	display: inline-block;
 	position: absolute;
-	right : 30px;
+	right : 80px;
 }
 
 .service div{
@@ -160,20 +159,18 @@ input {
 }
 .inputmain {
 	width: 100%;
-	/* min-width: 1082px; */
+	min-width: 1082px;
 	height: 450px;
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
-	background-repeat: no-repeat;
 	background: url("../img/web/inputpage1/inputmain.png")center/cover;
-	background-size : 1920px 
 }
 .inputImg {
 	width: 100%;
+	min-width: 1082px;
 	height: 254.88px;
 	margin-top: 80px;
-	background-repeat: no-repeat;
 	background: url("../img/web/inputpage1/풍선2.png")center/cover;
 }
 .box{
