@@ -1,19 +1,41 @@
-function plus() {
-	$(function () {
-		// function form_btn(n) {
-		// 	var num = document.getElementById("num"); // 폼 선택
-		// 	num_val = parseInt(num.value); // 폼 값을 숫자열로 변환
-		// 	num_val += n; // 계산
-		// 	num.value = num_val; // 계산된 값을 바꾼다
-		// 	if (num_val <= 0) {
-		// 		num.value = 1;   // 만약 값이 0 이하면 1로 되돌려준다, 1보다 작은 수는 나타나지 않게하기 위해   
-		// 	}
-		// }
-		// var asd ='<input type="text" id="num" style="border:none;border-right:0px; border-top:0px; boder-left:0px; boder-bottom:0px;"value="1" />'
+var count = 2;
 
-		var hor = '&nbsp;&nbsp;가로<input id="horizon" style="font-size: 25px; margin:0 20px 80px 20px; width: 200px; height:40px"; type="text" name="horizon" onKeyup="this.value=this.value.replace(/[^0-9]/g,"")"; value=""> 세로<input id="vertical" style="font-size: 25px; margin:0 20px; width: 200px; height:40px;" type="text" name="vertical" onKeyup="this.value=this.value.replace(/[^0-9]/g,"");" value="">위치<input style="font-size: 25px; margin:0 20px; width: 200px; height:40px;" type="text" name="" value="">'
-
-		$(".JS_list").append( "<br>" + hor);
-	});
+function addForm(){
+ 
+	var addedFormDiv = document.getElementById("addedFormDiv");
+   
+	var str = "";
+   
+	str+=""+count+" .가로<input id='horizon' style='font-size: 17px; margin:5px 5px;  width: 170px; height:30px'; type='text' name='horizon' onKeyup='this.value=this.value.replace(/[^0-9]/g,'')'; value=''> 세로<input id='vertical' style='font-size: 17px; margin:0 5px;  width: 170px; height:30px;' type='text' name='vertical' onKeyup='this.value=this.value.replace(/[^0-9]/g,'');' value=''>위치<input style='font-size: 17px; margin:0 5px;  width: 170px; height:30px;' type='text' name='' value=''>";
+   
+   
+   
+	var addedDiv = document.createElement("div"); 
+   
+	addedDiv.id = "added_"+count; 
+   
+	addedDiv.innerHTML = str; 
+	
+	if(count <6) {
+	addedFormDiv.appendChild(addedDiv); 
+   
+   
+   
+	count++;
+   
+	document.baseForm.count.value=count;
 }
-
+	}
+	function delForm(){
+ 
+		var addedFormDiv = document.getElementById("addedFormDiv");
+	   
+		if(count >2){ 
+	   
+		var addedDiv = document.getElementById("added_"+(--count));
+	   
+		addedFormDiv.removeChild(addedDiv);
+	   
+		}
+		}
+	  

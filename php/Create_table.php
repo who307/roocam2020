@@ -2,12 +2,18 @@
 	 $con = mysqli_connect("localhost", "roocam", "DB_PASSWORD_REMOVED", "roocam") or die("MySQL 안들어가짐!!");
 
     $sql ="
-        CREATE TABlE IF NOT EXISTS roocam
+        CREATE TABlE IF NOT EXISTS UserData
         (
-						userName VARCHAR(100) NOT NULL ,
-						userNumber INT NOT NULL PRIMARY KEY,
-						userAddr VARCHAR(100) NOT NULL, 
-            mDate DATE
+					userBuilding VARCHAR(100) NOT NULL ,
+					size_horizon INT(100) NOT NULL ,  
+					size_vertical INT(100) NOT NULL ,
+					size_position VARCHAR(100) NOT NULL ,
+					userHope VARCHAR(100) NOT NULL,
+					userAddr1 VARCHAR(100) NOT NULL, 
+					userAddr2 VARCHAR(100) NOT NULL, 
+					userAddr3 VARCHAR(100) NOT NULL, 
+					userNumber INT NOT NULL PRIMARY KEY,
+          mDate DATE
         )
         ";
     

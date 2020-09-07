@@ -3,7 +3,7 @@
    
    $userNumber = $_POST["userNumber"];
      
-   $sql ="DELETE FROM roocam WHERE userNumber='".$userNumber."'";
+   $sql ="DELETE FROM UserData WHERE userNumber='".$userNumber."'";
    
    $ret = mysqli_query($con, $sql);
  
@@ -17,5 +17,5 @@
    } 
    mysqli_close($con);
    
-	 echo "<br> <a href='../index.html'> <--돌아가기</a> ";
+	 echo "<br> <a href='./userData.php'> <--돌아가기</a> ";
 ?>

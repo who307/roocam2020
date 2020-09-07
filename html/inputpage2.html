@@ -22,11 +22,11 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
 
-	<title>인풋페이지2</title>
+	<title>견적알아보기 - 루캠</title>
 
 </head>
 
-<body style="overflow-x :hidden; overflow-y : auto;">
+<body>
 	<div class="lay">
 		<div class="modal">
 			<div class="modal_contents">
@@ -44,7 +44,7 @@
 				<div class="line"></div>
 				<div class="line"></div>
 			</div>
-			<a class="ahide" href="../index.html"><img class="alogo" src="../img/web/logo.png" ;></a>
+			<a class="ahide" href="../index.html"><img class="alogo" style ="padding-top :20px;" src="../img/web/logo.png" ;></a>
 			<div class="service">
 				<div class="service1">내 서비스</div>
 			</div>
@@ -53,79 +53,89 @@
 		<section class="inputmain"></section>
 
 		<div class="inputImg"></div>
-		<div class="box">
-			<p>창호 인테리어</p>
-		</div>
+		
 
 		<section class="inputinner">
-
-			<div class="inner_menu1">
-				<p class="p_tag1">1. 건물 유형을 선택해 주세요</p>
-				<form>
-					<label class="label123">
-						<div class="div1">
-							<input class="building" type="radio" name="building" value="주택">
-							주택
-						</div>
-					</label>
-
-					<label class="label123">
-						<div class="div1">
-							<input class="building" type="radio" name="building" value="빌라">
-							빌라
-						</div>
-					</label>
-
-					<label class="label123">
-						<div class="div1">
-							<input class="building" type="radio" name="building" value="아파트">
-							아파트
-						</div>
-					</label>
-				</form>
-
+			<form METHOD="post" ACTION="../php/inputpage2_result.php">
 				<div class="inner_menu1">
-					<p class="p_tag1">2. 창호 사이즈</p>
-					<form>
+					<div class="cont_size">
+						<div class="box">
+							<p>창호 인테리어</p>
+						</div>
+						<p class="p_tag1">1. 건물 유형을 선택해 주세요</p>
+						<label class="label123">
+							<div class="div1">
+								<!-- name="building" -->
+								<input class="building" type="radio" name="userBuilding" value="주택" required>
+								주택
+							</div>
+						</label>
+
+						<label class="label123">
+							<div class="div1">
+								<input class="building" type="radio" name="userBuilding" value="빌라">
+								빌라
+							</div>
+						</label>
+
+						<label class="label123">
+							<div class="div1">
+								<input class="building" type="radio" name="userBuilding" value="아파트">
+								아파트
+							</div>
+						</label>
+
+						<div class="inner_menu1">
+							<p class="p_tag1">2. 창호 사이즈</p>
 							<div class="size JS_list">
-								&nbsp;&nbsp;가로<input id="horizon" style="font-size: 25px; margin:0 20px 80px 20px; width: 200px; height:40px;" type="text" name="horizon" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="">
-								세로<input id="vertical" style="font-size: 25px; margin:0 20px; width: 200px; height:40px;" type="text" name="vertical" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="">
-								위치<input style="font-size: 25px; margin:0 20px; width: 200px; height:40px;" type="text" name="" value="">
+								<!-- 
+									가로 => size_horizon
+									세로 => size_vertical
+									위치 => size_position
+								 -->
+								<input type="hidden" name="count" value="2">
+								1 .가로<input id="horizon" style="font-size: 17px; margin:0 5px 0 5px; width: 170px; height:30px;"
+									type="text" name="size_horizon" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" required>
+								세로<input id="vertical" style="font-size: 17px; margin:0 5px;  width: 170px; height:30px;" type="text"
+									name="size_vertical" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" required>
+								위치<input style="font-size: 17px; margin:0 5px;  width: 170px; height:30px;" type="text"
+									name="size_position" value="" required>
+								<div id="addedFormDiv"></div><BR>
 							</div>
-						<div class="Imgplus" ><img src="../img/web/inputpage1/plus.png" onclick="plus(),form_btn(1)"></div>
-					</form>
-				</div>
-
-				<div class="inner_menu1">
-					<p class="p_tag1">3. 공사 희망일</p>
-					<form>
-						<label class="label123">
-							<div class="div1">
-								<input class="building" type="radio" name="Hope_date" value="">
-								1 ~ 2개월 이내
+							<div class="plusminus_img">
+								<img style="margin-left: 33%; width: 16px; height: 12px;" src="../img/web/inputpage1/plus.svg"
+									onclick="addForm()">
+								<img style="width: 16px; height: 12px;" src="../img/web/inputpage1/minus.svg" onclick="delForm()">
 							</div>
-						</label>
+						</div>
 
-						<label class="label123">
-							<div class="div1">
-								<input class="building" type="radio" name="Hope_date" value="">
-								3 개월 이후
-							</div>
-						</label>
+						<div class="inner_menu1">
+							<p class="p_tag1">3. 공사 희망일</p>
+							<label class="label123">
+								<div class="div1">
+									<input class="building" type="radio" name="userHope" value="1~2개월" required>
+									1 ~ 2개월 이내
+								</div>
+							</label>
 
-						<label class="label123">
-							<div class="div1">
-								<input class="building" type="radio" name="Hope_date" value="">
-								상담 후 결정
-							</div>
-						</label>
-					</form>
-				</div>
+							<label class="label123">
+								<div class="div1">
+									<input class="building" type="radio" name="userHope" value="3개월 이후">
+									3 개월 이후
+								</div>
+							</label>
 
-				<div class="inner_menu1">
-					<p class="p_tag1">4. 주소</p>
-					<form>
-						<select class="font_size" name=Addr1 size=0 style="margin:30px 0 0 450px; width: 510px; height:52px;">
+							<label class="label123">
+								<div class="div1">
+									<input class="building" type="radio" name="userHope" value="상담 후 결정">
+									상담 후 결정
+								</div>
+							</label>
+						</div>
+
+						<div class="inner_menu1">
+							<p class="p_tag1">4. 주소</p>
+							<!-- <select class="font_size" name="userAddr1" size=0 style="margin:30px 0 0 450px; width: 510px; height:52px;">
 							<option value="" selected>시/도 선택</option>
 							<option value="Seoul">서울특별시</option>
 							<option value="busan">부산광역시</option>
@@ -133,33 +143,42 @@
 							<option value="Seoul">서울특별시</option>
 							<option value="Seoul">서울특별시</option>
 						</select>
-						<select class="font_size" name=Addr2 size=0 style="margin:30px 0 0 30px; width: 510px; height:52px;">
+						<select class="font_size" name="userAddr2" size=0 style="margin:30px 0 0 30px; width: 510px; height:52px;">
 							<option value="" selected>시/군/구 선택</option>
 							<option value="Seoul">서울특별시</option>
 							<option value="busan">부산광역시</option>
 							<option value="Seoul">서울특별시</option>
 							<option value="Seoul">서울특별시</option>
 							<option value="Seoul">서울특별시</option>
-						</select> <br>
-						<input class="font_size" style="margin:30px 0 0 450px; width: 1049px; height:47px;" type="text" name="Addr3"
-							Placeholder="상세 주소를 입력해주세요." value="">
-					</form>
-				</div>
+						</select> <br> -->
+							<div style="min-width: 1500px;">
+								<input class="font_size" name="userAddr1" size=0
+									style="margin:30px 0 0 30px; width: 330px; height:36px;" type="text" Placeholder="시/도 를 작성해주세요" required>
+								<input class="font_size" name="userAddr2" size=0 style="min-width: 330px; height:36px;" type="text"
+									Placeholder="시/군/구 를 작성해주세요" required>
+							</div>
+							<input class="font_size" name="userAddr3" style="margin:30px 0 0 30px; width: 675px; height:36px;"
+								type="text" Placeholder="상세 주소를 입력해주세요." required>
 
-				<div class="inner_menu1">
-					<p class="p_tag1">5. 연락처</p>
-					<div class="size font_size1">
-						Mobile<input class="font_size" style="text-align:center;	margin:0 20px; width: 259px; height:52px;"
-							type="text" name="Number" Placeholder="010 - xxxx - xxxx" value="">
+						</div>
+
+						<div class="inner_menu1">
+							<p class="p_tag1">5. 연락처</p>
+							<div class="size font_size1">
+								Mobile<input class="font_size" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" style="text-align:center;	margin:0 0 40px 20px; width: 177px; height:36px;"
+									type="text" name="userNumber" Placeholder="010 - xxxx - xxxx" required>
+							</div>
+						</div>
+						<div class="btn_div">
+							<button type="submit" class="btn_01">
+								견적서 보내기
+							</button>
+						</div>
 					</div>
-				</div>
-
-				<div class="btn_div">
-					<button class="btn_01">
-						견적 알아보기
-					</button>
+				
 				</div>
 				<div class="mint"></div>
+			</form>
 		</section>
 
 		<section class="section5">
@@ -180,11 +199,15 @@
 		<div class="footer_menu">
 			<div class="inner">
 				<ul class="cf">
-
-					<li><span>ㅣ</span><a href="../html/about.html">회사 소개 </a><span>ㅣ</span></li>
-                    <li><a href="../html/terms.html">이용 약관</a><span>ㅣ</span></li>
-                    <li><a href="../html/alliance.html">제휴 및 광고 문의 </a><span>ㅣ</span></li>
-                    <li><a href="../html/recruits.html">인테리어 구인</a><span>ㅣ</span></li>
+					<span>ㅣ</span>
+					<li><a href="../html/about.html">회사 소개 </a></li>
+					<span>ㅣ</span>
+					<li><a href="../html/terms.html">이용 약관</a></li>
+					<span>ㅣ</span>
+					<li><a href="../html/alliance.html">제휴 및 광고 문의 </a></li>
+					<span>ㅣ</span>
+					<li><a href="../html/recruits.html">인테리어 구인</a></li>
+					<span>ㅣ</span>
 				</ul>
 			</div>
 		</div>

@@ -34,7 +34,7 @@
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-            <a class="ahide" href="../index.html"><img class="alogo" src="../img/web/logo.png" ;></a>
+            <a class="ahide" href="../index.html"><img class="alogo"  style = "padding-top : 20px;"src="../img/web/logo.png" ;></a>
 
             <div class="service">
                 <!-- <a class="service1" href="kakao/myservice.html">내 서비스</a> -->
@@ -75,57 +75,57 @@
                         <tr>
                             <td class="label">파트너 유형</td>
                             <td style ="margin-left: 40px;"colspan ="2" class="partner">
-                                <input id ="rb1"style ="margin : 0 30px; " type="radio" name="partner" value=""><label for="rb1"></label>시공 업체
-                                <input id ="rb2"style ="margin : 0 30px; " type="radio" name="partner" value=""><label style ="margin-left :73px;" for ="rb2"></label>제휴 서비스
+                                <input id ="rb1"style ="margin : 0 30px; " type="radio" name="partner" value="시공업체" required><label for="rb1"></label>시공 업체
+                                <input id ="rb2"style ="margin : 0 30px; " type="radio" name="partner" value="제휴서비스"><label style ="margin-left :73px;" for ="rb2"></label>제휴 서비스
                             </td>
                         </tr>
                         <tr>
                             <td ></td>
-                            <td  style ="margin-left: 40px;" colspan ="2" class="partner">
-                                <input id ="rb3" style ="margin : 0 30px; "type="radio" name="partner" value=""><label for="rb3"></label>광고 서비스
-                                <input id ="rb4" style ="margin : 0 30px;"type="radio" name="partner" value=""><label style ="margin-left : 50px;" for="rb4"></label>전문가
+                            <td  style ="margin-left: 40px;" colspan ="2" class="partner"required >
+                                <input id ="rb3" style ="margin : 0 30px; "type="radio" name="partner" value="광고서비스" ><label for="rb3"></label>광고 서비스
+                                <input id ="rb4" style ="margin : 0 30px;"type="radio" name="partner" value="전문가" ><label style ="margin-left : 50px;" for="rb4"></label>전문가
                             </td>
                         </tr>
                         <tr>
                             <td class="label">업체명</td>
-                            <td class="info"><input type="text" name="" placeholder="업체명을 입력해주세요."></td>
+                            <td class="info"><input type="text" name="" required placeholder="업체명을 입력해주세요."></td>
                         </tr>
                         <tr>
                             <td class="label">이름</td>
-                            <td class="info"><input type="text" name="" placeholder="문의하시는 분 이름을 입력해주세요.">
+                            <td class="info"><input type="text" name="" required  placeholder="문의하시는 분 이름을 입력해주세요.">
                             </td>
                         </tr>
                         <tr>
                             <td class="label">전화번호</td>
-                            <td class="info"><input type="tel" name="" placeholder="'-'를 제외한 숫자만 입력해주세요."></td>
+                            <td class="info"><input type="number" name="" required placeholder="'-'를 제외한 숫자만 입력해주세요."></td>
                         </tr>
                         <tr>
                             <td class="label">이메일</td>
-                            <td class="info"><input type="email" name="" placeholder="답변 받으실 이메일을 입력해주세요."></td>
+                            <td class="info"><input type="email" name=""required placeholder="답변 받으실 이메일을 입력해주세요."></td>
                         </tr>
                     </table>
 
                     <ul style ="width : 500px; height: 500px; margin-top : 40px; position: relative; left : 150px;">
                         <li style ="font-size : 32px; margin-bottom : 10px;">
-                            <input type="checkbox" id="cb1" name="">
+                            <input  type="checkbox" id="cb1"  onclick="cAll();">
                             <label for="cb1"></label>
                             약관 (전체 동의)
                         </li>
                         <li style ="position: relative; left : 20px; font-size : 25px; margin-bottom : 10px;">
-                            <input type="checkbox" id="cb2" name=""><label for="cb2">
+                            <input type="checkbox" id="cb2" name="terms"required><label for="cb2">
                             </label>개인정보 제 3자 이용 (필수)
                             <a style ="font-size : 15px; color : #707070;"href="../html/terms.html">_약관보기</a>
 
                         </li>
                         <li style ="position: relative; left : 20px;font-size : 25px; margin-bottom : 10px;">
-                            <input type="checkbox" id="cb3" name="">
+                            <input type="checkbox" id="cb3" name="terms"required>
                             <label for="cb3"></label>마켓팅 활용 (선택)
                             <a style ="font-size : 15px; color : #707070; " href="../html/terms.html">_약관보기</a>
 
                         </li>
                         <li style ="position: relative; left : 225px; bottom : -80px;">
-                            <input style ="width : 250px; height: 60px; font-size : 33px; background-color :#4B524B; color : white; font-family: 'InfinitySansWMR-Regular'; text-align: left;" 
-                            type="submit" value="문의하기"><img style = "position: absolute; left : 135px; bottom : 10px;" src ="../img/web/handicon.png">
+                            <input style ="width : 250px; height: 60px; font-size : 33px; background-color :#4B524B; outline : none; color : white; font-family: 'InfinitySansWMR-Regular'; text-align: left; cursor: pointer;" 
+                            type="submit" value="문의하기"><img style = "position: absolute; left : 135px; bottom : 10px; cursor: pointer;" src ="../img/web/handicon.png">
                         </li>
                     </ul>
                     
@@ -141,13 +141,16 @@
         <div class="footer_menu">
             <div class="inner">
                 <ul class="cf">
-
-                    <li><span>ㅣ</span><a href="../html/about.html">회사 소개 </a><span>ㅣ</span></li>
-                    <li><a href="../html/terms.html">이용 약관</a><span>ㅣ</span></li>
-                    <li><a href="../html/alliance.html">제휴 및 광고 문의 </a><span>ㅣ</span></li>
-                    <li><a href="../html/recruits.html">인테리어 구인</a><span>ㅣ</span></li>
-
-                </ul>
+                    <span>ㅣ</span>
+                    <li><a href="../html/about.html">회사 소개 </a></li>
+                    <span>ㅣ</span>
+                    <li><a href="../html/terms.html">이용 약관</a></li>
+                    <span>ㅣ</span>
+                    <li><a href="../html/alliance.html">제휴 및 광고 문의 </a></li>
+                    <span>ㅣ</span>
+                    <li><a href="../html/recruits.html">인테리어 구인</a></li>
+                    <span>ㅣ</span>
+                  </ul>
             </div>
         </div>
         <footer>
@@ -213,6 +216,8 @@
     <script type="text/javascript" src="../JS/select.js"></script>
     <script type="text/javascript" src="../JS/modal.js"></script>
     <script type="text/javascript" src="../JS/kakao.js"></script>
+    <script type="text/javascript" src="../JS/check.js"></script>
+    
 </body>
 
 </html>
