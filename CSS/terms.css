@@ -60,7 +60,8 @@ header {
 }
 
 .ahide, .alogo{
-	visibility: hidden;	
+	visibility: hidden;
+	padding-top : 20px;
 }
 
 .logo{

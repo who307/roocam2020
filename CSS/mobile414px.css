@@ -1,8 +1,8 @@
-@media only screen 
-    and (device-width : 414px) 
-    and (device-height : 896px) 
-    and (-webkit-device-pixel-ratio : 2) {
+@media all
+	and (min-device-width : 414px) 
+	and (max-device-width : 499px)  {
 
+	
 		@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 		@font-face { font-family: 'SCDream8';  src: url('../Font/S-Core_Dream_OTF/SCDream8.otf');}
 		@font-face { font-family: 'SCDream4';  src: url('../Font/S-Core_Dream_OTF/SCDream4.otf');}
@@ -38,34 +38,16 @@
 		}
 		
 		a{text-decoration:none}
-		
-		header {
-			width: 414px;
-			min-width: 414px;
-			position: fixed;
-			top: 0;
-			left: 0;
-			height: 60px;
-			background: 0 0;
-			z-index: 3;
-			text-align: center;
-		}
-
-		.section1 {
-			width: 414px; 
-			min-width: 414px;
-			height: 500px;
-			display: flex;
-			-webkit-box-align: center;
-			align-items: center; 
-			background: url("../img/mobile/main_1.png")center/cover;
+		body {
+			overflow-x : hidden;
 		}
 		
+				
 		.ahide, .alogo{
 			visibility: hidden;	
 			width: 77px;
 			height: 42px;
-			margin-top :8px;
+			padding-top : 10px;
 		}
 		
 		.logo{
@@ -81,22 +63,28 @@
 		.service .adown {
 			background: url('../img/mobile/메뉴2.png');
 		}
-		.header_sidebar{
-			display: inline;
-		}
-		
 		.service .adown {
 			color: #313131;
 			border: 0px solid #313131;
 		
+		}
+		header {
+			width: 100%;
+			min-width: 414px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 60px;
+			background: 0 0;
+			z-index: 3;
+			text-align: center;
 		}
 		
 		.service {
 			margin : 0px 0px 0px 0px;
 			display: inline-block;
 			position: absolute;
-			right : 370px;
-			
+			right : 90%;
 		}
 		
 		.service div{
@@ -117,14 +105,14 @@
 		}
 		.modal{
 			position: fixed; 
-			left: 0; 
-			top: 0; 
-			width: 100%; 
+				left: 0; 
+				top: 0; 
+			 width: 100%; 
 			height: 100%; 
-			background-color: rgba(0, 0, 0, 0.5); 
-			opacity: 0; 
-			visibility: hidden; 
-			transform: scale(1.1); 
+				background-color: rgba(0, 0, 0, 0.5); 
+				opacity: 0; 
+				visibility: hidden; 
+				transform: scale(1.1); 
 			transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 			z-index: 99;
 		}
@@ -162,9 +150,7 @@
 		.scrollhidden{
 			overflow-y: hidden;
 		}
-		.section1_2, .main_logo {
-			display: none;
-		}
+		
 		.main_visual {
 			display: flex;
 			text-align: center;
@@ -175,7 +161,7 @@
 			align-items: center;
 			-webkit-box-align: center;
 			position : absolute;
-			top: 200px;
+			top: 150px;
 			margin : auto;
 			visibility: visible;
 		}
@@ -238,16 +224,17 @@
 
 		.greenimg1,.greenimg2,.greenimg3{
 			position: absolute;
-			
+			display: inline;
 		}
 		.whiteimg {
 			display: none;
 		}
 		
 		.btn_div{
-			margin-top : 0px;
+			
 			position: absolute;
-			margin-top: 190px;
+			bottom: 80px;
+			
 		}
 		
 		.btn_01{
@@ -269,7 +256,7 @@
 		
 		.main_visual .textdiv{
 			position: absolute;
-			bottom : 0px;
+			bottom :20px;
 			right: 10px;
 		}
 		.main_visual p{
@@ -292,28 +279,151 @@
 			margin-left: 80px;
 		}
 		
+		.section1_2 {
+			width: 100%;
+			min-width: 414px;
+			height: 500px;
+			display: flex;
+			-webkit-box-align: center;
+			align-items: center; 
+			background: url("../img/web/메인배경2.png");
+		}
+		.main_logo2{
+			width: 89px;
+			height: 51px;
+
+		}
+		.main_visual2{
+			display: flex;
+			text-align: center;
+			width: 100%;
+			min-width: 414px;
+			height: 500px;
+			flex-direction: column;
+			align-items: center;
+			-webkit-box-align: center;
+			position : absolute;
+			top: 30px;
+		}
+		.main_visual2 .main2_bg{
+			width : 414px;
+			height : 500px;
+			position: absolute;
+			top : -30px;
+			background : url('../img/mobile/mobile\ main_re-design.png');
+			background-size : 100% 500px;
+		}
+		.main2_text1{
+			position: relative;
+			top : 30px;
+		}
+		
+		.main2_text1 .ptext1 {
+			font-family : 'SCDream8';
+			font-size: 23px;
+			color : white;
+		}
+		.main2_text1 .ptext2{
+			font-family: 'SCDream4';
+			font-size: 23px;
+			color : white;
+			position: relative;
+			top : 20px;
+			left: 200px;
+			display: none;
+		}
+		.main2_text1 span{
+			color : #288160;
+		}
+		
+		.sub_div{
+			width: 350px;
+			height : 50px;
+			margin : auto;
+			position: relative;
+			bottom: -220px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.sub_text1{
+			color: white;
+			font-family: 'SCDream4';
+			font-size: 10px;
+		}
+		.sub_text2{
+			color: white;
+			font-family: 'SCDream4';
+			font-size: 10px;
+		}
+		.sub_text1 span, .sub_text2 span {
+			color : #288160;
+		}
+		.main_visual2 .main2_text2{
+			width: 100%;
+			min-width: 414px;
+			height: 40px;
+			line-height: 20px;
+			letter-spacing: 0.5;
+			position: absolute;
+			bottom : -10px;
+			background :#D2DAE3;
+			font-size : 10px;
+			font-family: 'SCDream4';
+			color :#63A569;
+			text-align: center;
+		}
+		.main_visual2 .main2_text2 span {
+			color : red;
+		}
+		.main2_text2 div{
+			width: 320px;
+			margin : auto;
+		}
+		.main2_btndiv{
+			width : 100%;
+			height: 50px;
+			margin : auto;
+			position: relative;
+			bottom : 20px;
+		}
+		.main2_btn {
+			width :60px;
+			height: 20px;
+			background :#074D0C;
+			color : white;
+			border-radius: 30px;
+			font-family: 'nanumsquare';
+			font-size : 10px;
+			line-height: 10px;
+			box-shadow: 0 27px 26px -50px rgba(0,0,0,.2);
+			outline: none;
+			cursor: pointer;
+		}
+		.main2_btn:hover{
+			transform: scale(1.1);
+		}
 		@keyframes zoom{0%{-webkit-transform:scale(1);transform:scale(1)}
 		25%{-webkit-transform:scale(1.1);transform:scale(1.1)}
 		50%{-webkit-transform:scale(1);transform:scale(1)}
 		75%{-webkit-transform:scale(1.1);transform:scale(1.1)}to{-webkit-transform:scale(1);transform:scale(1)}}
 		.trans {
 			animation: zoom 1.7s infinite;
-		}
-		
+		}		
 		.section2{
-			width : 414px;
+			width: 100%;
 			min-width: 414px;
 			height: 300px;
 			background-color : #D2DAE3;
+			margin-top:210px;
 		}
 		.section2 .inner{
-			width : 414px;
+			width: 100%;
 			min-width: 414px;
 			height: 453px;
 			position: relative;
 		}
 		.section2 .inner .bg_wrap {
-			width : 414px;
+			width: 100%;
 			min-width: 414px;
 			height: 250px;
 			position: absolute;
@@ -326,7 +436,7 @@
 		}
 		.text_wrap{
 			width : 150px;
-			height: 230px;
+			height: 215px;
 			background-color: rgba(255, 255, 255, 0.7);
 			position: absolute;
 			left:-3px;
@@ -364,13 +474,13 @@
 		.text_wrap .text2{
 			position: relative;
 			top:  130px;
-			left: 65px;
+			left: 50%;
 			color :rgb(0, 0, 0);
 			font-weight: lighter;
 			font-size : 15px;
 			line-height: 23px;
-			width: 285px;
-			height: 100px;
+			width: 280px;
+			height: 120px;
 			font-family: 'NanumSquare';
 		}
 		.text_wrap .text2 .color_red{
@@ -381,16 +491,26 @@
 		}
 		.mint{
 			background-color:#C7FFD6;
-			width: 414px;
+			width: 100vw;
+			min-width: 414px;
 			height: 50px;
 			position: relative;
 			bottom :0px;
-			top: 154px;
+			top: 120px;
 			left:3px;
 			z-index: -1;
 		}
 		
-		
+		.btndiv1 {
+			width : 100vw;
+			min-width: 414px;
+			height: 50px;
+			display: flex;
+			justify-content: center;
+			position: relative;
+			top: 160px;
+			right: 5px;
+		}
 		.btn_02{
 			min-width: 166px;
 			height: 37px;
@@ -407,8 +527,8 @@
 			font-family: 'NanumSquare';
 			font-weight: bold;
 			position: relative;
-			top: 180px;
-			left : 115px;
+			top: 0px;
+			left : 0px;
 			z-index: 99;
 		}
 		.arrowbutton {
@@ -423,9 +543,9 @@
 		}
 		
 		.swiper-container2 {
-			width : 414px;
+			width: 100%;
 			min-width: 414px;
-			height: 235px;
+			height: 250px;
 			margin-left: auto;
 			margin-right: auto;
 			position: relative;
@@ -435,18 +555,18 @@
 			z-index: 1;
 		}
 		.swiper-container2 .pic1{
-			width : 414px;
-			height: 275px;
+			width: 414px;
+			height: 250px;
 			background: url("../img/mobile/아기1.png")center/cover;
 		}
 		.swiper-container2 .pic2{
-			width : 414px;
-			height: 275px;
+			width: 414px;
+			height: 250px;
 			background : url("../img/mobile/아기2.png")center/cover;
 		
 		}.swiper-container2 .pic3{
-			width : 414px;
-			height: 275px;
+			width: 414px;
+			height: 250px;
 			background : url("../img/mobile/아기3.png")center/cover;
 			
 		}
@@ -540,13 +660,15 @@
 			bottom : 0px;
 		}
 		.section4{
-			width: 375px;
+			width: 100%;
+			min-width: 414px;
 			height: 638px;
 			background:url('../img/mobile/핸드폰사진.png');
 			background-repeat: no-repeat;
+			background-size : 100% 650px;
 			margin-top:60px;
-			margin-left :25px;
 			margin-bottom: 30px;
+			
 		}
 		.section4 .bg_wrap{
 			display: none;
@@ -614,7 +736,7 @@
 		
 		
 		.section5{
-			width : 414px;
+			width: 100%;
 			min-width: 414px;
 			height : 180px;
 			background: url("../img/web/section_5.png")center/cover;
@@ -622,14 +744,14 @@
 		}
 		
 		.dbox{
-			width : 414px;
+			width: 100%;
 			min-width: 414px;
 			height : 180px;
 			position: relative;
 			
 		}
 		.st1{
-			width : 414px;
+			width: 100%;
 			min-width: 414px;
 			height : 180px;
 			margin : auto;
@@ -649,7 +771,6 @@
 		}
 		.st1 .text2 {
 			font-size : 14px;
-			width: 300px;
 			height: 14px;
 		}
 		.st1 .text3 {
@@ -683,32 +804,34 @@
 		}
 		/* footer start */
 		
-		
 		.footer_menu{
-			width: 414px;
+			width: 100%;
 			min-width: 414px;
-			min-height: 50px;
+			min-height: 30px;
 			background: #fff;
 			font-family: '나눔고딕B';
-			font-size :12px;
-			margin-top :10px;
+			font-size :10px;
+			padding : 0px 0;
 		}
 		.footer_menu .inner {
-			width: 414px;
-			min-width : 414x;
+			width: 100%;
+			min-width : 414px;
 			margin : auto;
 		}
 		.footer_menu ul{
-			width : 414px;
-			min-width: 414px;
-			margin :auto;
+			width: 360px;
+			min-width: 350px;
+			height: 40px;
 			display: flex;
-			justify-content: space-between;
 			align-items: center;
+			margin : auto;
 		}
 		.footer_menu ul li {
-			height: 40px;
-			line-height: 40px;
+			height: 50px;
+			line-height: 50px;
+			text-align: left;
+			
+			
 		}
 		.footer_menu ul li a{
 			font-size: 10px;
@@ -717,13 +840,14 @@
 			color : black;
 		}
 		.footer_menu .cf span{
-			font-size : 10px;
-			color: #999999;		
+			font-size : 12px;
+			color: #999999;
+			margin : 0 10px;
+			
 		}
-		
 		footer {
 			position: relative;
-			width: 414px;
+			width: 100%;
 			min-width : 414px;
 			height: 200px;
 			background: #C7FFD6;
@@ -731,13 +855,13 @@
 		}
 		
 		footer .webinfo {
-			width: 414px;
+			width: 100%;
 			height: 200px;
 			display: flex;
 		}
 		.infodiv{
-			width: 414px;
-			height : 200px;
+			width: 100%;
+			height : 180px;
 			margin-left :auto;
 			margin-right: auto;
 			position: relative;
@@ -822,7 +946,7 @@
 			width : 300px;
 			font-size : 8px;	
 			position: absolute;
-			bottom: 40px;
+			bottom: -4px;
 		
 			
 		}

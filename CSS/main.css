@@ -58,7 +58,8 @@ header {
 }
 
 .ahide, .alogo{
-	visibility: hidden;	
+	visibility: hidden;
+	padding-top : 20px;
 }
 
 .logo{
@@ -66,12 +67,14 @@ header {
 }	
 .down{
 	background: hsla(0,0%,100%,.6);
+	transition: 0.8s;
 	
 
 }
 .down:hover{
 	background-color: white;
 	background-size: cover;
+	transition: 0.8s;
 
 }
 	
@@ -300,9 +303,10 @@ header {
 }
 .main_visual2 .main2_bg{
 	width : 1400px;
-	height : 800px;
+	height : 900px;
 	position: absolute;
-	top : 50px;
+	top : -30px;
+	background : url('../img/web/main_design.png');
 }
 .main2_text1{
 	position: relative;
@@ -353,7 +357,7 @@ header {
 	height: 40px;
 	line-height: 40px;
 	position: absolute;
-	bottom : -90px;
+	bottom : -110px;
 	background :#D2DAE3;
 	font-size : 16px;
 	font-family: 'SCDream4';
@@ -367,7 +371,7 @@ header {
 	height: 50px;
 	margin : auto;
 	position: relative;
-	bottom : -170px;
+	bottom : -190px;
 }
 .main2_btn {
 	width :81px;
@@ -441,7 +445,7 @@ header {
 .section2{
 	width : 100%;
 	background-color : #D2DAE3;
-	margin-top : 200px;
+	margin-top : 300px;
 	min-width: 1082px;
 }
 .section2 .inner{

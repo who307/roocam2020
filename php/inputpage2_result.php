@@ -3,8 +3,14 @@
 
 	 $userBuilding = $_POST["userBuilding"];
 	 $size_horizon = $_POST["size_horizon"];
+	 $size_horizon2 = $_POST["size_horizon2"];
+	 $size_horizon3 = $_POST["size_horizon3"];
 	 $size_vertical = $_POST["size_vertical"];
+	 $size_vertical2 = $_POST["size_vertical2"];
+	 $size_vertical3 = $_POST["size_vertical3"];
 	 $size_position = $_POST["size_position"];
+	 $size_position2 = $_POST["size_position2"];
+	 $size_position3 = $_POST["size_position3"];
 	 $userHope = $_POST["userHope"];
    $userAddr1 = $_POST["userAddr1"];
    $userAddr2 = $_POST["userAddr2"];
@@ -12,7 +18,7 @@
    $userNumber = $_POST["userNumber"];
 	 $mDate = date("Y-m-j"); //작성날짜
     
-   $sql =" INSERT INTO UserData VALUES('".$userBuilding."','".$size_horizon."','".$size_vertical."','".$size_position."','".$userHope."','".$userAddr1."','".$userAddr2."','".$userAddr3."','".$userNumber."','".$mDate."')";
+   $sql =" INSERT INTO UserData VALUES('".$userBuilding."','".$size_horizon."','".$size_horizon2."','".$size_horizon3."','".$size_vertical."','".$size_vertical2."','".$size_vertical3."','".$size_position."','".$size_position2."','".$size_position3."','".$userHope."','".$userAddr1."','".$userAddr2."','".$userAddr3."','".$userNumber."','".$mDate."')";
    
    $ret = mysqli_query($con, $sql);
  
@@ -50,7 +56,6 @@
 	// 					 "reserve_time" => "$reserve_time",
 	// 					 "custom_key" => "$custom_key",
 	// 					 "msg_content" => "$msg_content",
-	// 					 "sms_content" => "$sms_content",
 	// 					 ]
 	// 		 );
 	 
