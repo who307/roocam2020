@@ -1,3 +1,7 @@
+@media only screen 
+    and (min-width : 499px) 
+{
+
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 @font-face { font-family: 'SCDream8';  src: url('../Font/S-Core_Dream_OTF/SCDream8.otf');}
 @font-face { font-family: 'SCDream4';  src: url('../Font/S-Core_Dream_OTF/SCDream4.otf');}
@@ -29,7 +33,9 @@ p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h
 *{
 	-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
 }
-
+.mobile{
+	display: none;
+}
 a{text-decoration:none}
 
 header {
@@ -40,7 +46,7 @@ header {
 	left: 0;
 	height: 120px;
 	background: 0 0;
-	z-index: 3;
+	z-index: 999;
 	text-align: center;
 }
 
@@ -157,9 +163,7 @@ header {
 input {
  outline: none;
 }
-.inputmain1{
-	width: 100%;
-}
+
 .cont_size{
 	width: 740px;
 	margin : auto;
@@ -531,3 +535,4 @@ table td{
 /* Footer End */
 
 
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko" class="html">
+<html lang="ko" class="html" style ="overflow-x :hidden;">
 
 <head>
     <meta charset="UTF-8">
@@ -15,6 +15,7 @@
     <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 
     <link rel="stylesheet" href="../CSS/alliance.css" />
+    <link rel="stylesheet" href="../CSS/350px_alliance.css" />
     <script type="text/javascript" src="../JS/scroll.js"></script>
 
     <!--favicon 적용-->
@@ -28,12 +29,7 @@
 
 <body style="overflow-x : hidden;">
     <div class="lay">
-        <header>
-            <div class="header_sidebar">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+        <header style ="z-index: 999;">
             <a class="ahide" href="../index.html"><img class="alogo"src="../img/web/logo.png" ;></a>
 
             <div class="service">
@@ -44,13 +40,16 @@
         </header>
         <section class="section1">
             <div class="main_visual">
-                <img src="../img/web/메인로고.png">
+                <div class ="logo_div">
+                <img class ="main_logo"src="../img/web/메인로고.png">
+            </div>
                 <p class="main_p">
                     창호를 고르는 현명한 방법!
                 </p>
                 <br>
                 <p class="sub_p">견적부터 시공, 사후 서비스까지 한번에 해결하세요!</p>
                 <img class = "imgtext"src="../img/web/text1.png">
+                <div class ="about_img"></div>
             </div>
             
         </section>
@@ -68,74 +67,71 @@
         </div>
 
         <section class="alliance_section">
+            <div class ="title"></div>
             <div class="alliance_table">
                 <form>
                     <table>
-                        <img style="margin-bottom: 50px; margin-left : 50px;" src="../img/web/제휴광고.png">
+                        <img class ="imgtext2"style="margin-bottom: 50px; margin-left : 50px;" src="../img/web/제휴광고.png">
                         <tr>
                             <td class="label">파트너 유형</td>
-                            <td style ="margin-left: 40px;"colspan ="2" class="partner">
-                                <input id ="rb1"style ="margin : 0 30px; " type="radio" name="partner" value="시공업체" required><label for="rb1"></label>시공 업체
-                                <input id ="rb2"style ="margin : 0 30px; " type="radio" name="partner" value="제휴서비스"><label style ="margin-left :73px;" for ="rb2"></label>제휴 서비스
+                            <td colspan ="2" class="partner">
+                                <input  style ="margin-left :17px;"id ="rb1"type="radio" name="partner" value="시공업체" required><label for="rb1"></label>시공 업체
+                                <input style ="margin-left :29px;" id ="rb2"type="radio" name="partner" value="제휴서비스"><label for ="rb2"></label>제휴 서비스
                             </td>
                         </tr>
                         <tr>
                             <td ></td>
-                            <td  style ="margin-left: 40px;" colspan ="2" class="partner"required >
-                                <input id ="rb3" style ="margin : 0 30px; "type="radio" name="partner" value="광고서비스" ><label for="rb3"></label>광고 서비스
-                                <input id ="rb4" style ="margin : 0 30px;"type="radio" name="partner" value="전문가" ><label style ="margin-left : 50px;" for="rb4"></label>전문가
+                            <td colspan ="2" class="partner" required >
+                                <input id ="rb3" type="radio" name="partner" value="광고서비스" ><label for="rb3"></label>광고 서비스
+                                <input id ="rb4" type="radio" name="partner" value="전문가" ><label   for="rb4"></label>전문가
                             </td>
                         </tr>
                         <tr>
                             <td class="label">업체명</td>
-                            <td class="info"><input type="text" name="" required placeholder="업체명을 입력해주세요."></td>
+                            <td class="info"><input class ="info_text"type="text" name="" required placeholder="업체명을 입력해주세요."></td>
                         </tr>
                         <tr>
                             <td class="label">이름</td>
-                            <td class="info"><input type="text" name="" required  placeholder="문의하시는 분 이름을 입력해주세요.">
+                            <td class="info"><input class ="info_text" type="text" name="" required  placeholder="문의하시는 분 이름을 입력해주세요.">
                             </td>
                         </tr>
                         <tr>
                             <td class="label">전화번호</td>
-                            <td class="info"><input type="number" name="" required placeholder="'-'를 제외한 숫자만 입력해주세요."></td>
+                            <td class="info"><input class ="info_text" type="number" name="" required placeholder="'-'를 제외한 숫자만 입력해주세요."></td>
                         </tr>
                         <tr>
                             <td class="label">이메일</td>
-                            <td class="info"><input type="email" name=""required placeholder="답변 받으실 이메일을 입력해주세요."></td>
+                            <td class="info"><input class ="info_text" type="email" name=""required placeholder="답변 받으실 이메일을 입력해주세요."></td>
                         </tr>
                     </table>
 
-                    <ul style ="width : 500px; height: 500px; margin-top : 40px; position: relative; left : 150px;">
-                        <li style ="font-size : 32px; margin-bottom : 10px;">
+                    <ul class ="checkbox_list">
+                        <li class ="allcheck">
                             <input  type="checkbox" id="cb1"  onclick="cAll();">
                             <label for="cb1"></label>
                             약관 (전체 동의)
                         </li>
-                        <li style ="position: relative; left : 20px; font-size : 25px; margin-bottom : 10px;">
+                        <li class ="check1">
                             <input type="checkbox" id="cb2" name="terms"required><label for="cb2">
                             </label>개인정보 제 3자 이용 (필수)
-                            <a style ="font-size : 15px; color : #707070;"href="../html/terms.html">_약관보기</a>
+                            <a href="../html/terms.html">_약관보기</a>
 
                         </li>
-                        <li style ="position: relative; left : 20px;font-size : 25px; margin-bottom : 10px;">
+                        <li class ="check2">
                             <input type="checkbox" id="cb3" name="terms"required>
                             <label for="cb3"></label>마켓팅 활용 (선택)
-                            <a style ="font-size : 15px; color : #707070; " href="../html/terms.html">_약관보기</a>
+                            <a href="../html/terms.html">_약관보기</a>
 
                         </li>
-                        <li style ="position: relative; left : 225px; bottom : -80px;">
-                            <input style ="width : 250px; height: 60px; font-size : 33px; background-color :#4B524B; outline : none; color : white; font-family: 'InfinitySansWMR-Regular'; text-align: left; cursor: pointer;" 
-                            type="submit" value="문의하기"><img style = "position: absolute; left : 135px; bottom : 10px; cursor: pointer;" src ="../img/web/handicon.png">
+                        <li class= "submit_list">
+                            <input class ="submit" type="submit" value="문의하기"><img  src ="../img/web/handicon.png">
                         </li>
                     </ul>
                     
                 
             
                 </div>
-            </div>
                 </form>
-
-            </div>
         </section>
 
         <div class="footer_menu">
@@ -196,12 +192,12 @@
                             <img src="../img/web/업무시간.png">
                             <tr>
                                 <td class="label">업무시간</td>
-                                <td class="info">0:00~ 0:00</td>
+                                <td class="info">09:00~ 18:30</td>
                             </tr>
                         </table>
                     </div>
 
-                    <div class="fl_3">주식회사 루프탑 캠핑은 통신판매 중개자 및 플랫폼 사업자로서, 고객님과 시공업체 사장님들이 연결되도록 돕습니다. <br>
+                    <div class="fl_3">주식회사 루캠은 통신판매 중개자 및 플랫폼 사업자로서, 고객님과 시공업체 사장님들이 연결되도록 돕습니다. <br>
                         따라서 시공업체에서 제공하는 일련의 견적 상담과 시공 서비스에 대해서는 책임을 지지 않음을 알려드립니다. <br>
                         ⓒ 2020 Rooftop Camping Corp., All rights reserved.
                     </div>
@@ -209,6 +205,8 @@
             </div>
         </footer>
     </div>
+</div>
+</div>
 
     <!-- Script -->
     <script type="text/javascript" src="../JS/swiper.js"></script>
