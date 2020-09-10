@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko" class="html">
+<html lang="ko" class="html" style="overflow-x : hidden;">
 
 <head>
   <meta charset="UTF-8">
@@ -15,6 +15,7 @@
   <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 
   <link rel="stylesheet" href="../CSS/recruits.css" />
+  <link rel="stylesheet" href="../CSS/350px_recruits.css" />
   <script type="text/javascript" src="../JS/scroll.js"></script>
 
   <!--favicon 적용-->
@@ -29,11 +30,6 @@
 <body style="overflow-x : hidden;">
   <div class="lay">
     <header>
-      <div class="header_sidebar">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
       <a class="ahide" href="../index.html"><img class="alogo" src="../img/web/logo.png" ;></a>
 
       <div class="service">
@@ -44,15 +40,22 @@
     </header>
     <section class="section1">
       <div class="main_visual">
-        <img src="../img/web/메인로고.png">
+        <div class="logo_div">
+          <a style="cursor: pointer;" href="../index.html">
+            <img class="main_logo" src="../img/web/메인로고.png">
+          </a>
+        </div>
         <p class="main_p">
           창호를 고르는 현명한 방법!
         </p>
         <br>
+        <img class="imgtext" src="../img/web/text1.png">
         <p class="sub_p">견적부터 시공, 사후 서비스까지 한번에 해결하세요!</p>
-        <img class = "imgtext"src="../img/web/text1.png">
+        <div class="about_img"></div>
+
       </div>
     </section>
+
     <div class="modal">
       <div class="modal_contents">
         <div>

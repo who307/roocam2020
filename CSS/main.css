@@ -45,17 +45,6 @@ header {
 	z-index: 999;
 	text-align: center;
 }
-.section1 {
-	width: 100%;
-	min-width: 1082px;
-	height: 900px;
-	display: flex;
-	-webkit-box-align: center;
-	align-items: center; 
-	background: url("../img/web/메인배경.png");
-	background-size : 100% 100%;
-	display: none;
-}
 
 .ahide, .alogo{
 	visibility: hidden;
@@ -74,7 +63,7 @@ header {
 .down:hover{
 	background-color: white;
 	background-size: cover;
-	transition: 0.8s;
+	transition: 0.5s;
 
 }
 	

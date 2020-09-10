@@ -35,7 +35,12 @@ p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h
 	-webkit-user-drag: none; 	-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
 }
 .web{
-	display: none;
+	visibility: hidden;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	padding: 0;
+	/* display와 같지만 자리차지를 안하게해줌 ==> 클래스중복가능 */
 }
 
 body{
@@ -154,7 +159,7 @@ header {
 
 
 /* inputinner Start */
-.mobile_inputmain {
+.inputmain {
 	width: 375px;
 	min-width: 100%;
 	height: 100px;

@@ -306,7 +306,8 @@
 			top: 30px;
 		}
 		.main_visual2 .main2_bg{
-			width : 414px;
+			width : 100%;
+			min-width : 414px;
 			height : 500px;
 			position: absolute;
 			top : -30px;
@@ -663,7 +664,7 @@
 			width: 100%;
 			min-width: 414px;
 			height: 638px;
-			background:url('../img/mobile/핸드폰사진.png');
+			background:url('../img/mobile/섹션3이미지.svg');
 			background-repeat: no-repeat;
 			background-size : 100% 650px;
 			margin-top:60px;

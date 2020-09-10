@@ -93,19 +93,23 @@
 									위치 => size_position
 								 -->
 								<input type="hidden" name="count" value="2">
-								1 .가로<input id="horizon" style="font-size: 17px; margin:0 5px 0 5px; width: 170px; height:30px;"
-									type="text" name="size_horizon" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
+								1 .가로<input id="horizon"
+									style="font-size: 17px; margin:0 5px 0 5px; width: 170px; height:30px;" type="text"
+									name="size_horizon" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
 									required>
-								세로<input id="vertical" style="font-size: 17px; margin:0 5px;  width: 170px; height:30px;" type="text"
-									name="size_vertical" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" required>
+								세로<input id="vertical"
+									style="font-size: 17px; margin:0 5px;  width: 170px; height:30px;" type="text"
+									name="size_vertical" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
+									required>
 								위치<input style="font-size: 17px; margin:0 5px;  width: 170px; height:30px;" type="text"
 									name="size_position" value="" required>
 								<div id="addedFormDiv"></div><BR>
 							</div>
 							<div class="plusminus_img">
-								<img style="margin-left: 33%; width: 16px; height: 12px;" src="../img/web/inputpage1/plus.svg"
-									onclick="addForm()">
-								<img style="width: 16px; height: 12px;" src="../img/web/inputpage1/minus.svg" onclick="delForm()">
+								<img style="margin-left: 33%; width: 16px; height: 12px;"
+									src="../img/web/inputpage1/plus.svg" onclick="addForm()">
+								<img style="width: 16px; height: 12px;" src="../img/web/inputpage1/minus.svg"
+									onclick="delForm()">
 							</div>
 						</div>
 
@@ -153,22 +157,24 @@
 						</select> <br> -->
 							<div style="min-width: 1500px;">
 								<input class="font_size" name="userAddr1" size=0
-									style="margin:30px 0 0 30px; width: 330px; height:36px;" type="text" Placeholder="시/도 를 작성해주세요"
-									required>
-								<input class="font_size" name="userAddr2" size=0 style="min-width: 330px; height:36px;" type="text"
-									Placeholder="시/군/구 를 작성해주세요" required>
+									style="margin:30px 0 0 30px; width: 330px; height:36px;" type="text"
+									Placeholder="시/도 를 작성해주세요." required>
+								<input class="font_size" name="userAddr2" size=0 style="min-width: 330px; height:36px;"
+									type="text" Placeholder="시/군/구 를 작성해주세요." required>
 							</div>
-							<input class="font_size" name="userAddr3" style="margin:30px 0 0 30px; width: 675px; height:36px;"
-								type="text" Placeholder="상세 주소를 입력해주세요." required>
+							<input class="font_size" name="userAddr3"
+								style="margin:30px 0 0 30px; width: 675px; height:36px;" type="text"
+								Placeholder="상세 주소를 작성해주세요." required>
 
 						</div>
 
 						<div class="inner_menu1">
 							<p class="p_tag1">5. 연락처</p>
 							<div class="size font_size1">
-								Mobile<input class="font_size" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
-									style="text-align:center;	margin:0 0 40px 20px; width: 177px; height:36px;" type="text"
-									name="userNumber" Placeholder="010 - xxxx - xxxx" required>
+								Mobile<input class="font_size" maxlength="11" oninput="maxLengthCheck(this)"
+									onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+									style="text-align:center;	margin:0 0 40px 20px; width: 250px; height:36px;"
+									type="text" name="userNumber" Placeholder="'-'를 제외한 연락처를 작성해주세요." required>
 							</div>
 						</div>
 						<div class="btn_div">
@@ -185,7 +191,7 @@
 	</div>
 
 	<div class="mobile">
-		<section class="mobile_inputmain"></section>
+		<section class="inputmain"></section>
 		<div>
 			<div class="inputImg"></div>
 
@@ -228,14 +234,17 @@
 									위치 => size_position
 								 -->
 									<input type="hidden" name="count" value="2">
-									1 .가로<input id="horizon" style="font-size: 11px; margin:0 5px 0 5px; width: 87px; height:17px;"
-										type="text" name="size_horizon" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
-										required>
-									세로<input id="vertical" style="font-size: 11px; margin:0 5px;  width: 87px; height:17px;" type="text"
-										name="size_vertical" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" required><br>
+									1 .가로<input id="horizon"
+										style="font-size: 11px; margin:0 5px 0 5px; width: 87px; height:17px;"
+										type="text" name="size_horizon"
+										onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" required>
+									세로<input id="vertical"
+										style="font-size: 11px; margin:0 5px;  width: 87px; height:17px;" type="text"
+										name="size_vertical" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+										value="" required><br>
 									&nbsp;&nbsp;&nbsp;&nbsp;위치<input
-										style="font-size: 11px; margin:10px 0 0 5px; width: 87px; height:17px;" type="text"
-										name="size_position" value="" required>
+										style="font-size: 11px; margin:10px 0 0 5px; width: 87px; height:17px;"
+										type="text" name="size_position" value="" required>
 									<div id="addedFormDiv1"></div><BR>
 								</div>
 								<div class="plusminus_img">
@@ -286,21 +295,25 @@
 							<option value="Seoul">서울특별시</option>
 							<option value="Seoul">서울특별시</option>
 						</select> <br> -->
-								<input class="font_size" name="userAddr1" style="margin:20px 0 0 30px; width: 260px; height:23px;"
-									type="text" Placeholder="시/도 를 작성해주세요" required>
-								<input class="font_size" name="userAddr2" style="margin:10px 0 0 30px; width: 260px; height:23px;"
-									type="text" Placeholder="시/군/구 를 작성해주세요" required>
-								<input class="font_size" name="userAddr3" style="margin:10px 0 0 30px; width: 260px; height:23px;"
-									type="text" Placeholder="상세 주소를 입력해주세요." required>
+								<input class="font_size" name="userAddr1"
+									style="margin:20px 0 0 30px; width: 260px; height:23px;" type="text"
+									Placeholder="시/도 를 작성해주세요." required>
+								<input class="font_size" name="userAddr2"
+									style="margin:10px 0 0 30px; width: 260px; height:23px;" type="text"
+									Placeholder="시/군/구 를 작성해주세요." required>
+								<input class="font_size" name="userAddr3"
+									style="margin:10px 0 0 30px; width: 260px; height:23px;" type="text"
+									Placeholder="상세 주소를 작성해주세요." required>
 
 							</div>
 
 							<div class="inner_menu1">
 								<p class="p_tag1">5. 연락처</p>
 								<div class="size font_size1">
-									Mobile<input class="font_size" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
-										style="text-align:center;	margin:0 0 40px 20px; width: 111px; height:22px;" type="text"
-										name="userNumber" Placeholder="010-0000-0000" required>
+									Mobile<input maxlength="11" oninput="maxLengthCheck(this)" class="font_size"
+										onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+										style="text-align:center;	margin:0 0 40px 20px; width: 150px; height:22px;"
+										type="text" name="userNumber" Placeholder="'-'를 제외한 연락처를 작성해주세요." required>
 								</div>
 							</div>
 						</div>
@@ -412,6 +425,7 @@
 	<script type="text/javascript" src="../JS/kakao.js"></script>
 	<script type="text/javascript" src="../JS/plus.js"></script>
 	<script type="text/javascript" src="../JS/scroll.js"></script>
+	<script type="text/javascript" src="../JS/input.js"></script>
 
 
 

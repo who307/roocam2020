@@ -67,12 +67,15 @@ header {
 }	
 .down{
 	background: hsla(0,0%,100%,.6);
-	
+	transition: 0.8s;
+
 
 }
 .down:hover{
 	background-color: white;
 	background-size: cover;
+	transition: 0.5s;
+
 }
 .service .adown {
 	color: #313131;
@@ -142,7 +145,7 @@ header {
 	cursor: pointer;
 	position: absolute;
 	right:50px;
-	top: 50px;
+	top: 50px; 
 }
 .closebtn:hover{
 	transform: scale(1.2); 
@@ -165,7 +168,6 @@ header {
     position: absolute;
     top: 200px;
     margin: auto;
-    z-index: 99;
 }
 .main_visual .main_p{
 	font-size: 50px;
@@ -261,8 +263,8 @@ input[id="rb1"] {
 	width :1px;
 	height: 1px;
 	position: relative;
-	top : 8px;
-	left: 47px;
+	top : 0px;
+	left: 20px;
 }
 input[id="rb2"] + label {
     display: inline-block;

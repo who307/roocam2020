@@ -69,12 +69,14 @@ header {
 }	
 .down{
 	background: hsla(0,0%,100%,.6);
-	
+	transition: 0.8s;
+
 
 }
 .down:hover{
 	background-color: white;
 	background-size: cover;
+	transition: 0.5s;
 
 }
 	
@@ -254,7 +256,7 @@ header {
 }
 .about_section .text .title{
     font-size : 35px;
-    font-family: 'SpoqaHanSansB';
+    font-family: 'SpoqaHanSansR';
     color : #78E581;
     margin-bottom: 50px;
     

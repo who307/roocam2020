@@ -67,12 +67,15 @@ header {
 }	
 .down{
 	background: hsla(0,0%,100%,.6);
+	transition: 0.8s;
+
 	
 
 }
 .down:hover{
 	background-color: white;
 	background-size: cover;
+	transition: 0.5s;
 }
 .service .adown {
 	color: #313131;

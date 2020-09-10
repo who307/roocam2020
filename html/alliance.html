@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko" class="html" style ="overflow-x :hidden;">
+<html lang="ko" class="html" style="overflow-x :hidden;">
 
 <head>
     <meta charset="UTF-8">
@@ -29,8 +29,8 @@
 
 <body style="overflow-x : hidden;">
     <div class="lay">
-        <header style ="z-index: 999;">
-            <a class="ahide" href="../index.html"><img class="alogo"src="../img/web/logo.png" ;></a>
+        <header style="z-index: 999;">
+            <a class="ahide" href="../index.html"><img class="alogo" src="../img/web/logo.png" ;></a>
 
             <div class="service">
                 <!-- <a class="service1" href="kakao/myservice.html">내 서비스</a> -->
@@ -40,21 +40,23 @@
         </header>
         <section class="section1">
             <div class="main_visual">
-                <div class ="logo_div">
-                <img class ="main_logo"src="../img/web/메인로고.png">
-            </div>
+                <div class="logo_div">
+                    <a style="cursor: pointer;" href="../index.html">
+                        <img class="main_logo" src="../img/web/메인로고.png">
+                    </a>
+                </div>
                 <p class="main_p">
                     창호를 고르는 현명한 방법!
                 </p>
                 <br>
                 <p class="sub_p">견적부터 시공, 사후 서비스까지 한번에 해결하세요!</p>
-                <img class = "imgtext"src="../img/web/text1.png">
-                <div class ="about_img"></div>
+                <img class="imgtext" src="../img/web/text1.png">
+                <div class="about_img"></div>
             </div>
-            
+
         </section>
-        
-        
+
+
         <div class="modal">
             <div class="modal_contents">
                 <div>
@@ -67,71 +69,80 @@
         </div>
 
         <section class="alliance_section">
-            <div class ="title"></div>
+            <div class="title"></div>
             <div class="alliance_table">
-                <form>
+                <form form METHOD="post" ACTION="../php/requests_result.php">
                     <table>
-                        <img class ="imgtext2"style="margin-bottom: 50px; margin-left : 50px;" src="../img/web/제휴광고.png">
+                        <img class="imgtext2" style="margin-bottom: 50px; margin-left : 50px;"
+                            src="../img/web/제휴광고.png">
                         <tr>
                             <td class="label">파트너 유형</td>
-                            <td colspan ="2" class="partner">
-                                <input  style ="margin-left :17px;"id ="rb1"type="radio" name="partner" value="시공업체" required><label for="rb1"></label>시공 업체
-                                <input style ="margin-left :29px;" id ="rb2"type="radio" name="partner" value="제휴서비스"><label for ="rb2"></label>제휴 서비스
+                            <td colspan="2" class="partner">
+                                <input style="margin-left :17px;" id="rb1" type="radio" name="partner" value="시공업체"
+                                    required><label for="rb1"></label>시공 업체
+                                <input style="margin-left :29px;" id="rb2" type="radio" name="partner"
+                                    value="제휴서비스"><label for="rb2"></label>제휴 서비스
                             </td>
                         </tr>
                         <tr>
-                            <td ></td>
-                            <td colspan ="2" class="partner" required >
-                                <input id ="rb3" type="radio" name="partner" value="광고서비스" ><label for="rb3"></label>광고 서비스
-                                <input id ="rb4" type="radio" name="partner" value="전문가" ><label   for="rb4"></label>전문가
+                            <td></td>
+                            <td colspan="2" class="partner" required>
+                                <input id="rb3" type="radio" name="partner" value="광고서비스"><label for="rb3"></label>광고
+                                서비스
+                                <input id="rb4" type="radio" name="partner" value="전문가"><label for="rb4"></label>전문가
                             </td>
                         </tr>
                         <tr>
                             <td class="label">업체명</td>
-                            <td class="info"><input class ="info_text"type="text" name="" required placeholder="업체명을 입력해주세요."></td>
+                            <td class="info"><input style="ime-mode:active;" class="info_text" type="text"
+                                    name="company_name" required placeholder="업체명을 입력해주세요."></td>
                         </tr>
                         <tr>
                             <td class="label">이름</td>
-                            <td class="info"><input class ="info_text" type="text" name="" required  placeholder="문의하시는 분 이름을 입력해주세요.">
+                            <td class="info"><input style="ime-mode:active;" class="info_text" type="text"
+                                    name="user_name" required placeholder="문의하시는 분 이름을 입력해주세요.">
                             </td>
                         </tr>
                         <tr>
                             <td class="label">전화번호</td>
-                            <td class="info"><input class ="info_text" type="number" name="" required placeholder="'-'를 제외한 숫자만 입력해주세요."></td>
+                            <td class="info"><input maxlength="11" oninput="maxLengthCheck(this)"
+                                    onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" class="info_text" type="text"
+                                    name="phone_number" required placeholder="'-'를 제외한 숫자만 입력해주세요."></td>
                         </tr>
                         <tr>
                             <td class="label">이메일</td>
-                            <td class="info"><input class ="info_text" type="email" name=""required placeholder="답변 받으실 이메일을 입력해주세요."></td>
+                            <td class="info"><input style="ime-mode:disable;" class="info_text" type="email"
+                                    name="email" required placeholder="답변 받으실 이메일을 입력해주세요."></td>
                         </tr>
                     </table>
 
-                    <ul class ="checkbox_list">
-                        <li class ="allcheck">
-                            <input  type="checkbox" id="cb1"  onclick="cAll();">
+                    <ul class="checkbox_list">
+                        <li class="allcheck">
+                            <input type="checkbox" id="cb1" onclick="cAll();">
                             <label for="cb1"></label>
                             약관 (전체 동의)
                         </li>
-                        <li class ="check1">
-                            <input type="checkbox" id="cb2" name="terms"required><label for="cb2">
+                        <li class="check1">
+                            <input type="checkbox" id="cb2" name="terms" required><label for="cb2">
                             </label>개인정보 제 3자 이용 (필수)
                             <a href="../html/terms.html">_약관보기</a>
 
                         </li>
-                        <li class ="check2">
-                            <input type="checkbox" id="cb3" name="terms"required>
+                        <li class="check2">
+                            <input type="checkbox" id="cb3" name="terms" required>
                             <label for="cb3"></label>마켓팅 활용 (선택)
                             <a href="../html/terms.html">_약관보기</a>
 
                         </li>
-                        <li class= "submit_list">
-                            <input class ="submit" type="submit" value="문의하기"><img  src ="../img/web/handicon.png">
+                        <li class="submit_list">
+                            <input class="submit" type="submit" value="문의하기"><img src="../img/web/handicon.png">
                         </li>
                     </ul>
-                    
-                
-            
-                </div>
-                </form>
+
+
+
+            </div>
+            </form>
         </section>
 
         <div class="footer_menu">
@@ -146,7 +157,7 @@
                     <span>ㅣ</span>
                     <li><a href="../html/recruits.html">인테리어 구인</a></li>
                     <span>ㅣ</span>
-                  </ul>
+                </ul>
             </div>
         </div>
         <footer>
@@ -205,8 +216,8 @@
             </div>
         </footer>
     </div>
-</div>
-</div>
+    </div>
+    </div>
 
     <!-- Script -->
     <script type="text/javascript" src="../JS/swiper.js"></script>
@@ -215,7 +226,8 @@
     <script type="text/javascript" src="../JS/modal.js"></script>
     <script type="text/javascript" src="../JS/kakao.js"></script>
     <script type="text/javascript" src="../JS/check.js"></script>
-    
+    <script type="text/javascript" src="../JS/input.js"></script>
+
 </body>
 
 </html>

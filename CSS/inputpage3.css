@@ -1,3 +1,6 @@
+@media only screen 
+    and (min-width : 499px) 
+{
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 @font-face { font-family: 'SCDream8';  src: url('../Font/S-Core_Dream_OTF/SCDream8.otf');}
 @font-face { font-family: 'SCDream4';  src: url('../Font/S-Core_Dream_OTF/SCDream4.otf');}
@@ -29,6 +32,14 @@ p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h
 *{
 	-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
 }
+.mobile{
+	visibility: hidden;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	padding: 0;
+	/* display와 같지만 자리차지를 안하게해줌 ==> 클래스중복가능 */
+}
 
 a{text-decoration:none}
 
@@ -56,12 +67,15 @@ header {
 }	
 .down{
 	background: hsla(0,0%,100%,.6);
-	
+	transition: 0.8s;
+
 
 }
 .down:hover{
 	background-color: white;
 	background-size: cover;
+	transition: 0.5s;
+
 
 }
 	
@@ -179,13 +193,14 @@ header {
 
 /* inputinner Start */
 .input3_2{
-	width : 1500px;
+	width : 100%;
+	min-width: 1080px;
 	margin : auto;
 	display :flex;
 	flex-direction: column;
 	margin-bottom : 50px;
 	border-bottom : 1px solid lightgrey;
-	padding :100px 100px;
+	padding :100px 0;
 }
 
 .input_img2{
@@ -212,21 +227,23 @@ header {
 	margin-bottom: 20px;
 }
 .input3_3 {
-	width : 1500px;
-	margin : auto;
+	width : 100%;
+	min-width: 1080px;
+	display: flex;
+	justify-content: center;
 }
-.input_img3{
-	float :left;
+.input3_3 .input_img3{
 	position: relative;
-	left : 330px;
+	top: 20px;
 }
 .p_tag3{
+	position: relative;
 	font-size: 80px;
 	text-align: center;
 	margin-top: 100px;
 	color :#606060;
 	font-family: 'InfinitySansWMR-Regular';
-	margin-bottom: 200px;
+	margin-bottom: 180px;
 }
 .mint{
 	width: 100%;
@@ -445,5 +462,4 @@ table td{
 	
 }
 /* Footer End */
-
-
+}
