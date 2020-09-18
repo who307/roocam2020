@@ -306,6 +306,10 @@ header {
 	padding-top : 50px;
 	text-align: center;
 }
+.btns a{
+	color : white;
+
+}
 .btns button {
 	width : 302px;
 	height : 76px;
@@ -391,13 +395,14 @@ footer .webinfo {
 }
 
 .fl_1 {
-	width: 670px;
+	width: 740px;
 	height: 200px;
 	font-size : 15px;
 	float: left;
 	
 }
 .fl_1 table {
+	width : 740px;
 	margin: 0;
     padding: 0;
     border-spacing: 0;
@@ -408,7 +413,6 @@ footer .webinfo {
 }
 table td{
 	padding-bottom: 10px;
-	font-family: 'InfinitySansWM-Bold';
 	
 }
 
@@ -469,6 +473,4 @@ table td{
 	
 }
 /* Footer End */
-
-
 }

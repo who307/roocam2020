@@ -606,20 +606,20 @@
 	footer {
 		position: relative;
 		width: 100%;
-		min-width : 350px;
-		height: 200px;
+		min-width : 375px;
+		height: 160px;
 		background: #C7FFD6;
 		font-family: 'InfinitySansWMR-Regular';
 	}
 	
 	footer .webinfo {
 		width: 100%;
-		height: 200px;
+		height: 160px;
 		display: flex;
 	}
 	.infodiv{
 		width: 100%;
-		height : 180px;
+		height : 150px;
 		margin-left :auto;
 		margin-right: auto;
 		position: relative;
@@ -629,7 +629,7 @@
 	}
 	
 	.fl_1 {
-		width: 190px;
+		width: 215px;
 		height: 50px;
 		font-size : 7px;
 		float: left;
@@ -666,7 +666,7 @@
 		margin-left : 0px;
 	}
 	.fl_2 img {
-		width : 20px;
+		width : 30px;
 		height: 30px;
 	}
 
@@ -701,15 +701,17 @@
 		font-size : 10px;
 	}
 	.fl_3 {
-		width : 300px;
+		width : 340px;
 		font-size : 8px;	
 		position: absolute;
-		bottom: -4px;
+		bottom: 30px;
 	
 		
 	}
 	/* Footer End */
-}		
+	
+	
+}			
 @media only screen 
     and (min-width : 414px) 
     and (max-width : 499px) 

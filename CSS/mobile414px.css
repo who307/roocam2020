@@ -105,14 +105,14 @@
 		}
 		.modal{
 			position: fixed; 
-				left: 0; 
-				top: 0; 
+			left: 0; 
+			top: 0; 
 			 width: 100%; 
 			height: 100%; 
-				background-color: rgba(0, 0, 0, 0.5); 
-				opacity: 0; 
-				visibility: hidden; 
-				transform: scale(1.1); 
+			background-color: rgba(0, 0, 0, 0.5); 
+			opacity: 0; 
+			visibility: hidden; 
+			transform: scale(1.1); 
 			transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 			z-index: 99;
 		}
@@ -121,11 +121,45 @@
 			top: 50%; 
 			left: 50%; 
 			transform: translate(-50%, -50%); 
-			background-color: white; 
-			padding: 50px; 
-			width: 400px; 
-			height: 600px;
-			border-radius: 50px;
+			background :#483D3D;
+			width: 250px; 
+			height: 300px;
+			border : 8px solid white;
+			border-radius: 25px;
+			box-shadow: 5px 7px 11px 1px rgba(0,0,0,.3);
+		}
+		.closebtn {
+			cursor: pointer;
+			position: absolute;
+			right:0px;
+		
+		}
+		.closebtn:hover{
+			transform: scale(1.3); 
+		
+		}
+		.modal_login{
+			width: 200px;
+			height: 63px;
+			margin : auto;
+			display: flex;
+			justify-content: center;
+			position: relative;
+			top: -8px;
+			
+		
+		}
+		.login{
+			font-size : 13px;
+			color :#95F15D;
+			font-family: 'NIXGONFONTSb';
+			position: absolute;
+			top: 15px;
+		}
+		.modal_login img{
+			width: 109px;
+			height: 63px;
+		
 		}
 		.show_modal{
 			visibility: visible;
@@ -133,20 +167,7 @@
 			transform: scale(1.0); 
 			transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 		}
-		.closebtn {
-			width : 60px;
-			height: 30px;
-			border-radius: 15px;
-			outline :0;
-			cursor: pointer;
-			position: absolute;
-			right:50px;
-			top: 50px;
-		}
-		.closebtn:hover{
-			transform: scale(1.2); 
-			background : rgb(197, 247, 197)
-		}
+
 		.scrollhidden{
 			overflow-y: hidden;
 		}
@@ -775,8 +796,8 @@
 			height: 14px;
 		}
 		.st1 .text3 {
-			font-size : 10px;
-			width : 300px;
+			font-size : 7px;
+			width : 350px;
 			margin : auto;
 		}
 		.btns{
@@ -787,13 +808,13 @@
 		.btns button {
 			width : 80px;
 			height : 20px;
-			line-height: 20px;
+			line-height: 15px;
 			border : 1px solid white;
 			border-radius: 50px;
 			background-color : rgba(77, 75, 75, 0.8);
 			outline: none;
 			cursor: pointer;
-			font-size : 7px;
+			font-size : 10px;
 			font-family: 'InfinitySansWMR-Regular';
 			color : white;
 			margin:0 0px;	
@@ -849,20 +870,20 @@
 		footer {
 			position: relative;
 			width: 100%;
-			min-width : 414px;
-			height: 200px;
+			min-width : 375px;
+			height: 160px;
 			background: #C7FFD6;
 			font-family: 'InfinitySansWMR-Regular';
 		}
 		
 		footer .webinfo {
 			width: 100%;
-			height: 200px;
+			height: 160px;
 			display: flex;
 		}
 		.infodiv{
 			width: 100%;
-			height : 180px;
+			height : 150px;
 			margin-left :auto;
 			margin-right: auto;
 			position: relative;
@@ -891,7 +912,7 @@
 			padding-bottom: 3px;
 			
 		}
-		
+		 
 		.fl_1 table .label {
 			width : 70px;
 			color :#707070;
@@ -909,7 +930,7 @@
 			margin-left : 0px;
 		}
 		.fl_2 img {
-			width : 20px;
+			width : 30px;
 			height: 30px;
 		}
 
@@ -944,10 +965,10 @@
 			font-size : 10px;
 		}
 		.fl_3 {
-			width : 300px;
+			width : 340px;
 			font-size : 8px;	
 			position: absolute;
-			bottom: -4px;
+			bottom: 30px;
 		
 			
 		}

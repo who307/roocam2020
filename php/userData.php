@@ -1,4 +1,4 @@
-@<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="EUC-KR">
@@ -37,12 +37,21 @@ echo"<table border=1>";
 echo "<tr>";
 echo"<th>연락처</th>
 		<th>건물유형</th>
- <th>가로사이즈(cm)</th> <th>세로사이즈(cm)</th> <th>위치</th> 
+<th>가로사이즈[1](cm)</th> 
+<th>가로사이즈[2](cm)</th> 
+<th>가로사이즈[3](cm)</th> 
+<th>세로사이즈[1](cm)</th>
+<th>세로사이즈[2](cm)</th>
+<th>세로사이즈[3](cm)</th>
+<th>위치[1]</th> 
+<th>위치[2]</th> 
+<th>위치[3]</th> 
 <th>공사 희망일</th>
-<th>주소( 시/도 )</th>
-<th>주소( 시/군/구 )</th>
-<th>주소( 상세주소 )</th>
+<th>우편번호</th>
+<th>주소</th>
+<th>상세주소</th>
 <th>견적서 작성날짜</th>
+<th>수정</th>
 <th>삭제</th>";
 
 echo "</tr>";
@@ -52,21 +61,27 @@ while($row = mysqli_fetch_array($ret)) {
 		echo "<td>", $row['userNumber'], "</TD>";
 		echo "<td>", $row['userBuilding'], "</TD>";
 		echo "<td>", $row['size_horizon'], "</TD>"; //가로사이즈
+		echo "<td>", $row['size_horizon2'], "</TD>"; //가로사이즈
+		echo "<td>", $row['size_horizon3'], "</TD>"; //가로사이즈
 		echo "<td>", $row['size_vertical'], "</TD>"; //세로사이즈
+		echo "<td>", $row['size_vertical2'], "</TD>"; //세로사이즈
+		echo "<td>", $row['size_vertical3'], "</TD>"; //세로사이즈
 		echo "<td>", $row['size_position'], "</TD>"; //위치
+		echo "<td>", $row['size_position2'], "</TD>"; //위치
+		echo "<td>", $row['size_position3'], "</TD>"; //위치
 		echo "<td>", $row['userHope'], "</TD>"; //공사 희망일
 		echo "<td>", $row['userAddr1'], "</TD>"; // 시/도
 		echo "<td>", $row['userAddr2'], "</TD>"; // 시/군/구
 		echo "<td>", $row['userAddr3'], "</TD>"; // 상세주소
 		echo "<td>", $row['mDate'], "</TD>"; // 견적서 작성날짜
-		// echo "<td>", "<a href= '../php/update.php?userNumber=", $row['userNumber'], "'>수정 </a></td>";
+		echo "<td>", "<a href= '../php/update.php?userNumber=", $row['userNumber'], "'>수정 </a></td>";
     echo "<td>", "<a href= '../php/delete.php?userNumber=", $row['userNumber'], "'>삭제 </a></td>";
     echo"</tr>";
 }
 mysqli_close($con);
 echo "</table>";
 
-echo "<br> <a href='../index.html'> <--돌아가기</a> ";
+// echo "<br> <a href='../index.html'> <--돌아가기</a> ";
 
 ?>
 

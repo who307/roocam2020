@@ -30,9 +30,13 @@ p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h
 	list-style : none;
 	word-break: break-all;
 }
-*{
+select {
+	font-family: 'InfinitySansWMR-Regular';
+}
+p,label, table, div, ul, li,a span{
 	-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
 }
+
 .mobile{
 	display: none;
 }
@@ -162,6 +166,7 @@ header {
 }
 .scrollhidden{
 	overflow-y: hidden;
+	
 }
 
 /* inputinner Start */
@@ -373,6 +378,10 @@ input[type=radio]{
 	padding-top : 50px;
 	text-align: center;
 }
+.btns a{
+	color : white;
+
+}
 .btns button {
 	width : 302px;
 	height : 76px;
@@ -460,13 +469,14 @@ footer .webinfo {
 }
 
 .fl_1 {
-	width: 670px;
+	width: 730px;
 	height: 200px;
 	font-size : 15px;
 	float: left;
 	
 }
 .fl_1 table {
+	width : 730px;
 	margin: 0;
     padding: 0;
     border-spacing: 0;

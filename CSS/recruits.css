@@ -317,13 +317,14 @@ footer .webinfo {
 }
 
 .fl_1 {
-	width: 670px;
+	width: 730px;
 	height: 200px;
 	font-size : 15px;
 	float: left;
 	
 }
 .fl_1 table {
+	width : 730px;
 	margin: 0;
     padding: 0;
     border-spacing: 0;

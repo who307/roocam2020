@@ -6,6 +6,7 @@
 	@font-face { font-family: 'YoonMingukB';  src: url('../Font/YoonDokripManse/YoonMingukB.otf');}
 	@font-face { font-family: 'YoonMingukR';  src: url('../Font/YoonDokripManse/YoonMingukR.otf');}
 	@font-face { font-family: '닉스곤폰트M';  src: url('../Font/닉스곤폰트/NIXGONFONTSm.otf');}
+	@font-face { font-family: '닉스곤폰트b';  src: url('../Font/닉스곤폰트/NIXGONFONTSb.otf');}
 	@font-face { font-family: 'SpoqaHanSansB';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Bold.ttf');}
 	@font-face { font-family: 'SpoqaHanSansL';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Light.ttf');}
 	@font-face { font-family: 'SpoqaHanSansR';  src: url('../Font/SpoqaHanSans_all/SpoqaHanSans_jp_original/Spoqa\ Han\ Sans\ JP\ Regular.ttf');}
@@ -113,11 +114,45 @@ header {
 	top: 50%; 
 	left: 50%; 
 	transform: translate(-50%, -50%); 
-	background-color: white; 
-	padding: 50px; 
+	background :#483D3D;
 	width: 400px; 
-	height: 600px;
-	border-radius: 50px;
+	height: 505px;
+	border : 8px solid white;
+	border-radius: 25px;
+	box-shadow: 5px 7px 11px 1px rgba(0,0,0,.3);
+}
+.closebtn {
+	cursor: pointer;
+	position: absolute;
+	right:0px;
+
+}
+.closebtn:hover{
+	transform: scale(1.3); 
+
+}
+.modal_login{
+	width: 200px;
+	height: 63px;
+	margin : auto;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	top: -8px;
+	
+
+}
+.login{
+	font-size : 13px;
+	color :#95F15D;
+	font-family: 'NIXGONFONTSb';
+	position: absolute;
+	top: 15px;
+}
+.modal_login img{
+	width: 109px;
+	height: 63px;
+
 }
 .show_modal{
 	visibility: visible;
@@ -125,20 +160,7 @@ header {
 	transform: scale(1.0); 
 	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
-.closebtn {
-	width : 60px;
-	height: 30px;
-	border-radius: 15px;
-	outline :0;
-	cursor: pointer;
-	position: absolute;
-	right:50px;
-	top: 50px;
-}
-.closebtn:hover{
-	transform: scale(1.2); 
-	background : rgb(197, 247, 197)
-}
+
 .scrollhidden{
 	overflow-y: hidden;
 }
@@ -723,6 +745,9 @@ header {
 	left: 235px;
 	bottom : -40px;
 }
+.btn_03 a {
+	color: white;
+}
 .btn_03 .arrowbutton {
 	position: relative;
 	bottom : -5px;
@@ -775,6 +800,10 @@ header {
 	min-width: 900px;
 	text-align: center;
 	padding-top :60px;
+}
+.btns a{
+	color : white;
+
 }
 .btns button {
 	width : 302px;
@@ -860,13 +889,14 @@ footer .webinfo {
 }
 
 .fl_1 {
-	width: 670px;
+	width: 730px;
 	height: 200px;
 	font-size : 15px;
 	float: left;
 	
 }
 .fl_1 table {
+	width : 730px;
 	margin: 0;
     padding: 0;
     border-spacing: 0;

@@ -23,5 +23,5 @@
         echo "실패 : " , mysqli_error($con);
     }
     
-    mysqli_close($con);W
+    mysqli_close($con);
 ?>

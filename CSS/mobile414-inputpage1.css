@@ -309,8 +309,8 @@ header {
 	height: 14px;
 }
 .st1 .text3 {
-	font-size : 10px;
-	width : 300px;
+	font-size : 7px;
+	width : 350px;
 	margin : auto;
 }
 .btns{
@@ -318,16 +318,20 @@ header {
 	padding-top :10px;
 	text-align: center;
 }
+.btns button a{
+	color : white;
+
+}
 .btns button {
 	width : 80px;
 	height : 20px;
-	line-height: 20px;
+	line-height: 15px;
 	border : 1px solid white;
 	border-radius: 50px;
 	background-color : rgba(77, 75, 75, 0.8);
 	outline: none;
 	cursor: pointer;
-	font-size : 7px;
+	font-size : 10px;
 	font-family: 'InfinitySansWMR-Regular';
 	color : white;
 	margin:0 0px;	
@@ -384,20 +388,20 @@ header {
 footer {
 	position: relative;
 	width: 100%;
-	min-width : 350px;
-	height: 200px;
+	min-width : 375px;
+	height: 160px;
 	background: #C7FFD6;
 	font-family: 'InfinitySansWMR-Regular';
 }
 
 footer .webinfo {
 	width: 100%;
-	height: 200px;
+	height: 160px;
 	display: flex;
 }
 .infodiv{
 	width: 100%;
-	height : 180px;
+	height : 150px;
 	margin-left :auto;
 	margin-right: auto;
 	position: relative;
@@ -407,7 +411,7 @@ footer .webinfo {
 }
 
 .fl_1 {
-	width: 190px;
+	width: 215px;
 	height: 50px;
 	font-size : 7px;
 	float: left;
@@ -444,7 +448,7 @@ table td{
 	margin-left : 0px;
 }
 .fl_2 img {
-	width : 20px;
+	width : 30px;
 	height: 30px;
 }
 
@@ -479,12 +483,14 @@ table td{
 	font-size : 10px;
 }
 .fl_3 {
-	width : 300px;
+	width : 340px;
 	font-size : 8px;	
 	position: absolute;
-	bottom: -4px;
+	bottom: 30px;
 
 	
 }
 /* Footer End */
-}		
+
+
+}			
