@@ -239,6 +239,7 @@ input {
 	 /* min-width: 740px; */
 	 font-family: 'InfinitySansWMR-Regular';
 	 font-size: 11px;
+
  }
  
  .font_size{
@@ -262,6 +263,8 @@ input {
  .font_size1{
 	 font-family: 'InfinitySansWMR-Regular';
 	 font-size: 11px;
+	 position: relative;
+	left: 40px;
  }
  
  input[type=text]{

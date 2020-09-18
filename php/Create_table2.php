@@ -4,9 +4,9 @@
     $sql ="
         CREATE TABlE IF NOT EXISTS Requests
         (
-					partner VARCHAR(100) NOT NULL ,
-					company_name VARCHAR(100) NOT NULL ,
-					user_name VARCHAR(100) NOT NULL ,
+					userID VARCHAR(100) NOT NULL ,
+					userPW VARCHAR(100) NOT NULL ,
+					 VARCHAR(100) NOT NULL ,
 					phone_number INT(100) NOT NULL ,  
 					email VARCHAR(100) NOT NULL,
           mDate DATE
