@@ -111,14 +111,14 @@
 								 </select><br>
 								 2 .가로<input id="horizon" style="font-size: 16px; margin:0 5px 5px 5px; width: 170px; height:30px;"
 										type="text" name="size_horizon2" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
-										Placeholder="cm" required>
+										Placeholder="cm" >
 								 세로<input id="vertical" style="font-size: 16px; margin:0 5px;  width: 170px; height:30px;" type="text"
 										name="size_vertical2" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" Placeholder="cm"
-										required>
+										>
 								 <!-- 위치<input  style="font-size: 17px; margin:0 5px;  width: 170px; height:30px;" type ="text"
 											 name="size_position" value="" required> -->
 								 위치<select style="font-size: 16px; margin:0 5px;  width: 178px; height:36px; outline:none;"
-										name="size_position2" required>
+										name="size_position2" >
 										<option value="베란다">베란다
 										<option value="거실"selected>거실
 										<option value="방">방
@@ -127,14 +127,14 @@
 								 </select> <br>
 								 3 .가로<input id="horizon" style="font-size: 16px; margin:0 5px 5px 5px; width: 170px; height:30px;"
 										type="text" name="size_horizon3" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
-										Placeholder="cm" required>
+										Placeholder="cm" >
 								 세로<input id="vertical" style="font-size: 16px; margin:0 5px;  width: 170px; height:30px;" type="text"
 										name="size_vertical3" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" Placeholder="cm"
-										required>
+										>
 								 <!-- 위치<input  style="font-size: 17px; margin:0 5px;  width: 170px; height:30px;" type ="text"
 										name="size_position" value="" required> -->
 								 위치<select style="font-size: 16px; margin:0 5px;  width: 178px; height:36px; outline:none;"
-										name="size_position3" required>
+										name="size_position3" >
 										<option value="베란다">베란다
 										<option value="거실">거실
 										<option value="방"selected>방
@@ -143,14 +143,14 @@
 								 </select> <br>
 								 4 .가로<input id="horizon" style="font-size: 16px; margin:0 5px 5px 5px; width: 170px; height:30px;"
 										type="text" name="size_horizon4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
-										Placeholder="cm" required>
+										Placeholder="cm" >
 								 세로<input id="vertical" style="font-size: 16px; margin:0 5px;  width: 170px; height:30px;" type="text"
 										name="size_vertical4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" Placeholder="cm"
-										required>
+										>
 								 <!-- 위치<input  style="font-size: 17px; margin:0 5px;  width: 170px; height:30px;" type ="text"
 										name="size_position" value="" required> -->
 								 위치<select style="font-size: 16px; margin:0 5px;  width: 178px; height:36px; outline:none;"
-										name="size_position4" required>
+										name="size_position4" >
 										<option value="베란다">베란다
 										<option value="거실">거실
 										<option value="방">방
@@ -159,14 +159,14 @@
 								 </select><br>
 								 5 .가로<input id="horizon" style="font-size: 16px; margin:0 5px 5px 5px; width: 170px; height:30px;"
 										type="text" name="size_horizon5" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
-										Placeholder="cm" required>
+										Placeholder="cm" >
 								 세로<input id="vertical" style="font-size: 16px; margin:0 5px;  width: 170px; height:30px;" type="text"
 										name="size_vertical5" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" Placeholder="cm"
-										required>
+										>
 								 <!-- 위치<input  style="font-size: 17px; margin:0 5px;  width: 170px; height:30px;" type ="text"
 										name="size_position" value="" required> -->
 								 위치<select style="font-size: 16px; margin:0 5px;  width: 178px; height:36px; outline:none;"
-										name="size_position5" required>
+										name="size_position5" >
 										<option value="베란다">베란다
 										<option value="거실">거실
 										<option value="방">방
@@ -182,17 +182,42 @@
 							</div>
 					 </div>
 
+					 
+					 <div class="inner_menu1">
+						<p class="p_tag1">3. 공사 희망일</p>
+						<label class="label123">
+							<div class="div1">
+								<input class="building" type="radio" name="userHope" value="1~2개월" required>
+								1개월 이내
+							</div>
+						</label>
+
+						<label class="label123">
+							<div class="div1">
+								<input class="building" type="radio" name="userHope" value="3개월 이후">
+								1개월 이후
+							</div>
+						</label>
+
+						<label class="label123">
+							<div class="div1">
+								<input class="building" type="radio" name="userHope" value="상담 후 결정">
+								상담 후 결정
+							</div>
+						</label>
+					</div>
+
+
 						<div class="inner_menu1">
 							<p class="p_tag1">4. 주소</p>
 							<div style="min-width: 1500px;">
 								<input class="font_size" name="userAddr1" id="sample6_postcode"
-									style="margin:30px 0 0 30px; width: 250px; height:36px;" type="text" Placeholder="   우편번호" readonly
-									required>
+									style="margin:30px 0 0 30px; width: 250px; height:36px;" type="text" Placeholder="   우편번호" required readonly>
 								<input style="width: auto; height:40px;" class="GPS_btn" type="button"
 									onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
 							</div>
 							<input class="font_size" name="userAddr2" id="sample6_address"
-								style="margin:30px 0 0 30px; width: 675px; height:36px;" type="text" Placeholder="   주소" readonly>
+								style="margin:30px 0 0 30px; width: 675px; height:36px;" type="text" Placeholder="   주소" required >
 							<input class="font_size" name="userAddr3" id="sample6_detailAddress"
 								style="ime-mode:auto; margin:30px 0 0 30px; width: 675px; height:36px;" type="text"
 								Placeholder="   상세주소" required>
@@ -265,7 +290,7 @@
 								 -->
 									1 .가로<input id="horizon" style="font-size: 11px; margin:0 5px 0 5px; width: 87px; height:17px;"
 										type="text" name="size_horizon" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
-										required>
+										required> 
 									세로<input id="vertical" style="font-size: 11px; margin:0 5px;  width: 87px; height:17px;" type="text"
 										name="size_vertical" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" required><br>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;위치<select
@@ -279,12 +304,12 @@
 									</select> <br>
 									2 .가로<input id="horizon" style="font-size: 11px; margin:5px 5px 0 5px; width: 87px; height:17px;"
 										type="text" name="size_horizon2" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
-										required>
+										> 
 									세로<input id="vertical" style="font-size: 11px; margin:5px 5px 0 5px;  width: 87px; height:17px;" type="text"
-										name="size_vertical2" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" required><br>
+										name="size_vertical2" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" ><br>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;위치<select
 										style="font-size: 11px; margin:10px 0 0 3.6px; width: 91px; height:24px; outline: none;"
-										name="size_position2" required>
+										name="size_position2" >
 										<option value="베란다">베란다
 										<option value="거실"selected>거실
 										<option value="방">방
@@ -293,12 +318,12 @@
 									</select> <br>
 									3 .가로<input id="horizon" style="font-size: 11px; margin:5px 5px 0 5px; width: 87px; height:17px;"
 										type="text" name="size_horizon3" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
-										required>
+										> 
 									세로<input id="vertical" style="font-size: 11px; margin:5px 5px 0 5px;  width: 87px; height:17px;" type="text"
-										name="size_vertical3" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" required><br>
+										name="size_vertical3" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" ><br>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;위치<select
 										style="font-size: 11px; margin:10px 0 0 3.6px; width: 91px; height:24px; outline: none;"
-										name="size_position3" required>
+										name="size_position3" >
 										<option value="베란다">베란다
 										<option value="거실">거실
 										<option value="방"selected>방
@@ -307,12 +332,12 @@
 									</select> <br>
 									4 .가로<input id="horizon" style="font-size: 11px; margin:5px 5px 0 5px; width: 87px; height:17px;"
 										type="text" name="size_horizon4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
-										required>
+										> 
 									세로<input id="vertical" style="font-size: 11px; margin:5px 5px 0 5px;  width: 87px; height:17px;" type="text"
-										name="size_vertical4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" required><br>
+										name="size_vertical4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" ><br>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;위치<select
 										style="font-size: 11px; margin:10px 0 0 3.6px; width: 91px; height:24px; outline: none;"
-										name="size_position4" required>
+										name="size_position4" >
 										<option value="베란다">베란다
 										<option value="거실">거실
 										<option value="방">방
@@ -321,12 +346,12 @@
 									</select> <br>
 									5 .가로<input id="horizon" style="font-size: 11px; margin:5px 5px 0 5px; width: 87px; height:17px;"
 										type="text" name="size_horizon5" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
-										required>
+										>
 									세로<input id="vertical" style="font-size: 11px; margin:5px 5px 0 5px;  width: 87px; height:17px;" type="text"
-										name="size_vertical5" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" required><br>
+										name="size_vertical5" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" ><br>
 									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;위치<select
 										style="font-size: 11px; margin:10px 0 0 3.6px; width: 91px; height:24px; outline: none;"
-										name="size_position5" required>
+										name="size_position5" >
 										<option value="베란다">베란다
 										<option value="거실">거실
 										<option value="방">방
@@ -369,12 +394,12 @@
 							<div class="inner_menu1">
 								<p class="p_tag1">4. 주소</p>
 								<input class="font_size" name="userAddr1" id="sample6_postcode1"
-									style="margin:20px 0 0 30px; width: 130px; height:23px;" type="text" Placeholder="우편번호" readonly
-									required>
+									style="margin:20px 0 0 30px; width: 130px; height:23px;" type="text" Placeholder="우편번호" required readonly
+									>
 								<input class="GPS_btn" type="button" onclick="sample6_execDaumPostcode1()" value="우편번호 찾기">
 								<input class="font_size" name="userAddr2" id="sample6_address1"
-									style="margin:10px 0 0 30px; width: 260px; height:23px;" type="text" Placeholder="주소" readonly
-									required>
+									style="margin:10px 0 0 30px; width: 260px; height:23px;" type="text" Placeholder="주소" required readonly
+									>
 								<input type="text" id="sample6_detailAddress1" class="font_size" name="userAddr3"
 									style="margin:10px 0 0 30px; width: 260px; height:23px;" Placeholder="상세주소" required>
 

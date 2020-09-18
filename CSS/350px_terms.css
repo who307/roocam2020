@@ -636,13 +636,13 @@
 	
 	}
 	.fl_1 table {
+		width: 215px;
 		margin: 0;
 		padding: 0;
 		border-spacing: 0;
 		border: 0;
 		border-collapse: collapse;
 		word-break: break-all;
-		
 	}
 	table td{
 		padding-bottom: 3px;
