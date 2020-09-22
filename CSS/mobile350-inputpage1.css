@@ -314,9 +314,11 @@ header {
 	margin : auto;
 }
 .btns{
-	min-width: 100px;
+	width: 300px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
 	padding-top :10px;
-	text-align: center;
 }
 .btns button a{
 	color : white;

@@ -379,9 +379,11 @@ input[type=radio]{
 	font-size : 25px;
 }
 .btns{
-	min-width: 900px;
-	padding-top : 50px;
-	text-align: center;
+	width: 1200px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	padding-top :60px;
 }
 .btns a{
 	color : white;

@@ -495,42 +495,30 @@
 		}
 		.text_wrap .text2{
 			position: relative;
-			top:  130px;
-			left: 50%;
+			top:  110px;
+			left: 70px;
 			color :rgb(0, 0, 0);
 			font-weight: lighter;
 			font-size : 15px;
 			line-height: 23px;
-			width: 280px;
-			height: 120px;
+			width: 285px;
+			height: 100px;
 			font-family: 'NanumSquare';
 		}
+		.text_wrap .text2 .color_green{
+			color:#245A29;
+		}
 		.text_wrap .text2 .color_red{
-			color : #000000;
+			color: #FF2929;
 		}
-		.text2 .color_green {
-			color :#388F47;
-		}
-		.mint{
-			background-color:#C7FFD6;
-			width: 100vw;
-			min-width: 414px;
-			height: 50px;
-			position: relative;
-			bottom :0px;
-			top: 120px;
-			left:3px;
-			z-index: -1;
-		}
-		
 		.btndiv1 {
 			width : 100vw;
-			min-width: 414px;
+			min-width: 350px;
 			height: 50px;
 			display: flex;
 			justify-content: center;
 			position: relative;
-			top: 160px;
+			top: 180px;
 			right: 5px;
 		}
 		.btn_02{
@@ -562,6 +550,17 @@
 		}
 		.btn_02:hover {
 				transform : scale(1.1);
+		}
+		.mint{
+			background-color:#C7FFD6;
+			width: 100vw;
+			min-width: 350px;
+			height: 50px;
+			position: relative;
+			bottom :0px;
+			top: 140px;
+			left:3px;
+			z-index: -1;
 		}
 		
 		.swiper-container2 {
@@ -801,9 +800,11 @@
 			margin : auto;
 		}
 		.btns{
-			min-width: 100px;
+			width: 300px;
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
 			padding-top :10px;
-			text-align: center;
 		}
 		.btns button {
 			width : 80px;

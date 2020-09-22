@@ -244,13 +244,14 @@
 	/* 회사 소개 */
 
 .about_section{
-    width : 100%;
-    min-width: 350px;
-    height: 350px;
+  width : 100%;
+  min-width: 350px;
+  height: 350px;
 	padding : 20px 0 0 0;
 	position: relative;
 	bottom: 220px;
 	background :white;
+	display: block;
     
 }
 .about_header {

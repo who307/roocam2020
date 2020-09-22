@@ -496,7 +496,7 @@
 	}
 	.text_wrap .text2{
 		position: relative;
-		top:  130px;
+		top:  100px;
 		left: 50px;
 		color :rgb(0, 0, 0);
 		font-weight: lighter;
@@ -506,13 +506,12 @@
 		height: 100px;
 		font-family: 'NanumSquare';
 	}
+	.text_wrap .text2 .color_green{
+		color:#245A29;
+	}
 	.text_wrap .text2 .color_red{
-		color : #000000;
+		color: #FF2929;
 	}
-	.text2 .color_green {
-		color :#388F47;
-	}
-	
 	.btndiv1 {
 		width : 100vw;
 		min-width: 350px;
@@ -801,9 +800,11 @@
 		margin : auto;
 	}
 	.btns{
-		min-width: 100px;
+		width: 300px;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
 		padding-top :10px;
-		text-align: center;
 	}
 	.btns button {
 		width : 80px;

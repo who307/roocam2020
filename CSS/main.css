@@ -37,7 +37,7 @@ a{
 
 header {
 	width: 100%;
-	min-width: 1082px;
+	min-width: 1080px;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -170,7 +170,7 @@ header {
 	display: flex;
 	text-align: center;
 	width: 100%;
-	min-width: 1082px;
+	min-width: 1080px;
 	height: 600px;
 	flex-direction: column;
 	align-items: center;
@@ -293,7 +293,7 @@ header {
 }
 .section1_2 {
 	width: 100%;
-	min-width: 1082px;
+	min-width: 1080px;
 	height: 900px;
 	display: flex;
 	-webkit-box-align: center;
@@ -304,7 +304,7 @@ header {
 	display: flex;
 	text-align: center;
 	width: 100%;
-	min-width: 1082px;
+	min-width: 1080px;
 	height: 800px;
 	flex-direction: column;
 	align-items: center;
@@ -387,7 +387,7 @@ header {
 .main2_btn {
 	width :81px;
 	height: 33px;
-	background :#707070;
+	background :#074D0C;
 	color : white;
 	border-radius: 30px;
 	font-family: 'nanumsquare';
@@ -409,50 +409,6 @@ header {
 	animation: zoom 1.7s infinite;
 }
 
-
-/* .main_visual2{
-	width: 100%;
-	height : 0px;
-	background: #fff;
-	padding-top :100px;
-}
-.content_box{
-	width: 100%;
-	background: #fff;
-	
-}
-.content_box ul{
-	background-color: limegreen;
-	padding : 200px, 0;
-
-}
-.content_box li {
-	width : 240px;
-	height: 390px;
-	background-color: lightgreen;
-	margin :auto;
-}
-.content_box .icon01{
-	width : 240px;
-	height : 240px;
-	background-color: mediumblue;
-}
-.content_box .icon02{
-	width : 240px;
-	height : 240px;
-	background-color: mediumblue;
-}
-.content_box .icon03{
-	width : 240px;
-	height : 240px;
-	background-color: mediumblue;
-}
-.content_box li .info {
-	width: 240px;
-	background-color: lightgreen;
-
-} */
-
 .section2{
 	width : 100%;
 	background-color : #D2DAE3;
@@ -462,24 +418,22 @@ header {
 .section2 .inner{
 	width: 100%;
 	height: 732px;
-	min-width: 1082px;
+	min-width: 1080px;
 	position: relative;
 }
 .section2 .inner .bg_wrap {
-	width: 1400px;
-	min-width: 1082px;
+	width: 1112px;
+	min-width: 800px;
 	height: 750px;
 	position: absolute;
 	top: -160px;
 	left: 50%;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	border-radius: 6px;
-	border: 15px solid white;
-	
+	border-radius: 6px;	
 }
 .text_wrap{
-	width: 453px;
+	width: 450px;
 	height: 750px;
 	background-color: rgba(255, 255, 255, 0.7);
 	position: absolute;
@@ -492,7 +446,7 @@ header {
 	padding : 10px 10px 0 0;
 	position: relative;
 	top:134px;
-	left: 2px;
+	left: 0px;
 }
 .textdiv1{
 	position: relative;
@@ -515,23 +469,26 @@ header {
 .text_wrap .text2{
 	color :rgb(0, 0, 0);
 	font-weight: lighter;
-	font-size : 20px;
+	font-size: 20px;
 	font-family: 'InfinitySansWMR-Regular';
 	position: relative;
 	top: 55px;
 }	
+.text_wrap .text2 .color_green{
+	color:#245A29;
+}
 .text_wrap .text2 .color_red{
-	color : #FF2929;
+	color: #FF2929;
 }
 .btn_02{
-	min-width: 253px;
-	height: 56px;
-	line-height: 56px;
-	background:#3DC447;
+	min-width: 173px;
+	height: 30px;
+	line-height: 30px;
+	background:#4B524B;
 	color: white;
 	border-radius: 64px;
 	font-weight: 500;
-	font-size: 22px;
+	font-size: 17px;
 	border-style: none;
 	outline: none;
 	cursor: pointer;
@@ -540,12 +497,14 @@ header {
 	font-weight: bold;
 	position: relative;
 	top: 150px;
-	left : 55px;
+	left : 90px;
 }
-.arrowbutton {
+.btn_02 .arrowbutton {
+	width : 20px;
+	height: 20px;
 	position: relative;
 	bottom : -5px;
-	left : 10px;
+	left : 5px;
 }
 .btn_02:hover {
 		transform : scale(1.1);
@@ -556,11 +515,11 @@ header {
 	min-width: 700px;
 	height: 750px;
 	margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
 	z-index: 1;
 }
 .swiper-container2 .pic1{
@@ -584,77 +543,86 @@ header {
 }
 .section3{
 	width: 100%;
-	height: 880px;
-	min-width: 1082px;
-	margin : 200px 0;
+	height: 1100px;
+	min-width: 1200x;
+	margin : 100px 0;
 	background: #ffffff;
 	display: flex;
-	border-top : 1px solid #AAA8A8;
 }
 .sectiondiv{
-	width: 1550px;
-    min-width: 1082px;
-	height: 976px;
+	width: 100%;
+  min-width: 1080px;
+	height: 1100px;
 	margin :auto;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    -webkit-box-pack: justify;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-pack: justify;
 	-ms-flex-pack: justify;
 	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
 
 }
 
-.sectiondiv .img1{ 
-	min-width : 465px;
-	margin-right: 50px;
-	height :880px;
-	background : url("../img/web/섹션3.png");
+.sectiondiv .sec3_text{
+	width: 100%;
+	min-width: 1080px;
+	height: 50px;
+	line-height: 50px;
+	background : #D2DAE3;
+	margin-bottom: 100px;
+	text-align: center;
+	font-family: 'SCDREAM8';
+	font-size : 30px;
 }
+.sectiondiv .sec3_text .color_green{
+	color: #288160;
+}
+	
 .swiper-container {
-	height: 650px;
-	width: 1050px;
+	width: 1080px;
+	height: 700px;
 	background: #fff;
 	position: relative;
 }
 .swiper-container .pic1{
-	width : 314px;
-	height: 644px;
+	width : 350px;
+	height: 700px;
 	background : url("../img/web/섹션3_1.png");
 	
 }
 .swiper-container .pic2{
-	width : 314px;
-	height: 644px;
+	width : 350px;
+	height: 700px;
 	background: url("../img/web/섹션3_2.png");
 	
 }.swiper-container .pic3{
-	width : 314px;
-	height: 644px;
+	width : 350px;
+	height: 700px;
 	background : url("../img/web/섹션3_3.png");
 	
 }
 
 .sec3_img{
-	width : 1095px;
+	width : 1080px;
 	height :180px;
-	position :absolute;
-	bottom : 96px;
-	left : 465px;
-	background-color: #C7FFD6;
+	margin : auto;
+	position: relative;
+	top: 30px;
 	display: flex;
 	justify-content: space-around;
 	
 }
 .section3 .icon1{
 	position: relative;
-	left : 30px;
+	left : 10px;
 	bottom : 40px;
 	
 }
 .section3 .icon2{
 	position: relative;
-	left : 50px;
+	left : 30px;
 	bottom : 40px;
 }
 .section3 .icon3{
@@ -685,7 +653,7 @@ header {
 }
 .section4{
 	width: 100%;
-	min-width: 1082px;
+	min-width: 1080px;
 	height: 900px;
 	background : url("../img/web/Section3.png");
 	background-size : 100% 100%;
@@ -750,7 +718,7 @@ header {
 }
 .btn_03 .arrowbutton {
 	position: relative;
-	bottom : -5px;
+	bottom : -6px;
 	left : 10px;
 }
 .btn_03:hover {
@@ -760,7 +728,7 @@ header {
 
 .section5{
 	width : 100%;
-	min-width: 1082px;
+	min-width: 1080px;
 	height : 700px;
 	background: url("../img/web/section_5.png");
 	background-size : 100% 100%;
@@ -768,14 +736,14 @@ header {
 .dbox{
 	width : 100%;
 	height : 700px;
-	min-width : 1082px;
+	min-width : 1080px;
 	position: relative;
 	
 }
 .st1{
 	height: 500px;
 	width: 100%;
-	min-width: 1082px;
+	min-width: 1080px;
 	position: absolute;
 	top : 100px;
 }
@@ -797,8 +765,10 @@ header {
 	font-size : 25px;
 }
 .btns{
-	min-width: 900px;
-	text-align: center;
+	width: 1080px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
 	padding-top :60px;
 }
 .btns a{
@@ -817,7 +787,6 @@ header {
 	line-height: 70px;
 	font-family: 'InfinitySansWMR-Regular';
 	color : white;
-	margin:0 50px;	
 	transition: all 0.3s;
 } 
 .btns button:hover{
@@ -828,7 +797,7 @@ header {
 /* footer start */
 .footer_menu{
 	width: 100%;
-    min-width: 1200px;
+    min-width: 1080px;
 	min-height: 30px;
 	background: #fff;
 	font-family: '나눔고딕B';
