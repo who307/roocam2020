@@ -48,12 +48,12 @@ header {
 .section1 {
 	width: 100%;
 	min-width: 1082px;
-	height: 800px;
+	height: 450px;
 	display: flex;
 	-webkit-box-align: center;
 	align-items: center;
-    background: url("../img/web/메인배경.png")center/cover;
-	z-index: -999;
+	background: url("../img/web/제휴메인.png");
+	background-size : 100% 450px;
 }
 
 .ahide, .alogo{
@@ -168,23 +168,25 @@ header {
     top: 200px;
     margin: auto;
 }
+.main_visual .logo_div{
+	position: relative;
+	top: -70px;
+}
 .main_visual .main_p{
 	font-size: 50px;
 	color: #fff;
 	font-family: 'SCDream8';
 	margin-top: 30px;
+	display: none;
 
 }
 .main_visual .sub_p{
 	font-size: 34px;
 	color: #fff;
 	font-family: 'SCDream4';
+	display: none;
 }
-.imgtext {
-	position: absolute;
-	right: 300px;
-	bottom : 40px;
-}
+
 
 @keyframes zoom{0%{-webkit-transform:scale(1);transform:scale(1)}
 25%{-webkit-transform:scale(1.1);transform:scale(1.1)}
@@ -198,32 +200,57 @@ header {
 /* 서비스 이용약관 */
 
 .alliance_section{
-    width : 100%;
-    height : 1400px;
+		width : 100%;
+		min-width: 1080px;
+    height : 1200px;
     font-family: 'InfinitySansWMR-Regular';
+}
+.alliance_section .img_head{
+	width: 100%;
+	height : 180px;
+	background : url('../img/web/제휴광고헤드.png')center/cover;
+	margin-bottom: 100px;
 }
 
 .alliance_table{
-    width : 1000px;
-    height : 600px;
-    margin : auto;
+    width : 800px;
+		height : 700px;
+		margin : auto;
+		border : 1px solid #707070;
+		padding : 50px 0;
 
+}
+.alliance_table .table_title{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	bottom: 65px;
+}
+.table_title div{
+	width: 168px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	font-size : 20px;
+	color : white;
+	background-color :#78E581; 
+	font-family: 'InfinitySansWM-Bold';
 }
 .alliance_table table{
     margin : auto;
-    width: 800px;
-    height: 600px;
+    width: 650px;
+		height: 450px;
 }
 .alliance_table table tr{
     padding-bottom: 50px;
 }
 .alliance_table .partner{
-    font-size : 27px;
+    font-size : 20px;
     width: 100px;
 }
 .alliance_table .label{
     width: 200px;
-    font-size : 32px;
+    font-size : 24px;
     color :#707070;
     margin-right: 150px;
 }
@@ -237,7 +264,7 @@ input[type="number"]::-webkit-inner-spin-button {
     height : 55px; 
     border : 1px solid #C4EBC1; 
     color : #707070; 
-    font-size : 25px;
+    font-size : 20px;
     text-align: left;
     padding-left : 20px;
     outline: none;
@@ -324,6 +351,7 @@ input[id="rb4"]:checked + label {
 }
 input[id="rb4"] {
 	visibility: hidden;
+	margin-right : 9px
 
 }
 
@@ -335,13 +363,13 @@ input[id="rb4"] {
 	   left : 150px;
 }
 .allcheck {
-	font-size : 32px;
+	font-size : 24px;
 	 margin-bottom : 10px;
 }
 .check1 {
 	position: relative;
 	 left : 20px;
-	  font-size : 25px;
+	  font-size : 20px;
 	   margin-bottom : 10px;
 }
 .checkbox_list a{
@@ -351,31 +379,30 @@ input[id="rb4"] {
 .check2{
 	position: relative;
 	 left : 15px;
-	 font-size : 25px;
+	 font-size : 20px;
 	 margin-bottom : 10px;
 }
 .submit_list{
 	position: relative;
-	left : 200px;
-	bottom : -80px;
+	left : 180px;
+	bottom : -50px;
+}
+.submit_list img{
+	display: none;
 }
 .submit {
-	width : 250px;
-	height: 60px;
-	font-size : 33px;
+	width : 120px;
+	height: 30px;
+	font-size : 18px;
 	background-color :#4B524B;
 	outline : none;
 	color : white;
 	font-family: 'InfinitySansWMR-Regular';
-	text-align: left;
+	text-align: center;
 	cursor: pointer;
+	border-radius: 50px;
 }
-.submit_list img {
-	position: absolute;
-	left : 135px;
-	bottom : 10px;
-	cursor: pointer;
-}
+
 input[id="cb1"] + label {
     display: inline-block;
     width: 35px;
@@ -427,7 +454,8 @@ input[id="cb3"] + label {
     height: 35px;
     margin-right: 10px;
     position: relative;
-    top: 10px;
+		top: 10px;
+		left : 1px;
     border: 2px solid #707070;
 	cursor: pointer;
 	background : white;

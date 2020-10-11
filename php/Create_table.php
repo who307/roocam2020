@@ -54,7 +54,7 @@
 					userAddr1 VARCHAR(100) NOT NULL, 
 					userAddr2 VARCHAR(100) NOT NULL, 
 					userAddr3 VARCHAR(100) NOT NULL, 
-					userNumber INT NOT NULL PRIMARY KEY,
+					userNumber CHAR NOT NULL PRIMARY KEY,
           mDate DATE
         )
         ";

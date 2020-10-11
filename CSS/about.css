@@ -46,21 +46,8 @@ header {
 	z-index: 999;
 	text-align: center;
 }
-.section1 {
-	width: 100%;
-	min-width: 1082px;
-	height: 2000px;
-	display: flex;
-	-webkit-box-align: center;
-	align-items: center; 
-	background: url("../img/web/회사소개.png");
-	background-size : 100% 100%;
-
-	
-}
-
 .ahide, .alogo{
-	visibility: visible;
+	visibility: hidden;
 	padding-top : 20px;
 }
 
@@ -111,14 +98,14 @@ header {
 
 .modal{
 	position: fixed; 
-  left: 0; 
-  top: 0; 
+    left: 0; 
+    top: 0; 
  	width: 100%; 
 	height: 100%; 
-  background-color: rgba(0, 0, 0, 0.5); 
-  opacity: 0; 
-  visibility: hidden; 
-  transform: scale(1.1); 
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    visibility: hidden; 
+    transform: scale(1.1); 
 	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
 	z-index: 99;
 }
@@ -157,19 +144,35 @@ header {
 	overflow-y: hidden;
 }
 
-
+.section1 {
+	/* width: 100%;
+	min-width: 1082px;
+	height: 400px;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center; 
+	background-size : 100% 100%; */
+	width: 100%;
+	min-width: 1082px;
+	height: 400px;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	background: url("../img/web/메인배경3.png");
+	background-size : 100% 400px;
+}
 .main_visual {
-	display: none;
-  text-align: center;
-  width: 100%;
-  min-width: 1082px;
-  height: 600px;
-  flex-direction: column;
-  align-items: center;
-  -webkit-box-align: center;
-  position: absolute;
-  top: 200px;
-  margin: auto;
+	display: flex;
+    text-align: center;
+    width: 100%;
+    min-width: 1082px;
+    height: 600px;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-align: center;
+    position: absolute;
+    top: 200px;
+    margin: auto;
 }
 .main_visual .main_p{
 	font-size: 50px;
@@ -223,48 +226,56 @@ header {
 
 
 /* 회사 소개 */
-.about_section{
-	display:none;
+
+.about_section1{
   width : 100%;
   min-width: 1080px;
-  height: 1700px;
-  padding : 100px 0 0 0;
-    
+	height: 670px;
+	padding: 100px 0 0 0;
 }
-.about_header {
-  width: 100%;
-	min-width : 1080px;
-	text-align: center;
-	margin-bottom: 70px;
 
+.about_div1{
+	width : 1000px;
+	min-width: 1000px;
+	height: 292.5px;
+	margin: 0 auto;
+	display: flex;
 }
-.about_title{
-    min-width : 1080px;
-    text-align: center;
-    font-size: 45px;
-	font-family: 'YoonMingukB';
+.about_div1 .about_1{
+	margin-right: 50px;
 }
-.about_section .textdiv1{
-    width: 100%;
-    text-align: center;
+.about_div2{
+	width : 1000px;
+	min-width: 1000px;
+	height: 292.5px;
+	margin: 0 auto;
+	display: flex;
 }
-.about_section .text{
-    width :1000px;
-    margin: auto;
-    padding : 60px 0;
-    
+.about_div2 .about_2{
+	margin-right: 50px;
 }
-.about_section .text .title{
-    font-size : 35px;
-    font-family: 'SpoqaHanSansR';
-    color : #78E581;
-    margin-bottom: 50px;
-    
+.about_section2{
+	width : 100%;
+	min-width: 1080px;
+	height: 670px;
+	background-color:#F9F3EA
 }
-.about_section .text .contents {
-    font-family: 'SpoqaHanSansR';
-    font-size : 25px;
+.about_div3{
+	width : 1172px;
+	min-width: 1172px;
+	height: 322px;
+	margin: 0 auto;
 }
+.about_div3 .about_3{
+	margin: 0px 0 50px 410px;
+	padding-top:100px
+}
+.about_div0{
+	margin-left: 46%;
+	margin-top:200px;
+	height: 48.21px;
+}
+
 /* 회사 소개 end */
 
 

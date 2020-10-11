@@ -16,7 +16,7 @@
 	<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 
 	<link rel="stylesheet" href="../CSS/inputpage2.css" />
-	<link rel="stylesheet" href="../CSS/mobile350-inputpage2.css" />
+	<link rel="stylesheet" href="../CSS/mobile-input2.css" />
 
 
 
@@ -56,7 +56,13 @@
 	</div>
 
 	<div class="web">
-		<section class="inputmain"></section>
+		<section class="inputmain">
+			<div class="logo_div">
+				<a style="cursor: pointer;" href="../index.html">
+					<img class="main_logo" src="../img/web/메인로고.png">
+				</a>
+			</div>
+		</section>
 		<div class="inputImg"></div>
 		<section class="inputinner">
 			<form METHOD="post" ACTION="../php/inputpage2_result.php">
@@ -102,8 +108,6 @@
 								세로<input id="vertical" style="font-size: 16px; margin:0 5px;  width: 170px; height:30px;" type="text"
 									name="size_vertical" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" Placeholder="cm"
 									required>
-								<!-- 위치<input  style="font-size: 17px; margin:0 5px;  width: 170px; height:30px;" type ="text"
-										name="size_position" value="" required> -->
 								위치<select style="font-size: 16px; margin:0 5px;  width: 178px; height:36px; outline:none;"
 									name="size_position" required>
 									<option value="베란다" selected>베란다
@@ -116,10 +120,8 @@
 									type="text" name="size_horizon2" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
 									Placeholder="cm">
 								세로<input id="vertical" style="font-size: 16px; margin:0 5px;  width: 170px; height:30px;" type="text"
-									name="size_vertical2" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
+									name="size_vertical4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
 									Placeholder="cm">
-								<!-- 위치<input  style="font-size: 17px; margin:0 5px;  width: 170px; height:30px;" type ="text"
-											 name="size_position" value="" required> -->
 								위치<select style="font-size: 16px; margin:0 5px;  width: 178px; height:36px; outline:none;"
 									name="size_position2">
 									<option value="베란다">베란다
@@ -127,32 +129,29 @@
 									<option value="방">방
 									<option value="화장실">화장실
 									<option value="기타">기타
-								</select> <br>
+								</select><br>
 								3 .가로<input id="horizon" style="font-size: 16px; margin:0 5px 5px 5px; width: 170px; height:30px;"
 									type="text" name="size_horizon3" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
 									Placeholder="cm">
-								세로<input id="vertical" style="font-size: 16px; margin:0 5px;  width: 170px; height:30px;" type="text"
+								  세로<input id="vertical" style="font-size: 16px; margin:0 5px;  width: 170px; height:30px;" type="text"
 									name="size_vertical3" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
 									Placeholder="cm">
-								<!-- 위치<input  style="font-size: 17px; margin:0 5px;  width: 170px; height:30px;" type ="text"
-										name="size_position" value="" required> -->
-								위치<select style="font-size: 16px; margin:0 5px;  width: 178px; height:36px; outline:none;"
+								  위치<select style="font-size: 16px; margin:0 5px;  width: 178px; height:36px; outline:none;"
 									name="size_position3">
 									<option value="베란다">베란다
 									<option value="거실">거실
 									<option value="방" selected>방
 									<option value="화장실">화장실
 									<option value="기타">기타
-								</select> <br>
+								</select><br>
 								4 .가로<input id="horizon" style="font-size: 16px; margin:0 5px 5px 5px; width: 170px; height:30px;"
 									type="text" name="size_horizon4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
 									Placeholder="cm">
-								세로<input id="vertical" style="font-size: 16px; margin:0 5px;  width: 170px; height:30px;" type="text"
+								  세로<input id="vertical" style="font-size: 16px; margin:0 5px;  width: 170px; height:30px;" type="text"
 									name="size_vertical4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
 									Placeholder="cm">
-								<!-- 위치<input  style="font-size: 17px; margin:0 5px;  width: 170px; height:30px;" type ="text"
-										name="size_position" value="" required> -->
-								위치<select style="font-size: 16px; margin:0 5px;  width: 178px; height:36px; outline:none;"
+
+								  위치<select style="font-size: 16px; margin:0 5px;  width: 178px; height:36px; outline:none;"
 									name="size_position4">
 									<option value="베란다">베란다
 									<option value="거실">거실
@@ -163,12 +162,11 @@
 								5 .가로<input id="horizon" style="font-size: 16px; margin:0 5px 5px 5px; width: 170px; height:30px;"
 									type="text" name="size_horizon5" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
 									Placeholder="cm">
-								세로<input id="vertical" style="font-size: 16px; margin:0 5px;  width: 170px; height:30px;" type="text"
+								  세로<input id="vertical" style="font-size: 16px; margin:0 5px;  width: 170px; height:30px;" type="text"
 									name="size_vertical5" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
 									Placeholder="cm">
-								<!-- 위치<input  style="font-size: 17px; margin:0 5px;  width: 170px; height:30px;" type ="text"
-										name="size_position" value="" required> -->
-								위치<select style="font-size: 16px; margin:0 5px;  width: 178px; height:36px; outline:none;"
+
+								  위치<select style="font-size: 16px; margin:0 5px;  width: 178px; height:36px; outline:none;"
 									name="size_position5">
 									<option value="베란다">베란다
 									<option value="거실">거실

@@ -184,15 +184,6 @@ header {
 	color: #fff;
 	font-family: 'SCDream4';
 }
-
-@keyframes zoom{0%{-webkit-transform:scale(1);transform:scale(1)}
-25%{-webkit-transform:scale(1.1);transform:scale(1.1)}
-50%{-webkit-transform:scale(1);transform:scale(1)}
-75%{-webkit-transform:scale(1.1);transform:scale(1.1)}to{-webkit-transform:scale(1);transform:scale(1)}}
-.trans {
-	animation: zoom 1.7s infinite;
-}
-
 .main_visual .textdiv{
 	position: relative;
 	bottom : -50px;
@@ -249,7 +240,7 @@ header {
 	display :block;
 	animation: fade-in 1.1s;
 }
-.nodisplay{
+.offdisplay{
 	display : none;
 	animation: fade-in 1.1s;
 }

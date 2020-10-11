@@ -1,5 +1,5 @@
 @media only screen 
-    and (min-width : 499px) 
+    and (min-width : 506px) 
 {
 
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
@@ -163,10 +163,14 @@ header {
 	min-width: 1082px;
 	height: 450px;
 	display: flex;
+	justify-content: center;
 	-webkit-box-align: center;
 	align-items: center;
 	background: url("../img/web/inputpage1/inputmain.png")center/cover;
-
+}
+.inputmain .logo_div{
+	position: relative;
+	top: -30px;
 }
 .inputImg{
 	width: 100%;
@@ -174,77 +178,91 @@ header {
 	height: 254.88px;
 	margin-top: 80px;
 	background: url("../img/web/inputpage1/풍선1.png")center/cover;
-
+}
+.sec3_text{
+	width: 100%;
+	min-width: 1080px;
+	height: 50px;
+	line-height: 50px;
+	background : #D2DAE3;
+	margin: 100px 0;
+	text-align: center;
+	font-family: 'SCDream8';
+	font-size : 30px;
+	letter-spacing: -25;
 }
 .input_menu1{
-	width: 1543px;
+	width: 1100px;
 	min-width: 1082px;
-	height: 245.7px;
+	height: 175.69px;
 	margin: 0 auto;
 	margin-top: 150px;
 	background: url("../img/web/inputpage1/1.png");
 }
 .input_menu1 > p{
-	margin-left: 680px;
-	padding-top: 50px;
+	margin-left: 500px;
+	padding-top: 40px;
 	font-family: 'InfinitySansWMR-Regular';
-	font-size: 27px;
+	font-size: 18px;
 	letter-spacing:-15;
 }
 .input_menu2{
-	width: 1543px;
-	height: 245.7px;
+	width: 1100px;
+	height: 175.69px;
 	margin: 0 auto;
 	margin-top: 80px;
 	background: url("../img/web/inputpage1/2.png");
 }
 .input_menu2 > p{
-	margin-left: 680px;
-	padding-top: 50px;
+	margin-left: 500px;
+	padding-top: 40px;
 	font-family: 'InfinitySansWMR-Regular';
-	font-size: 27px;
+	font-size: 18px;
 	letter-spacing:-15;
 }
 .input_menu3{
-	width: 1543px;
-	height: 245.7px;
+	width: 1100px;
+	height: 175.69px;
 	margin: 0 auto;
 	margin-top: 80px;
 	background: url("../img/web/inputpage1/3.png");
 }
 .input_menu3 > p{
-	margin-left: 680px;
-	padding-top: 50px;
+	margin-left: 500px;
+	padding-top: 40px;
 	font-family: 'InfinitySansWMR-Regular';
-	font-size: 27px;
+	font-size: 18px;
 	letter-spacing:-15;
 }
-.side_font{
+.input_menu4{
 	margin-bottom: 120px;
+	width: 1100px;
+	height: 175.69px;
+	margin: 0 auto;
+	margin-top: 25px;
 }
-.side_font .side_tag{
-	margin-left: 890px;
-	min-width: 1082px;
+.input_menu4 > p{
+	margin-left: 520px;
 	font-family: 'InfinitySansWMR-Regular';
-	font-size: 25px;
+	font-size: 16px;
 }
 .btn_div{
-	width: 100%;
+	width: 1100px;
 	margin-top: -60px;
 	height: 120px;
-	margin-left: 40%;
+	margin: 0 auto;
 }
 .btn_01{
 	position:flex;
 	margin:0 auto;
-	width: 350px;
-	height: 70px;
-	line-height: 70px;
+	margin-left: 480px;
+	width: 150px;
+	height: 30px;
+	line-height: 20px;
 	background: #4B524B;
 	color: #fff;
 	border-radius: 64px;
-	font-weight: 500;
-	font-size: 40px;
+	font-size: 18px;
 	font-weight: bold;
 	border-style: none;
 	outline: none;

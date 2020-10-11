@@ -17,5 +17,5 @@
    } 
    mysqli_close($con);
    
-	 echo "<br> <a href='./tables.php'> <--돌아가기</a> ";
+	 echo "<br> <a href='./userData.php'> <--돌아가기</a> ";
 ?>

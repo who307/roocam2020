@@ -1,5 +1,5 @@
 @media only screen 
-    and (min-width : 499px) 
+    and (min-width : 506px) 
 {
 
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
@@ -181,15 +181,19 @@ input {
 }
 .inputmain {
 	width: 100%;
-	/* min-width: 1082px; */
+	min-width: 1082px;
 	height: 450px;
 	display: flex;
+	justify-content: center;
 	-webkit-box-align: center;
 	align-items: center;
-	background-repeat: no-repeat;
 	background: url("../img/web/inputpage1/inputmain.png")center/cover;
-	background-size : 1920px 
 }
+.inputmain .logo_div{
+	position: relative;
+	top: -30px;
+}
+
 .inputImg {
 	width: 100%;
 	height: 254.88px;

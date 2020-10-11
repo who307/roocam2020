@@ -68,7 +68,7 @@
 	 $userid = "roocam"; 
 	 $api_key = "uukte5x8y739t6pq1uc3pvwjedsu4mlvsoalle4p"; 
 	 $template_id = "50042"; 
-	 $phone = "01073258890";
+	 $phone = "01049209932";
 	 $headers = array("Content-Type: application/json; charset=utf-8");
 	 $phonenumber = $userNumber;
 	 $msg = "[$mDate] 견적이 도착하였습니다!
@@ -203,7 +203,7 @@
 	 if($respCode === 200) {
 		echo "<script> alert('감사합니다 확인 후 연락드리겠습니다.');</script>";
 		echo "<script> location.href='../html/inputpage3.html';</script>";
-		require ""; // put here the page you want to go to it. ex: "pagename.php"
+		 // put here the page you want to go to it. ex: "pagename.php"
    }
    else {
 	   echo "전송 실패!!! Response code is not 200";

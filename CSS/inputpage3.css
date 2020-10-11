@@ -1,5 +1,5 @@
 @media only screen 
-    and (min-width : 499px) 
+    and (min-width : 506px) 
 {
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 @font-face { font-family: 'SCDream8';  src: url('../Font/S-Core_Dream_OTF/SCDream8.otf');}
@@ -176,9 +176,14 @@ header {
 	min-width: 1082px;
 	height: 450px;
 	display: flex;
+	justify-content: center;
 	-webkit-box-align: center;
 	align-items: center;
 	background: url("../img/web/inputpage1/inputmain.png")center/cover;
+}
+.inputmain .logo_div{
+	position: relative;
+	top: -30px;
 }
 .inputImg{
 	width: 100%;
