@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS 적용-->
+    <link rel="stylesheet" href="../build/css/estimate.css" />
+
+    <!--favicon 적용-->
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <title>견적 확인서 - 윈플</title>
+</head>
+
+<script>
+    function calcNow() {
+        calc.result_plus.value = calc_plus(calc.left.value, calc.right.value);
+        calc.result_minus.value = calc_minus(calc.left.value, calc.right.value);
+        calc.result_multiply.value = calc_multiply(calc.left.value, calc.right.value);
+        calc.result_divide.value = calc_divide(calc.left.value, calc.right.value);
+        calc.result_mod.value = calc_mod(calc.left.value, calc.right.value);
+    }
+    function calc_plus(left, right) {
+        return Number(left) + Number(right);
+    }
+    function calc_minus(left, right) {
+        return left - right;
+    }
+    function calc_multiply(left, right) {
+        return left * right;
+    }
+    function calc_divide(left, right) {
+        return left / right;
+    }
+    function calc_mod(left, right) {
+        return left % right;
+    }
+</script>
+</head>
+
+<body>
+    <section>
+        <header>견적 계산</header>
+        <div class ="calc-div">
+            <form name="calc">
+                <input type="text" name="left" />
+                <input type="text" name="right" />
+                <input type="button" value="계산하기" onClick="calcNow()" />
+                더하기 <input type="text" name="result_plus" readonly />
+                빼　기 <input type="text" name="result_minus" readonly />
+                곱하기 <input type="text" name="result_multiply" readonly />
+                나누기 <input type="text" name="result_divide" readonly />
+                나머지 <input type="text" name="result_mod" readonly />
+                <input type="reset" value="초기화" /><BR>
+                <div id="addedFormDiv"></div><BR>
+            </form>
+        </div>
+        <div class="plusminus_img">
+            <img style="width: 16px; height: 12px; background-color: blue;" src="/img/web/inputpage1/plus.svg"onclick="addForm()">
+            <img style="width: 16px; height: 12px; background-color: blue;" src="/img/web/inputpage1/minus.svg" onclick="delForm()">
+        </div>
+    </section>
+</body>
+
+<!-- Script -->
+<script type="text/javascript" src="../build/js/plus.js"></script>
+
+</html>

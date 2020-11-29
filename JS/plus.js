@@ -33,7 +33,7 @@ function delForm() {
 		var addedDiv = document.getElementById("added_" + (--count));
 
 		addedFormDiv.removeChild(addedDiv);
-
+ 
 	}
 }
 // 모바일버전

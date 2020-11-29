@@ -1,0 +1,60 @@
+p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, html, label, legend, li, ol, pre, table, td, th, ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	color: #313131;
+	letter-spacing: -.5px;
+	list-style : none;
+	word-break: break-all;
+}
+*{
+	-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none;
+}
+
+a{text-decoration:none}
+
+section{
+    padding : 50px;
+    background-color: rgb(250, 243, 182);
+    
+}
+header{
+    display: flex;
+    justify-content: center;
+    font-size : 40px;
+    margin-bottom: 30px;
+}
+.calc-div{
+    display: flex;
+    justify-content: center;
+}
+input[type=text] {
+    width: 145px;
+    padding: 5px;
+    background-color: #e7e7e7;
+    border: 1px solid silver;
+}
+input[type=button] {
+    width: 100px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border: 1px solid silver;
+}
+input[type=reset] {
+    width: 100px;
+    padding: 5px;
+    background-color: green;
+    color: white;
+    border: 1px solid silver;
+}
+.plusminus_img{
+	display: flex;
+	justify-content: center;
+}
+.plusminus_img img {
+	width : 30px;
+	height: 30px;
+	margin : 0 50px;
+	cursor: pointer;
+}

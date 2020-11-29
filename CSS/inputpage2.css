@@ -251,9 +251,10 @@ input {
 	text-align: right;
 	position: relative;
 	top : 20px;
-	right : 30px;
-	padding-bottom: 20px;
-	/* min-width: 740px; */
+	right : 0px;
+	margin-bottom: 20px;
+	padding-right : 0px;
+	width: 700px;
 	font-family: 'InfinitySansWMR-Regular';
 	font-size: 17x;
 }
@@ -264,16 +265,13 @@ input {
 }
 .plusminus_img{
 	display: flex;
-	position: relative;
-	top : 0;
-	left: 0px;
-	cursor: pointer;
-	
+	justify-content: center;
 }
 .plusminus_img img {
 	width : 30px;
 	height: 30px;
-	padding : 0 50px;
+	margin : 0 50px;
+	cursor: pointer;
 }
 .font_size1{
 	width : 400px;

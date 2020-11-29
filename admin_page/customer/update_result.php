@@ -81,9 +81,10 @@
 <HEAD>
 	<META http-equiv="content-type" content="text/html; charset=euc-kr">
 	<!--favicon 적용-->
-	<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  	<link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+  	<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+
 	<TITLE>견적서 수정 - 윈플</TITLE>
 </HEAD>
 

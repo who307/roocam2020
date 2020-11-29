@@ -11,9 +11,10 @@
   <title>관리자 페이지 - 윈플</title>
 
   <!--favicon 적용-->
-  <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="../images/favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+
 
   <!-- Bootstrap -->
   <link href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">

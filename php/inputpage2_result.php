@@ -69,10 +69,10 @@
 	 $api_key = "uukte5x8y739t6pq1uc3pvwjedsu4mlvsoalle4p"; 
 	 $template_id = "50042"; 
 	 $phone = "01049209932";
+  //  $phone = "01073258890";
 	 $headers = array("Content-Type: application/json; charset=utf-8");
 	 $phonenumber = $userNumber;
 	 $msg = "[$mDate] 견적이 도착하였습니다!
-
 건물유형 : [$userBuilding]
 	 
 창호 사이즈: 가로[ $size_horizon cm ] 세로[ $size_vertical cm ] 위치[ $size_position ]
@@ -80,72 +80,58 @@
 가로(cm) [$size_horizon] 
 세로(cm) [$size_vertical] 
 위치 [$size_position]
-
 [2]
 가로(cm) [$size_horizon2] 
 세로(cm) [$size_vertical2] 
 위치 [$size_position2]
-
 [3]
 가로(cm) [$size_horizon3] 
 세로(cm) [$size_vertical3] 
 위치 [$size_position3]
-
 [4]
 가로(cm) [$size_horizon4] 
 세로(cm) [$size_vertical4] 
 위치 [$size_position4]
-
 [5]
 가로(cm) [$size_horizon5] 
 세로(cm) [$size_vertical5] 
 위치 [$size_position5]
-
 [6]
 가로(cm) [$size_horizon6] 
 세로(cm) [$size_vertical6] 
 위치 [$size_position6]
-
 [7]
 가로(cm) [$size_horizon7] 
 세로(cm) [$size_vertical7] 
 위치 [$size_position7]
-
 [8]
 가로(cm) [$size_horizon8] 
 세로(cm) [$size_vertical8] 
 위치 [$size_position8]
-
 [9]
 가로(cm) [$size_horizon9] 
 세로(cm) [$size_vertical9] 
 위치 [$size_position9]
-
 [10]
 가로(cm) [$size_horizon10] 
 세로(cm) [$size_vertical10] 
 위치 [$size_position10]
-
 [11]
 가로(cm) [$size_horizon11] 
 세로(cm) [$size_vertical11] 
 위치 [$size_position11]
-
 [12]
 가로(cm) [$size_horizon12] 
 세로(cm) [$size_vertical12] 
 위치 [$size_position12]
-
 [13]
 가로(cm) [$size_horizon13] 
 세로(cm) [$size_vertical13] 
 위치 [$size_position13]
-
 [14]
 가로(cm) [$size_horizon14] 
 세로(cm) [$size_vertical14] 
 위치 [$size_position14]
-
 [15]
 가로(cm) [$size_horizon15] 
 세로(cm) [$size_vertical15] 
