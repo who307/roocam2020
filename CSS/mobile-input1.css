@@ -40,7 +40,6 @@ p,address, blockquote, body, button, caption, dd, div, dl, dt, fieldset, form, h
 	width: 0;
 	height: 0;
 	padding: 0;
-	/* display와 같지만 자리차지를 안하게해줌 ==> 클래스중복가능 */
 }
 
 body{
