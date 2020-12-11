@@ -161,10 +161,11 @@ header {
 	background: url("../../../img/mobile/inputpage/inputpage1/mobile\ main_1.png")center/cover;
 }
 
-
-
 /* ceomain Start */
 .web_estimate{
+	display: none;
+}
+.plusminus_img{
 	display: none;
 }
 .ceomain{
@@ -185,9 +186,8 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
-}
-.sum_estimate form {
 	text-align: center;
+
 }
 .result-text {
 	font-family: 'SCDREAM5';
@@ -251,11 +251,8 @@ header {
 	height: 900px;
 	top: 50px;
 	padding : 40px 0 80px 0;
-	/* overflow-y : scroll; */
-	border-top-left-radius: 40px;
-	border-bottom-left-radius: 40px;
-	border-top-right-radius: 40px;
-	border-bottom-right-radius: 40px;
+	overflow-y : scroll;
+	border-radius: 40px;
 	border : 1px #707070;
 	box-shadow: 5px 20px 10px -3px rgba(112, 112, 112, 0.5);
 	font-family: 'InfinitySansWMR-Regular';
@@ -270,11 +267,11 @@ header {
 .est-head span{
 	padding : 10px 5px 15px 0px;
 }
-.plusminus_img{
+.plusminus_img1{
 	display: flex;
 	justify-content: center;
 }
-.plusminus_img img {
+.plusminus_img1 img {
 	width : 30px;
 	height: 30px;
 	margin : 0 50px;

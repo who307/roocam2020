@@ -54,321 +54,333 @@
 
     <section class="ceomain">
         <div class="sum_estimate">
-            <form id="form" name="calc">
-                <p class="result-text">견적 합계</p>
+            <p class="result-text">견적 합계</p>
 
-                <div class="web_estimate">
-                    <div class="result-div">
+            <div class="web_estimate">
+                <div class="result-div">
+                    <span class="won1">&#8361;</span>
+                    <input type="text" id="fn_total" name="fn_total" placeholder="VAT제외" readonly />
+                    <!-- onKeyUp="removeChar(event);inputNumberFormat(this);" onKeyDown="inputNumberFormat(this);" -->
+                    <span class="won2">&#8361;</span>
+                    <input type="text" id="fn_totalVTA" name="fn_totalVTA" placeholder="VAT포함" readonly />
+                    <!-- onKeyUp="removeChar(event);inputNumberFormat(this);" onKeyDown="inputNumberFormat(this);" -->
+                </div>
+            </div>
+
+            <div class="mobile_estimate">
+                <div class="result-div">
+                    <div>
                         <span class="won1">&#8361;</span>
-                        <input type="text" id="fn_total" name="fn_total" placeholder="VAT제외" readonly />
-                        <!-- onKeyUp="removeChar(event);inputNumberFormat(this);" onKeyDown="inputNumberFormat(this);" -->
+                        <input type="text" id="fn_totalM" name="fn_totalM" placeholder="VAT제외" readonly />
+                    </div>
+                    <div>
                         <span class="won2">&#8361;</span>
-                        <input type="text" id="fn_totalVTA" name="fn_totalVTA" placeholder="VAT포함" readonly />
-                        <!-- onKeyUp="removeChar(event);inputNumberFormat(this);" onKeyDown="inputNumberFormat(this);" -->
+                        <input type="text" id="fn_totalVTAM" name="fn_totalVTAM" placeholder="VAT포함" readonly />
                     </div>
                 </div>
-
-                <div class="mobile_estimate">
-                    <div class="result-div">
-                        <div>
-                            <span class="won1">&#8361;</span>
-                            <input type="text" id="fn_totalM" name="fn_totalM" placeholder="VAT제외" readonly />
-                        </div>
-                        <div>
-                            <span class="won2">&#8361;</span>
-                            <input type="text" id="fn_totalVTAM" name="fn_totalVTAM" placeholder="VAT포함" readonly />
-                        </div>
-                    </div>
-                </div>
-
+            </div>
+            <div>
+                <input onclick="calNow(),calNowM()" type= "button" value="계산하기" />
                 <input type="reset" value="초기화" />
+            </div>
         </div>
-
-        <div class="estimate">
-            <div class="web_estimate" id="addedFormDiv" style="padding-bottom : 30px;">
-                <div class="est-head"><span style="margin-right : 20px;">공급가액(VAT제외금액)</span><span>합계금액(VAT포함금액)</span>
-                </div>
-
-                <div class="est" style="display: flex; justify-content: center; align-items: center; ">
-                    <div>
-                        1 .가로<input id="horizon"
-                            style="font-size: 16px; margin:0 60px 5px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
-                            type="text" name="size_horizon" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
-                            value="" Placeholder="cm" maxlength="4" required>
-                        세로<input id="vertical"
-                            style="font-size: 16px; margin:0 60px 5px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
-                            type="text" name="size_vertical" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
-                            value="" Placeholder="cm" maxlength="4" required>
-                        위치<select
-                            style="font-size: 16px; margin:0 60px 0 5px;  width: 130px; height:33px; outline: none; border : 1px solid #c9c7c7;"
-                            name="size_position" required>
-                            <option value="베란다" selected>베란다
-                            <option value="거실">거실
-                            <option value="방">방
-                            <option value="화장실">화장실
-                            <option value="기타">기타
-                        </select>
+        <form id="form" name="calc">
+            <div class="estimate">
+                <div class="web_estimate" id="addedFormDiv">
+                    <div class="est-head"><span
+                            style="margin-right : 20px;">공급가액(VAT제외금액)</span><span>합계금액(VAT포함금액)</span>
                     </div>
-                    <div class="est-2" style="display: flex; align-items: center; ">
+
+                    <div class="est">
                         <div>
-                            창호종류
-                            <input id="two" type="radio" name="frame" value="2666667" /> 이중창
-                            <input id="one" type="radio" name="frame" value="1666667" /> 단창
+                            1 .가로<input id="horizon"
+                                style="font-size: 16px; margin:0 60px 0px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
+                                type="text" name="size_horizon" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+                                value="" Placeholder="cm" maxlength="4" required>
+                            세로<input id="vertical"
+                                style="font-size: 16px; margin:0 60px 0px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
+                                type="text" name="size_vertical" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+                                value="" Placeholder="cm" maxlength="4" required>
+                            위치<select
+                                style="font-size: 16px; margin:0 30px 0 5px;  width: 130px; height:33px; outline: none; border : 1px solid #c9c7c7;"
+                                name="size_position" required>
+                                <option value="베란다" selected>베란다
+                                <option value="거실">거실
+                                <option value="방">방
+                                <option value="화장실">화장실
+                                <option value="기타">기타
+                            </select>
                         </div>
+                        <div class="est-2" style="display: flex; align-items: center; ">
+                            <div>
+                                창호종류
+                                <input id="two" type="radio" name="frame" value="2666667" /> 이중창
+                                <input id="one" type="radio" name="frame" value="1666667" /> 단창
+                            </div>
 
-                        <div class="est-3">
-                            견적<span
-                                style="position : relative; left : 15px; top: -2px; font-weight : bold; color : #2699FB;">&#8361;</span>
-                            <input class="num_sum" type="text" id="est1" name="est1"
-                                style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : -5px; text-align : right; outline: none; border : 1px solid #c9c7c7;font-weight : bold; color : #2699FB;"
-                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
-                            <span
-                                style="position : relative; left : 20px; top: -2px; font-weight : bold; color : #2699FB;">&#8361;</span>
-                            <input class="num_sum" type="text" id="estVAT1" name="estVTA1"
-                                style="width : 120px; height : 30px; padding : 0 10px 0 20px;  text-align : right; outline: none; border : 1px solid #c9c7c7;font-weight : bold; color : #2699FB;"
-                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
-                        </div>
-                    </div>
-                </div>
-
-                <br>
-                <div class="est" style="display: flex; justify-content: center; align-items: center; ">
-                    <div>
-                        2 .가로<input id="horizon"
-                            style="font-size: 16px; margin:0 60px 5px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
-                            type="text" name="size_horizon2" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
-                            value="" Placeholder="cm" maxlength="4">
-                        세로<input id="vertical"
-                            style="font-size: 16px; margin:0 60px 5px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
-                            type="text" name="size_vertical2" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
-                            value="" Placeholder="cm" maxlength="4">
-                        위치<select
-                            style="font-size: 16px; margin:0 60px 0 5px;  width: 130px; height:33px; outline: none; border : 1px solid #c9c7c7;"
-                            name="size_position2">
-                            <option value="베란다">베란다
-                            <option value="거실" selected>거실
-                            <option value="방">방
-                            <option value="화장실">화장실
-                            <option value="기타">기타
-                        </select>
-                    </div>
-                    <div class="est-2" style="display: flex; align-items: center; ">
-                        <div>
-                            창호종류
-                            <input id="two" type="radio" name="frame2" value="2666667" /> 이중창
-                            <input id="one" type="radio" name="frame2" value="1666667" /> 단창
-                        </div>
-                        <div class="est-3">
-                            견적<span
-                                style="position : relative; left : 15px; top: -2px; font-weight : bold; color : #2699FB;">&#8361;</span>
-                            <input class="num_sum" type="text" id="est2" name="est2"
-                                style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : -5px; text-align : right; outline: none; border : 1px solid #c9c7c7; font-weight : bold; color : #2699FB;"
-                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
-                            <span
-                                style="position : relative; left : 25px; top: -2px; font-weight : bold; color : #2699FB;">&#8361;</span>
-                            <input class="num_sum" type="text" id="estVAT2" name="estVAT2"
-                                style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : 5px; text-align : right; outline: none; border : 1px solid #c9c7c7; font-weight : bold; color : #2699FB;"
-                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
-                        </div>
-                    </div>
-                </div>
-
-                <br>
-                <div class="est" style="display: flex; justify-content: center; align-items: center; ">
-                    <div>
-                        3 .가로<input id="horizon"
-                            style="font-size: 16px; margin:0 60px 5px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
-                            type="text" name="size_horizon3" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
-                            value="" Placeholder="cm" maxlength="4">
-                        세로<input id="vertical"
-                            style="font-size: 16px; margin:0 60px 5px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
-                            type="text" name="size_vertical3" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
-                            value="" Placeholder="cm" maxlength="4">
-                        위치<select
-                            style="font-size: 16px; margin:0 60px 0 5px; width: 130px; height:33px; outline: none; border : 1px solid #c9c7c7;"
-                            name="size_position3">
-                            <option value="베란다">베란다
-                            <option value="거실">거실
-                            <option value="방" selected>방
-                            <option value="화장실">화장실
-                            <option value="기타">기타
-                        </select>
-                    </div>
-                    <div class="est-2" style="display: flex; align-items: center; ">
-                        <div>
-                            창호종류
-                            <input id="two" type="radio" name="frame3" value="2666667" /> 이중창
-                            <input id="one" type="radio" name="frame3" value="1666667" /> 단창
-                        </div>
-                        <div class="est-3">
-                            견적<span
-                                style="position : relative; left : 15px; top: -2px; font-weight : bold; color : #2699FB;">&#8361;</span>
-                            <input class="num_sum" type="text" id="est3" name="est3"
-                                style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : -5px; text-align : right; outline: none; border : 1px solid #c9c7c7; font-weight : bold; color : #2699FB;"
-                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
-                            <span
-                                style="position : relative; left : 25px; top: -2px; font-weight : bold; color : #2699FB;">&#8361;</span>
-                            <input class="num_sum" type="text" id="estVAT3" name="estVAT3"
-                                style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : 5px; text-align : right; outline: none; border : 1px solid #c9c7c7; font-weight : bold; color : #2699FB;"
-                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
-                        </div>
-                    </div>
-                </div>
-
-                <br>
-                <div class="est" style="display: flex; justify-content: center; align-items: center; ">
-                    <div>
-                        4 .가로<input id="horizon"
-                            style="font-size: 16px; margin:0 60px 5px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
-                            type="text" name="size_horizon4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
-                            value="" Placeholder="cm" maxlength="4">
-                        세로<input id="vertical"
-                            style="font-size: 16px; margin:0 60px 5px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
-                            type="text" name="size_vertical4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
-                            value="" Placeholder="cm" maxlength="4">
-                        위치<select
-                            style="font-size: 16px; margin:0 60px 0 5px; width: 130px; height:33px; outline: none; border : 1px solid #c9c7c7;"
-                            name="size_position4">
-                            <option value="베란다">베란다
-                            <option value="거실">거실
-                            <option value="방">방
-                            <option value="화장실" selected>화장실
-                            <option value="기타">기타
-                        </select>
-                    </div>
-                    <div class="est-2" style="display: flex; align-items: center; ">
-                        <div>
-                            창호종류
-                            <input id="two" type="radio" name="frame4" value="2666667" /> 이중창
-                            <input id="one" type="radio" name="frame4" value="1666667" /> 단창
-                        </div>
-                        <div class="est-3">
-                            견적<span
-                                style="position : relative; left : 15px; top: -2px; font-weight : bold; color : #2699FB;">&#8361;</span>
-                            <input class="num_sum" type="text" id="est4" name="est4"
-                                style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : -5px; text-align : right; outline: none; border : 1px solid #c9c7c7; font-weight : bold; color : #2699FB;"
-                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
-                            <span
-                                style="position : relative; left : 25px; top: -2px; font-weight : bold; color : #2699FB;">&#8361;</span>
-                            <input class="num_only num_comma num_sum" type="text" id="estVAT4" name="VAT4"
-                                style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : 5px; text-align : right; outline: none; border : 1px solid #c9c7c7; font-weight : bold; color : #2699FB;"
-                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="est" style="display: flex; justify-content: center; align-items: center; ">
-                    <div>
-                        5 .가로<input id="horizon"
-                            style="font-size: 16px; margin:0 60px 5px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
-                            type="text" name="size_horizon5" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
-                            value="" Placeholder="cm" maxlength="4">
-                        세로<input id="vertical"
-                            style="font-size: 16px; margin:0 60px 5px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
-                            type="text" name="size_vertical5" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
-                            value="" Placeholder="cm" maxlength="4">
-                        위치<select
-                            style="font-size: 16px; margin:0 60px 0 5px; width: 130px; height:33px; outline: none; border : 1px solid #c9c7c7;"
-                            name="size_position5">
-                            <option value="베란다">베란다
-                            <option value="거실">거실
-                            <option value="방">방
-                            <option value="화장실">화장실
-                            <option value="기타" selected>기타
-                        </select>
-                    </div>
-                    <div class="est-2" style="display: flex; align-items: center; ">
-                        <div>
-                            창호종류
-                            <input id="two" type="radio" name="frame5" value="2666667" /> 이중창
-                            <input id="one" type="radio" name="frame5" value="1666667" /> 단창
                             <div class="est-3">
                                 견적<span
-                                    style="position : relative; left : 15px; top: -2px;font-weight : bold; color : #2699FB;">&#8361;</span>
-                                <input class="num_sum" type="text" id="est5" name="est5"
-                                    style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : -5px; text-align : right; outline: none; border : 1px solid #c9c7c7; font-weight : bold; color : #2699FB; "
+                                    style="position : relative; left : 15px; top: -2px; font-weight : bold; color : #2699FB;">&#8361;</span>
+                                <input class="num_sum" type="text" id="est1" name="est1"
+                                    style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : -5px; text-align : right; outline: none; border : 1px solid #c9c7c7;font-weight : bold; color : #2699FB;"
                                     onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
                                 <span
-                                    style="position : relative; left : 25px; top: -2px;font-weight : bold; color : #2699FB;">&#8361;</span>
-                                <input class="num_sum" type="text" id="estVAT5" name="estVAT5"
-                                    style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : 5px; text-align : right; outline: none; border : 1px solid #c9c7c7; font-weight : bold; color : #2699FB; "
+                                    style="position : relative; left : 25px; top: -2px; font-weight : bold; color : #2699FB;">&#8361;</span>
+                                <input class="num_sum" type="text" id="estVAT1" name="estVTA1"
+                                    style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : 5px;text-align : right; outline: none; border : 1px solid #c9c7c7;font-weight : bold; color : #2699FB;"
                                     onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
-
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- <div id="addedFormDiv"></div><BR> -->
-            </div>
-            <div class="mobile_estimate" id="addedFormDiv" style="width : 350px; margin : auto;">
-                <div style=" display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                    <div>
-                        1 .가로<input id="horizonM"
-                            style="font-size: 16px; margin:0 10px 5px 5px; width: 90px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
-                            type="text" name="size_horizonM" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
-                            value="" Placeholder="cm" maxlength="4" required>
-                        세로<input id="verticalM"
-                            style="font-size: 16px; margin:0 10px 5px 5px; width: 90px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
-                            type="text" name="size_verticalM" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
-                            value="" Placeholder="cm" maxlength="4" required><br>&nbsp;&nbsp;&nbsp;
-                        위치<select
-                            style="font-size: 16px; margin:0 10px 5px 6px; width: 104px; height:30px; outline: none; border : 1px solid #c9c7c7;"
-                            name="size_positionM" required>
-                            <option value="베란다" selected>베란다
-                            <option value="거실">거실
-                            <option value="방">방
-                            <option value="화장실">화장실
-                            <option value="기타">기타
-                        </select>
-                        종류
-                        <input id="two" type="radio" name="frameM" value="2666667" /> 이중창
-                        <input id="one" type="radio" name="frameM" value="1666667" /> 단창
-                        <div style="width : 100%; margin-left: 13px; line-height : 36px;">
-                            견적(VAT제외)<span
-                                style="position : relative; left : 20px;; font-weight : bold; color : #2699FB;">&#8361;</span>
-                            <input class="num_sum" type="text" id="est1M" name="est1M"
-                                style="width : 155px; height : 30px; padding : 0 10px 0 20px;font-size: 16px; margin-left : -5px; text-align : right; outline: none; border : 1px solid #c9c7c7;font-weight : bold; color : #2699FB;"
-                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly /> <br>
-                            견적(VAT포함)<span
-                                style="position : relative; left : 20px; font-weight : bold; color : #2699FB;">&#8361;</span>
-                            <input class="num_sum" type="text" id="estVAT1M" name="estVTA1M"
-                                style="width : 155px; height : 30px; padding : 0 10px 0 20px;font-size: 16px; margin : 0 0 30px -5px; text-align : right; outline: none; border : 1px solid #c9c7c7;font-weight : bold; color : #2699FB;"
-                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
+
+                    <br>
+                    <div class="est">
+                        <div>
+                            2 .가로<input id="horizon"
+                                style="font-size: 16px; margin:0 60px 0px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
+                                type="text" name="size_horizon2" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+                                value="" Placeholder="cm" maxlength="4">
+                            세로<input id="vertical"
+                                style="font-size: 16px; margin:0 60px 0px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
+                                type="text" name="size_vertical2" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+                                value="" Placeholder="cm" maxlength="4">
+                            위치<select
+                                style="font-size: 16px; margin:0 30px 0 5px;  width: 130px; height:33px; outline: none; border : 1px solid #c9c7c7;"
+                                name="size_position2">
+                                <option value="베란다">베란다
+                                <option value="거실" selected>거실
+                                <option value="방">방
+                                <option value="화장실">화장실
+                                <option value="기타">기타
+                            </select>
+                        </div>
+                        <div class="est-2" style="display: flex; align-items: center; ">
+                            <div>
+                                창호종류
+                                <input id="two" type="radio" name="frame2" value="2666667" /> 이중창
+                                <input id="one" type="radio" name="frame2" value="1666667" /> 단창
+                            </div>
+                            <div class="est-3">
+                                견적<span
+                                    style="position : relative; left : 15px; top: -2px; font-weight : bold; color : #2699FB;">&#8361;</span>
+                                <input class="num_sum" type="text" id="est2" name="est2"
+                                    style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : -5px; text-align : right; outline: none; border : 1px solid #c9c7c7; font-weight : bold; color : #2699FB;"
+                                    onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
+                                <span
+                                    style="position : relative; left : 25px; top: -2px; font-weight : bold; color : #2699FB;">&#8361;</span>
+                                <input class="num_sum" type="text" id="estVAT2" name="estVAT2"
+                                    style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : 5px; text-align : right; outline: none; border : 1px solid #c9c7c7; font-weight : bold; color : #2699FB;"
+                                    onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="est">
+                        <div>
+                            3 .가로<input id="horizon"
+                                style="font-size: 16px; margin:0 60px 0px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
+                                type="text" name="size_horizon3" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+                                value="" Placeholder="cm" maxlength="4">
+                            세로<input id="vertical"
+                                style="font-size: 16px; margin:0 60px 0px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
+                                type="text" name="size_vertical3" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+                                value="" Placeholder="cm" maxlength="4">
+                            위치<select
+                                style="font-size: 16px; margin:0 30px 0 5px; width: 130px; height:33px; outline: none; border : 1px solid #c9c7c7;"
+                                name="size_position3">
+                                <option value="베란다">베란다
+                                <option value="거실">거실
+                                <option value="방" selected>방
+                                <option value="화장실">화장실
+                                <option value="기타">기타
+                            </select>
+                        </div>
+                        <div class="est-2" style="display: flex; align-items: center; ">
+                            <div>
+                                창호종류
+                                <input id="two" type="radio" name="frame3" value="2666667" /> 이중창
+                                <input id="one" type="radio" name="frame3" value="1666667" /> 단창
+                            </div>
+                            <div class="est-3">
+                                견적<span
+                                    style="position : relative; left : 15px; top: -2px; font-weight : bold; color : #2699FB;">&#8361;</span>
+                                <input class="num_sum" type="text" id="est3" name="est3"
+                                    style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : -5px; text-align : right; outline: none; border : 1px solid #c9c7c7; font-weight : bold; color : #2699FB;"
+                                    onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
+                                <span
+                                    style="position : relative; left : 25px; top: -2px; font-weight : bold; color : #2699FB;">&#8361;</span>
+                                <input class="num_sum" type="text" id="estVAT3" name="estVAT3"
+                                    style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : 5px; text-align : right; outline: none; border : 1px solid #c9c7c7; font-weight : bold; color : #2699FB;"
+                                    onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="est">
+                        <div>
+                            4 .가로<input id="horizon"
+                                style="font-size: 16px; margin:0 60px 0px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
+                                type="text" name="size_horizon4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+                                value="" Placeholder="cm" maxlength="4">
+                            세로<input id="vertical"
+                                style="font-size: 16px; margin:0 60px 0px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
+                                type="text" name="size_vertical4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+                                value="" Placeholder="cm" maxlength="4">
+                            위치<select
+                                style="font-size: 16px; margin:0 30px 0 5px; width: 130px; height:33px; outline: none; border : 1px solid #c9c7c7;"
+                                name="size_position4">
+                                <option value="베란다">베란다
+                                <option value="거실">거실
+                                <option value="방">방
+                                <option value="화장실" selected>화장실
+                                <option value="기타">기타
+                            </select>
+                        </div>
+                        <div class="est-2" style="display: flex; align-items: center; ">
+                            <div>
+                                창호종류
+                                <input id="two" type="radio" name="frame4" value="2666667" /> 이중창
+                                <input id="one" type="radio" name="frame4" value="1666667" /> 단창
+                            </div>
+                            <div class="est-3">
+                                견적<span
+                                    style="position : relative; left : 15px; top: -2px; font-weight : bold; color : #2699FB;">&#8361;</span>
+                                <input class="num_sum" type="text" id="est4" name="est4"
+                                    style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : -5px; text-align : right; outline: none; border : 1px solid #c9c7c7; font-weight : bold; color : #2699FB;"
+                                    onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
+                                <span
+                                    style="position : relative; left : 25px; top: -2px; font-weight : bold; color : #2699FB;">&#8361;</span>
+                                <input class="num_sum" type="text" id="estVAT4" name="estVAT4"
+                                    style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : 5px; text-align : right; outline: none; border : 1px solid #c9c7c7; font-weight : bold; color : #2699FB;"
+                                    onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
+                            </div>
                         </div>
                     </div>
                     <br>
+                    <div class="est">
+                        <div>
+                            5 .가로<input id="horizon"
+                                style="font-size: 16px; margin:0 60px 0px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
+                                type="text" name="size_horizon5" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+                                value="" Placeholder="cm" maxlength="4">
+                            세로<input id="vertical"
+                                style="font-size: 16px; margin:0 60px 0px 5px; width: 100px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
+                                type="text" name="size_vertical5" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+                                value="" Placeholder="cm" maxlength="4">
+                            위치<select
+                                style="font-size: 16px; margin:0 30px 0 5px; width: 130px; height:33px; outline: none; border : 1px solid #c9c7c7;"
+                                name="size_position5">
+                                <option value="베란다">베란다
+                                <option value="거실">거실
+                                <option value="방">방
+                                <option value="화장실">화장실
+                                <option value="기타" selected>기타
+                            </select>
+                        </div>
+                        <div class="est-2" style="display: flex; align-items: center; ">
+                            <div>
+                                창호종류
+                                <input id="two" type="radio" name="frame5" value="2666667" /> 이중창
+                                <input id="one" type="radio" name="frame5" value="1666667" /> 단창
+                            </div>
+                            <div class="est-3">
+                                견적<span
+                                    style="position : relative; left : 15px; top: -2px; font-weight : bold; color : #2699FB;">&#8361;</span>
+                                <input class="num_sum" type="text" id="est5" name="est5"
+                                    style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : -5px; text-align : right; outline: none; border : 1px solid #c9c7c7; font-weight : bold; color : #2699FB;"
+                                    onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
+                                <span
+                                    style="position : relative; left : 25px; top: -2px; font-weight : bold; color : #2699FB;">&#8361;</span>
+                                <input class="num_sum" type="text" id="estVAT5" name="estVAT5"
+                                    style="width : 120px; height : 30px; padding : 0 10px 0 20px; margin-left : 5px; text-align : right; outline: none; border : 1px solid #c9c7c7; font-weight : bold; color : #2699FB;"
+                                    onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
+                            </div>
+                        </div>
+                    </div>
+                    <BR>
+                </div>
+                <div class="plusminus_img">
+                    <img style="width: 16px; height: 12px;" src="../../img/web/inputpage1/plus.svg" onclick="addForm()">
+                    <img style="width: 16px; height: 12px; " src="../../img/web/inputpage1/minus.svg"
+                        onclick="delForm()">
+                </div>
+
+
+                <div class="mobile_estimate" id="addedFormDiv1" style="width : 350px; margin : auto;">
                     <div>
-                        2 .가로<input id="horizon2M"
-                            style="font-size: 16px; margin:0 10px 5px 5px; width: 90px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
-                            type="text" name="size_horizon2M" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
-                            value="" Placeholder="cm" maxlength="4" required>
-                        세로<input id="vertical2M"
-                            style="font-size: 16px; margin:0 10px 5px 5px; width: 90px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
-                            type="text" name="size_vertical2M" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
-                            value="" Placeholder="cm" maxlength="4" required><br>&nbsp;&nbsp;&nbsp;
-                        위치<select
-                            style="font-size: 16px; margin:0 10px 5px 6px; width: 104px; height:30px; outline: none; border : 1px solid #c9c7c7;"
-                            name="size_position2M" required>
-                            <option value="베란다">베란다
-                            <option value="거실"selected>거실
-                            <option value="방">방
-                            <option value="화장실">화장실
-                            <option value="기타">기타
-                        </select>
-                        종류
-                        <input id="two" type="radio" name="frame2M" value="2666667" /> 이중창
-                        <input id="one" type="radio" name="frame2M" value="1666667" /> 단창
-                        <div style="width : 100%; margin-left: 13px; line-height : 36px;">
-                            견적(VAT제외)<span
-                                style="position : relative; left : 20px; font-weight : bold; color : #2699FB;">&#8361;</span>
-                            <input class="num_sum" type="text" id="est2M" name="est2M"
-                                style="width : 155px; height : 30px; padding : 0 10px 0 20px;font-size: 16px; margin-left : -5px; text-align : right; outline: none; border : 1px solid #c9c7c7;font-weight : bold; color : #2699FB;"
-                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly /> <br>
-                            견적(VAT포함)<span
-                                style="position : relative; left : 20px; font-weight : bold; color : #2699FB;">&#8361;</span>
-                            <input class="num_sum" type="text" id="estVAT2M" name="estVTA2M"
-                                style="width : 155px; height : 30px; padding : 0 10px 0 20px;font-size: 16px; margin : 0 0 30px -5px; text-align : right; outline: none; border : 1px solid #c9c7c7;font-weight : bold; color : #2699FB;"
-                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
+                        <div>
+                            1 .가로<input id="horizonM"
+                                style="font-size: 16px; margin:0 10px 5px 5px; width: 90px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
+                                type="text" name="size_horizonM" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+                                value="" Placeholder="cm" maxlength="4" required>
+                            세로<input id="verticalM"
+                                style="font-size: 16px; margin:0 10px 5px 5px; width: 90px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
+                                type="text" name="size_verticalM" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+                                value="" Placeholder="cm" maxlength="4" required><br>&nbsp;&nbsp;&nbsp;
+                            위치<select
+                                style="font-size: 16px; margin:0 10px 5px 6px; width: 104px; height:30px; outline: none; border : 1px solid #c9c7c7;"
+                                name="size_positionM" required>
+                                <option value="베란다" selected>베란다
+                                <option value="거실">거실
+                                <option value="방">방
+                                <option value="화장실">화장실
+                                <option value="기타">기타
+                            </select>
+                            종류
+                            <input id="two" type="radio" name="frameM" value="2666667" /> 이중창
+                            <input id="one" type="radio" name="frameM" value="1666667" /> 단창
+                            <div style="width : 100%; margin-left: 13px; line-height : 36px;">
+                                견적(VAT제외)<span
+                                    style="position : relative; left : 20px;; font-weight : bold; color : #2699FB;">&#8361;</span>
+                                <input class="num_sum" type="text" id="est1M" name="est1M"
+                                    style="width : 155px; height : 30px; padding : 0 10px 0 20px;font-size: 16px; margin-left : -5px; text-align : right; outline: none; border : 1px solid #c9c7c7;font-weight : bold; color : #2699FB;"
+                                    onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
+                                <br>
+                                견적(VAT포함)<span
+                                    style="position : relative; left : 20px; font-weight : bold; color : #2699FB;">&#8361;</span>
+                                <input class="num_sum" type="text" id="estVAT1M" name="estVTA1M"
+                                    style="width : 155px; height : 30px; padding : 0 10px 0 20px;font-size: 16px; margin : 0 0 30px -5px; text-align : right; outline: none; border : 1px solid #c9c7c7;font-weight : bold; color : #2699FB;"
+                                    onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                            2 .가로<input id="horizon2M"
+                                style="font-size: 16px; margin:0 10px 5px 5px; width: 90px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
+                                type="text" name="size_horizon2M" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+                                value="" Placeholder="cm" maxlength="4" required>
+                            세로<input id="vertical2M"
+                                style="font-size: 16px; margin:0 10px 5px 5px; width: 90px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
+                                type="text" name="size_vertical2M"
+                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" Placeholder="cm"
+                                maxlength="4" required><br>&nbsp;&nbsp;&nbsp;
+                            위치<select
+                                style="font-size: 16px; margin:0 10px 5px 6px; width: 104px; height:30px; outline: none; border : 1px solid #c9c7c7;"
+                                name="size_position2M" required>
+                                <option value="베란다">베란다
+                                <option value="거실" selected>거실
+                                <option value="방">방
+                                <option value="화장실">화장실
+                                <option value="기타">기타
+                            </select>
+                            종류
+                            <input id="two" type="radio" name="frame2M" value="2666667" /> 이중창
+                            <input id="one" type="radio" name="frame2M" value="1666667" /> 단창
+                            <div style="width : 100%; margin-left: 13px; line-height : 36px;">
+                                견적(VAT제외)<span
+                                    style="position : relative; left : 20px; font-weight : bold; color : #2699FB;">&#8361;</span>
+                                <input class="num_sum" type="text" id="est2M" name="est2M"
+                                    style="width : 155px; height : 30px; padding : 0 10px 0 20px;font-size: 16px; margin-left : -5px; text-align : right; outline: none; border : 1px solid #c9c7c7;font-weight : bold; color : #2699FB;"
+                                    onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
+                                <br>
+                                견적(VAT포함)<span
+                                    style="position : relative; left : 20px; font-weight : bold; color : #2699FB;">&#8361;</span>
+                                <input class="num_sum" type="text" id="estVAT2M" name="estVTA2M"
+                                    style="width : 155px; height : 30px; padding : 0 10px 0 20px;font-size: 16px; margin : 0 0 30px -5px; text-align : right; outline: none; border : 1px solid #c9c7c7;font-weight : bold; color : #2699FB;"
+                                    onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
+                            </div>
                         </div>
                         <br>
                         <div>
@@ -386,7 +398,7 @@
                                 name="size_position3M" required>
                                 <option value="베란다">베란다
                                 <option value="거실">거실
-                                <option value="방"selected>방
+                                <option value="방" selected>방
                                 <option value="화장실">화장실
                                 <option value="기타">기타
                             </select>
@@ -408,37 +420,41 @@
                             </div>
                         </div>
                         <br>
-                        4 .가로<input id="horizon4M"
-                            style="font-size: 16px; margin:0 10px 5px 5px; width: 90px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
-                            type="text" name="size_horizon4M" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
-                            value="" Placeholder="cm" maxlength="4" required>
-                        세로<input id="vertical4M"
-                            style="font-size: 16px; margin:0 10px 5px 5px; width: 90px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
-                            type="text" name="size_vertical4M" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
-                            value="" Placeholder="cm" maxlength="4" required><br>&nbsp;&nbsp;&nbsp;
-                        위치<select
-                            style="font-size: 16px; margin:0 10px 5px 6px; width: 104px; height:30px; outline: none; border : 1px solid #c9c7c7;"
-                            name="size_position4M" required>
-                            <option value="베란다">베란다
-                            <option value="거실">거실
-                            <option value="방">방
-                            <option value="화장실"selected>화장실
-                            <option value="기타">기타
-                        </select>
-                        종류
-                        <input id="two" type="radio" name="frame4M" value="2666667" /> 이중창
-                        <input id="one" type="radio" name="frame4M" value="1666667" /> 단창
-                        <div style="width : 100%; margin-left: 13px; line-height : 36px;">
-                            견적(VAT제외)<span
-                                style="position : relative; left : 20px; font-weight : bold; color : #2699FB;">&#8361;</span>
-                            <input class="num_sum" type="text" id="est4M" name="est4M"
-                                style="width : 155px; height : 30px; padding : 0 10px 0 20px;font-size: 16px; margin-left : -5px; text-align : right; outline: none; border : 1px solid #c9c7c7;font-weight : bold; color : #2699FB;"
-                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly /> <br>
-                            견적(VAT포함)<span
-                                style="position : relative; left : 20px; font-weight : bold; color : #2699FB;">&#8361;</span>
-                            <input class="num_sum" type="text" id="estVAT4M" name="estVTA4M"
-                                style="width : 155px; height : 30px; padding : 0 10px 0 20px;font-size: 16px; margin : 0 0 30px -5px; text-align : right; outline: none; border : 1px solid #c9c7c7;font-weight : bold; color : #2699FB;"
-                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
+                        <div>
+                            4 .가로<input id="horizon4M"
+                                style="font-size: 16px; margin:0 10px 5px 5px; width: 90px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
+                                type="text" name="size_horizon4M" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+                                value="" Placeholder="cm" maxlength="4" required>
+                            세로<input id="vertical4M"
+                                style="font-size: 16px; margin:0 10px 5px 5px; width: 90px; height:30px; text-align: right; padding-right: 10px; outline: none; border : 1px solid #c9c7c7;"
+                                type="text" name="size_vertical4M"
+                                onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" Placeholder="cm"
+                                maxlength="4" required><br>&nbsp;&nbsp;&nbsp;
+                            위치<select
+                                style="font-size: 16px; margin:0 10px 5px 6px; width: 104px; height:30px; outline: none; border : 1px solid #c9c7c7;"
+                                name="size_position4M" required>
+                                <option value="베란다">베란다
+                                <option value="거실">거실
+                                <option value="방">방
+                                <option value="화장실" selected>화장실
+                                <option value="기타">기타
+                            </select>
+                            종류
+                            <input id="two" type="radio" name="frame4M" value="2666667" /> 이중창
+                            <input id="one" type="radio" name="frame4M" value="1666667" /> 단창
+                            <div style="width : 100%; margin-left: 13px; line-height : 36px;">
+                                견적(VAT제외)<span
+                                    style="position : relative; left : 20px; font-weight : bold; color : #2699FB;">&#8361;</span>
+                                <input class="num_sum" type="text" id="est4M" name="est4M"
+                                    style="width : 155px; height : 30px; padding : 0 10px 0 20px;font-size: 16px; margin-left : -5px; text-align : right; outline: none; border : 1px solid #c9c7c7;font-weight : bold; color : #2699FB;"
+                                    onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
+                                <br>
+                                견적(VAT포함)<span
+                                    style="position : relative; left : 20px; font-weight : bold; color : #2699FB;">&#8361;</span>
+                                <input class="num_sum" type="text" id="estVAT4M" name="estVTA4M"
+                                    style="width : 155px; height : 30px; padding : 0 10px 0 20px;font-size: 16px; margin : 0 0 30px -5px; text-align : right; outline: none; border : 1px solid #c9c7c7;font-weight : bold; color : #2699FB;"
+                                    onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
+                            </div>
                         </div>
                         <br>
                         <div>
@@ -458,7 +474,7 @@
                                 <option value="거실">거실
                                 <option value="방">방
                                 <option value="화장실">화장실
-                                <option value="기타"selected>기타
+                                <option value="기타" selected>기타
                             </select>
                             종류
                             <input id="two" type="radio" name="frame5M" value="2666667" /> 이중창
@@ -477,13 +493,19 @@
                                     onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10" readonly />
                             </div>
                         </div>
-                        <!-- <div class="plusminus_img">
-                <img style="width: 16px; height: 12px;;" src="../../img/web/inputpage1/plus.svg" onclick="addForm()">
-                <img style="width: 16px; height: 12px; " src="../../img/web/inputpage1/minus.svg" onclick="delForm()">
-            </div> -->
-                        </form>
+                        <br>
                     </div>
                 </div>
+                <div class="plusminus_img1">
+                    <img style="width: 16px; height: 12px;" src="../../img/web/inputpage1/plus.svg"
+                        onclick="addForm1()">
+                    <img style="width: 16px; height: 12px; " src="../../img/web/inputpage1/minus.svg"
+                        onclick="delForm1()">
+                </div>
+            </div>
+            </div>
+
+        </form>
     </section>
 
 

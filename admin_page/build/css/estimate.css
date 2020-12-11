@@ -169,7 +169,8 @@ header {
 	justify-content: center;
 	-webkit-box-align: center;
 	align-items: center;
-	background: url("../../../img/web/inputpage1/inputmain.png")center/cover;
+	background: url("../../../img/web/inputpage1/inputmain.png");
+	background-size : 100% 450px;
 }
 .inputmain .logo_div{
 	position: relative;
@@ -178,6 +179,9 @@ header {
 
 /* ceomain Start */
 .mobile_estimate{
+	display: none;
+}
+.plusminus_img1{
 	display: none;
 }
 
@@ -200,10 +204,9 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
-}
-.sum_estimate form {
 	text-align: center;
 }
+
 .result-text {
 	font-family: 'SCDREAM5';
 	font-size : 35px;
@@ -251,7 +254,7 @@ header {
 	position: relative;
 	margin: 0 auto;
 	background-color: #ffffff;
-	width : 1380px;
+	width : 1400px;
 	min-width: 800px;
 	height: 250px;
 	top: 200px;
@@ -266,13 +269,20 @@ header {
 	font-size : 15px;
 	text-align: right;
 }
+.web_estimate{
+	width: 1300px;
+}
 .est-head {
-	width: 1330px;
+	width: 1350px;
 	display : flex;
 	justify-content : flex-end;
 }
 .est-head span{
 	padding : 10px 5px 15px 0px;
+}
+.est {
+	display: flex;
+	justify-content: flex-end;
 }
 .est-3{
 	width : 380px;
@@ -296,22 +306,27 @@ header {
 
 @media only screen 
     and (min-width : 506px) 
-    and (max-width : 1580px)
+    and (max-width : 1380px)
 {
 .estimate{
+	width: 980px;
+}
+.web_estimate{
 	width: 900px;
+	padding-bottom: 30px;
 }
 .est-head{
 	display: none;
 }
 .est {
 	flex-direction: column;
-
+	align-items: center;
 	}
 .est-2{
 	width: 650px;
 	position: relative;
 	left: 15px;
+	padding-top : 10px;
 	
 }
 .est-3{
