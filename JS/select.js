@@ -1,51 +1,51 @@
-$(function () {
-    $(".select1").click(function () {
-        $(".select1").addClass("select");
-        $(".select2").removeClass("select");
-        $(".select3").removeClass("select");
+// $(function () {
+//     $(".select1").click(function () {
+//         $(".select1").addClass("select");
+//         $(".select2").removeClass("select");
+//         $(".select3").removeClass("select");
 
-        $(".btn_01").addClass("trans");
+//         $(".btn_01").addClass("trans");
 
-        $(".greenimg1").addClass("whiteimg");
-        $(".greenimg2").removeClass("whiteimg");
-        $(".greenimg3").removeClass("whiteimg");
+//         $(".greenimg1").addClass("whiteimg");
+//         $(".greenimg2").removeClass("whiteimg");
+//         $(".greenimg3").removeClass("whiteimg");
 
-        $(".color1").addClass("whitecolor");
-        $(".color2").removeClass("whitecolor");
-        $(".color3").removeClass("whitecolor");
+//         $(".color1").addClass("whitecolor");
+//         $(".color2").removeClass("whitecolor");
+//         $(".color3").removeClass("whitecolor");
         
-    });
-    $(".select2").click(function () {
-        $(".select2").addClass("select");
-        $(".select1").removeClass("select");
-        $(".select3").removeClass("select");
+//     });
+//     $(".select2").click(function () {
+//         $(".select2").addClass("select");
+//         $(".select1").removeClass("select");
+//         $(".select3").removeClass("select");
 
-        $(".btn_01").addClass("trans");
+//         $(".btn_01").addClass("trans");
 
-        $(".greenimg2").addClass("whiteimg");
-        $(".greenimg1").removeClass("whiteimg");
-        $(".greenimg3").removeClass("whiteimg");
+//         $(".greenimg2").addClass("whiteimg");
+//         $(".greenimg1").removeClass("whiteimg");
+//         $(".greenimg3").removeClass("whiteimg");
 
-        $(".color2").addClass("whitecolor");
-        $(".color1").removeClass("whitecolor");
-        $(".color3").removeClass("whitecolor");
-    });
-    $(".select3").click(function () {
-        $(".select3").addClass("select");
-        $(".select2").removeClass("select");
-        $(".select1").removeClass("select");
+//         $(".color2").addClass("whitecolor");
+//         $(".color1").removeClass("whitecolor");
+//         $(".color3").removeClass("whitecolor");
+//     });
+//     $(".select3").click(function () {
+//         $(".select3").addClass("select");
+//         $(".select2").removeClass("select");
+//         $(".select1").removeClass("select");
 
-        $(".btn_01").addClass("trans");
+//         $(".btn_01").addClass("trans");
 
-        $(".greenimg3").addClass("whiteimg");
-        $(".greenimg2").removeClass("whiteimg");
-        $(".greenimg1").removeClass("whiteimg");
+//         $(".greenimg3").addClass("whiteimg");
+//         $(".greenimg2").removeClass("whiteimg");
+//         $(".greenimg1").removeClass("whiteimg");
 
-        $(".color3").addClass("whitecolor");
-        $(".color1").removeClass("whitecolor");
-        $(".color2").removeClass("whitecolor");
-    });
-});
+//         $(".color3").addClass("whitecolor");
+//         $(".color1").removeClass("whitecolor");
+//         $(".color2").removeClass("whitecolor");
+//     });
+// });
 
 // $(function () {
 //     var a = false;
@@ -99,32 +99,31 @@ $(function () {
 // });
 
 
+// var btnid = document.getElementById('btnid');
+// var select1 = false;
 
-var btnid = document.getElementById('btnid');
-var select1 = false;
+// function goselect1() {
+//     btnid.addEventListener('click', function () {
+//         location.href = "http://roocam.cafe24.com/html/inputpage2.html";
+//     })
+//     return select1 = true;
+// }
 
-function goselect1() {
-    btnid.addEventListener('click', function () {
-        location.href = "http://roocam.cafe24.com/html/inputpage2.html";
-    })
-    return select1 = true;
-}
+// function goselect2() {
+//     btnid.addEventListener('click', function () {
+//         location.href = "http://roocam.cafe24.com/html/inputpage2.html";
+//     })
+//     return select1 = true;
+// }
 
-function goselect2() {
-    btnid.addEventListener('click', function () {
-        location.href = "http://roocam.cafe24.com/html/inputpage2.html";
-    })
-    return select1 = true;
-}
-
-function goselect3() {
-    btnid.addEventListener('click', function () {
-        location.href = "http://roocam.cafe24.com/html/inputpage2.html";
-    })
-    return select1 = true;
-}
-function Alert() {
-    if (select1 === false) {
-        alert("원하시는 유형을 선택해주세요.")
-    }
-}
+// function goselect3() {
+//     btnid.addEventListener('click', function () {
+//         location.href = "http://roocam.cafe24.com/html/inputpage2.html";
+//     })
+//     return select1 = true;
+// }
+// function Alert() {
+//     if (select1 === false) {
+//         alert("원하시는 유형을 선택해주세요.")
+//     }
+// }

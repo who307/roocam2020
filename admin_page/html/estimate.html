@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -37,7 +35,7 @@
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        <a class="ahide" href="../../index.html"><img class="alogo" src="../../img/web/logo.png" ;></a>
+        <a class="ahide" href="../../index.html"><img class="alogo" src="../../img/web/logo.png"></a>
         <!-- <div class="service">
 			<div class="service1">내 서비스</div>
 		</div> -->
@@ -53,38 +51,38 @@
     </section>
 
     <section class="ceomain">
-        <div class="sum_estimate">
-            <p class="result-text">견적 합계</p>
-
-            <div class="web_estimate">
-                <div class="result-div">
-                    <span class="won1">&#8361;</span>
-                    <input type="text" id="fn_total" name="fn_total" placeholder="VAT제외" readonly />
-                    <!-- onKeyUp="removeChar(event);inputNumberFormat(this);" onKeyDown="inputNumberFormat(this);" -->
-                    <span class="won2">&#8361;</span>
-                    <input type="text" id="fn_totalVTA" name="fn_totalVTA" placeholder="VAT포함" readonly />
-                    <!-- onKeyUp="removeChar(event);inputNumberFormat(this);" onKeyDown="inputNumberFormat(this);" -->
-                </div>
-            </div>
-
-            <div class="mobile_estimate">
-                <div class="result-div">
-                    <div>
-                        <span class="won1">&#8361;</span>
-                        <input type="text" id="fn_totalM" name="fn_totalM" placeholder="VAT제외" readonly />
-                    </div>
-                    <div>
-                        <span class="won2">&#8361;</span>
-                        <input type="text" id="fn_totalVTAM" name="fn_totalVTAM" placeholder="VAT포함" readonly />
-                    </div>
-                </div>
-            </div>
-            <div>
-                <input onclick="calNow(),calNowM()" type= "button" value="계산하기" />
-                <input type="reset" value="초기화" />
-            </div>
-        </div>
         <form id="form" name="calc">
+            <div class="sum_estimate">
+                <p class="result-text">견적 합계</p>
+
+                <div class="web_estimate">
+                    <div class="result-div">
+                        <span class="won1">&#8361;</span>
+                        <input type="text" id="fn_total" name="fn_total" placeholder="VAT제외" readonly />
+                        <!-- onKeyUp="removeChar(event);inputNumberFormat(this);" onKeyDown="inputNumberFormat(this);" -->
+                        <span class="won2">&#8361;</span>
+                        <input type="text" id="fn_totalVTA" name="fn_totalVTA" placeholder="VAT포함" readonly />
+                        <!-- onKeyUp="removeChar(event);inputNumberFormat(this);" onKeyDown="inputNumberFormat(this);" -->
+                    </div>
+                </div>
+
+                <div class="mobile_estimate">
+                    <div class="result-div">
+                        <div>
+                            <span class="won1">&#8361;</span>
+                            <input type="text" id="fn_totalM" name="fn_totalM" placeholder="VAT제외" readonly />
+                        </div>
+                        <div>
+                            <span class="won2">&#8361;</span>
+                            <input type="text" id="fn_totalVTAM" name="fn_totalVTAM" placeholder="VAT포함" readonly />
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <input onclick="calNow(),calNowM()" type="button" value="계산하기" />
+                    <input type="reset" value="초기화" />
+                </div>
+            </div>
             <div class="estimate">
                 <div class="web_estimate" id="addedFormDiv">
                     <div class="est-head"><span
@@ -598,14 +596,9 @@
         </div>
     </footer>
     <!-- Script -->
-    <script type="text/javascript" src="/JS/swiper.js"></script>
     <script>AOS.init()</script>
-    <script type="text/javascript" src="../build/js/plus.js"></script>
+    <script type="text/javascript" src="../../../JS/scroll.js"></script>
     <script type="text/javascript" src="../build/js/calc.js"></script>
-    <script type="text/javascript" src="/JS/scroll.js"></script>
-
-
-
 
 </body>
 

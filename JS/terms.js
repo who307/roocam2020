@@ -5,7 +5,6 @@ $(function () {
         $(".literms2").removeClass("text_color");
         $(".literms3").removeClass("text_color");
         $(".literms4").removeClass("text_color");
-
         $(".terms1").removeClass("offdisplay");
         $(".terms2").removeClass("ondisplay");
         $(".terms3").removeClass("ondisplay");
@@ -24,9 +23,7 @@ $(function () {
         $(".terms1").addClass("offdisplay");
         $(".terms3").removeClass("ondisplay");
         $(".terms4").removeClass("ondisplay");
-       
     });
-
     $(".literms3").click(function () {
         $(".literms3").addClass("text_color");
         $(".literms1").removeClass("text_color");
@@ -38,8 +35,6 @@ $(function () {
         $(".terms1").addClass("offdisplay");
         $(".terms2").removeClass("ondisplay");
         $(".terms4").removeClass("ondisplay");
-        
-        
     });
     $(".literms4").click(function () {
         $(".literms4").addClass("text_color");
