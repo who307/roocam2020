@@ -1,6 +1,6 @@
 <?php
 
-	 $con = mysqli_connect("localhost", "roocam", "DB_PASSWORD_REMOVED", "roocam") or die("MySQL 안들어가짐!!");
+	 $con = mysqli_connect("localhost", "roocam", "", "roocam") or die("MySQL 안들어가짐!!");
 
 	 $partner = $_POST["partner"];
 	 $company_name = $_POST["company_name"];
