@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ko" class="html" style="overflow-x :hidden; width:100%">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
+
+	<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+	<link rel="stylesheet" href="../CSS/inputpage2.css" />
+	<link rel="stylesheet" href="../CSS/mobile-input2.css" />
+
+
+
+	<!--favicon 적용-->
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+
+	<title>견적 알아보기 - 윈플 </title>
+
+</head>
+
+<body>
+
+	<header>
+		<div class="header_sidebar">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<a class="ahide" href="../index.html"><img class="alogo" src="../img/web/logo.png"></a>
+		<!-- <div class="service">
+			<div class="service1">내 서비스</div>
+		</div> -->
+	</header>
+
+	<!-- modal page -->
+	<div class="modal">
+		<div class="modal_contents">
+			<div>
+				<button class="closebtn">닫기</button>
+				<a id="create-kakao-login-btn"></a>
+
+				<div id="create-channel-add-button"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="web">
+		<section class="inputmain">
+			<div class="logo_div">
+				<a style="cursor: pointer;" href="../index.html">
+					<img class="main_logo" src="../img/web/메인로고.png">
+				</a>
+			</div>
+		</section>
+		<div class="inputImg"></div>
+		<section class="inputinner">
+			<form METHOD="post" ACTION="#" onsubmit="alert('데모 페이지에서는 요청이 전송되지 않습니다.'); return false;">
+				<div class="inner_menu1">
+					<div class="cont_size">
+						<div class="box">
+							<p>창호 인테리어</p>
+						</div>
+						<p class="p_tag1">1. 건물 유형을 선택해 주세요</p>
+						<label class="label123">
+							<div class="div1">
+								<!-- name="building" -->
+								<input class="building" type="radio" name="userBuilding" value="주택" required>
+								주택
+							</div>
+						</label>
+
+						<label class="label123">
+							<div class="div1">
+								<input class="building" type="radio" name="userBuilding" value="빌라">
+								빌라
+							</div>
+						</label>
+
+						<label class="label123">
+							<div class="div1">
+								<input class="building" type="radio" name="userBuilding" value="아파트">
+								아파트
+							</div>
+						</label>
+
+						<div class="inner_menu1">
+							<p class="p_tag1">2. 창호 사이즈</p>
+							<div class="size JS_list">
+								<!-- 
+										가로 => size_horizon
+										세로 => size_vertical
+										위치 => size_position
+									-->
+								1 .가로<input id="horizon" style="font-size: 16px; margin:0 5px 5px 5px; width: 170px; height:30px;"
+									type="text" name="size_horizon" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
+									Placeholder="cm" required>
+								세로<input id="vertical" style="font-size: 16px; margin:0 5px;  width: 170px; height:30px;" type="text"
+									name="size_vertical" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" Placeholder="cm"
+									required>
+								위치<select style="font-size: 16px; margin:0 5px;  width: 178px; height:36px; outline:none;"
+									name="size_position" required>
+									<option value="베란다" selected>베란다
+									<option value="거실">거실
+									<option value="방">방
+									<option value="화장실">화장실
+									<option value="기타">기타
+								</select><br>
+								2 .가로<input id="horizon" style="font-size: 16px; margin:0 5px 5px 5px; width: 170px; height:30px;"
+									type="text" name="size_horizon2" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
+									Placeholder="cm">
+								세로<input id="vertical" style="font-size: 16px; margin:0 5px;  width: 170px; height:30px;" type="text"
+									name="size_vertical4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
+									Placeholder="cm">
+								위치<select style="font-size: 16px; margin:0 5px;  width: 178px; height:36px; outline:none;"
+									name="size_position2">
+									<option value="베란다">베란다
+									<option value="거실" selected>거실
+									<option value="방">방
+									<option value="화장실">화장실
+									<option value="기타">기타
+								</select><br>
+								3 .가로<input id="horizon" style="font-size: 16px; margin:0 5px 5px 5px; width: 170px; height:30px;"
+									type="text" name="size_horizon3" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
+									Placeholder="cm">
+								세로<input id="vertical" style="font-size: 16px; margin:0 5px;  width: 170px; height:30px;" type="text"
+									name="size_vertical3" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
+									Placeholder="cm">
+								위치<select style="font-size: 16px; margin:0 5px;  width: 178px; height:36px; outline:none;"
+									name="size_position3">
+									<option value="베란다">베란다
+									<option value="거실">거실
+									<option value="방" selected>방
+									<option value="화장실">화장실
+									<option value="기타">기타
+								</select><br>
+								4 .가로<input id="horizon" style="font-size: 16px; margin:0 5px 5px 5px; width: 170px; height:30px;"
+									type="text" name="size_horizon4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
+									Placeholder="cm">
+								세로<input id="vertical" style="font-size: 16px; margin:0 5px;  width: 170px; height:30px;" type="text"
+									name="size_vertical4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
+									Placeholder="cm">
+
+								위치<select style="font-size: 16px; margin:0 5px;  width: 178px; height:36px; outline:none;"
+									name="size_position4">
+									<option value="베란다">베란다
+									<option value="거실">거실
+									<option value="방">방
+									<option value="화장실" selected>화장실
+									<option value="기타">기타
+								</select><br>
+								5 .가로<input id="horizon" style="font-size: 16px; margin:0 5px 5px 5px; width: 170px; height:30px;"
+									type="text" name="size_horizon5" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
+									Placeholder="cm">
+								세로<input id="vertical" style="font-size: 16px; margin:0 5px;  width: 170px; height:30px;" type="text"
+									name="size_vertical5" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
+									Placeholder="cm">
+
+								위치<select style="font-size: 16px; margin:0 5px;  width: 178px; height:36px; outline:none;"
+									name="size_position5">
+									<option value="베란다">베란다
+									<option value="거실">거실
+									<option value="방">방
+									<option value="화장실">화장실
+									<option value="기타" selected>기타
+								</select>
+								<div id="addedFormDiv"></div><BR>
+							</div>
+							<div class="plusminus_img">
+								<img style="width: 16px; height: 12px;" src="../img/web/inputpage1/plus.svg" onclick="addForm()">
+								<img style="width: 16px; height: 12px;" src="../img/web/inputpage1/minus.svg" onclick="delForm()">
+							</div>
+						</div>
+
+
+						<div class="inner_menu1">
+							<p class="p_tag1">3. 공사 희망일</p>
+							<label class="label123">
+								<div class="div1">
+									<input class="building" type="radio" name="userHope" value="1~2개월" required>
+									1개월 이내
+								</div>
+							</label>
+
+							<label class="label123">
+								<div class="div1">
+									<input class="building" type="radio" name="userHope" value="3개월 이후">
+									1개월 이후
+								</div>
+							</label>
+
+							<label class="label123">
+								<div class="div1">
+									<input class="building" type="radio" name="userHope" value="상담 후 결정">
+									상담 후 결정
+								</div>
+							</label>
+						</div>
+
+
+						<div class="inner_menu1">
+							<p class="p_tag1">4. 주소</p>
+							<div style="min-width: 1500px;">
+								<input class="font_size" name="userAddr1" id="sample6_postcode"
+									style="margin:30px 0 0 30px; width: 250px; height:36px;" type="text" Placeholder="   우편번호" required
+									readonly>
+								<input style="width: auto; height:40px;" class="GPS_btn" type="button"
+									onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
+							</div>
+							<input class="font_size" name="userAddr2" id="sample6_address"
+								style="margin:30px 0 0 30px; width: 675px; height:36px;" type="text" Placeholder="   주소" required>
+							<input class="font_size" name="userAddr3" id="sample6_detailAddress"
+								style="ime-mode:auto; margin:30px 0 0 30px; width: 675px; height:36px;" type="text"
+								Placeholder="   상세주소" required>
+						</div>
+
+						<div class="inner_menu1">
+							<p class="p_tag1">5. 연락처</p>
+							<div class="font_size1">
+								Mobile<input class="font_size" maxlength="11" oninput="maxLengthCheck(this)"
+									onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+									style="text-align:center;	margin:0 0 40px 20px; width: 250px; height:36px;" type="text"
+									name="userNumber" Placeholder="'-'를 제외한 연락처를 작성해주세요." required>
+							</div>
+						</div>
+						<div class="btn_div">
+							<button type="submit" class="btn_01">
+								견적 요청
+							</button>
+						</div>
+					</div>
+
+				</div>
+				<div class="mint"></div>
+			</form>
+		</section>
+	</div>
+
+	<div class="mobile">
+		<section class="inputmain"></section>
+		<div>
+			<div class="inputImg"></div>
+
+			<section class="inputinner">
+				<form METHOD="post" ACTION="#" onsubmit="alert('데모 페이지에서는 요청이 전송되지 않습니다.'); return false;">
+					<div class="inner_menu1">
+						<div class="cont_size">
+							<div class="box">
+								<p>창호 인테리어</p>
+							</div>
+							<p class="p_tag1">1. 건물 유형을 선택해 주세요</p>
+							<label class="label123">
+								<div class="div1">
+									<!-- name="building" -->
+									<input class="building" type="radio" name="userBuilding" value="주택" required>
+									주택
+								</div>
+							</label>
+
+							<label class="label123">
+								<div class="div1">
+									<input class="building" type="radio" name="userBuilding" value="빌라">
+									빌라
+								</div>
+							</label>
+
+							<label class="label123">
+								<div class="div1">
+									<input class="building" type="radio" name="userBuilding" value="아파트">
+									아파트
+								</div>
+							</label>
+
+							<div class="inner_menu1">
+								<p class="p_tag1">2. 창호 사이즈</p>
+								<div class="size JS_list">
+									<!-- 
+									가로 => size_horizon
+									세로 => size_vertical
+									위치 => size_position
+								 -->
+									1 .가로<input id="horizon" style="font-size: 11px; margin:0 5px 0 5px; width: 87px; height:17px;"
+										type="text" name="size_horizon" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value=""
+										required>
+									세로<input id="vertical" style="font-size: 11px; margin:0 5px;  width: 87px; height:17px;" type="text"
+										name="size_vertical" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="" required><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;위치<select
+										style="font-size: 11px; margin:10px 0 0 3.6px; width: 91px; height:24px; outline: none;"
+										name="size_position" required>
+										<option value="베란다" selected>베란다
+										<option value="거실">거실
+										<option value="방">방
+										<option value="화장실">화장실
+										<option value="기타">기타
+									</select> <br>
+									2 .가로<input id="horizon" style="font-size: 11px; margin:5px 5px 0 5px; width: 87px; height:17px;"
+										type="text" name="size_horizon2" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="">
+									세로<input id="vertical" style="font-size: 11px; margin:5px 5px 0 5px;  width: 87px; height:17px;"
+										type="text" name="size_vertical2" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+										value=""><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;위치<select
+										style="font-size: 11px; margin:10px 0 0 3.6px; width: 91px; height:24px; outline: none;"
+										name="size_position2">
+										<option value="베란다">베란다
+										<option value="거실" selected>거실
+										<option value="방">방
+										<option value="화장실">화장실
+										<option value="기타">기타
+									</select> <br>
+									3 .가로<input id="horizon" style="font-size: 11px; margin:5px 5px 0 5px; width: 87px; height:17px;"
+										type="text" name="size_horizon3" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="">
+									세로<input id="vertical" style="font-size: 11px; margin:5px 5px 0 5px;  width: 87px; height:17px;"
+										type="text" name="size_vertical3" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+										value=""><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;위치<select
+										style="font-size: 11px; margin:10px 0 0 3.6px; width: 91px; height:24px; outline: none;"
+										name="size_position3">
+										<option value="베란다">베란다
+										<option value="거실">거실
+										<option value="방" selected>방
+										<option value="화장실">화장실
+										<option value="기타">기타
+									</select> <br>
+									4 .가로<input id="horizon" style="font-size: 11px; margin:5px 5px 0 5px; width: 87px; height:17px;"
+										type="text" name="size_horizon4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="">
+									세로<input id="vertical" style="font-size: 11px; margin:5px 5px 0 5px;  width: 87px; height:17px;"
+										type="text" name="size_vertical4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+										value=""><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;위치<select
+										style="font-size: 11px; margin:10px 0 0 3.6px; width: 91px; height:24px; outline: none;"
+										name="size_position4">
+										<option value="베란다">베란다
+										<option value="거실">거실
+										<option value="방">방
+										<option value="화장실" selected>화장실
+										<option value="기타">기타
+									</select> <br>
+									5 .가로<input id="horizon" style="font-size: 11px; margin:5px 5px 0 5px; width: 87px; height:17px;"
+										type="text" name="size_horizon5" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" value="">
+									세로<input id="vertical" style="font-size: 11px; margin:5px 5px 0 5px;  width: 87px; height:17px;"
+										type="text" name="size_vertical5" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+										value=""><br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;위치<select
+										style="font-size: 11px; margin:10px 0 0 3.6px; width: 91px; height:24px; outline: none;"
+										name="size_position5">
+										<option value="베란다">베란다
+										<option value="거실">거실
+										<option value="방">방
+										<option value="화장실">화장실
+										<option value="기타" selected>기타
+									</select>
+									<div id="addedFormDiv1"></div><BR>
+
+								</div>
+								<div class="plusminus_img">
+									<img src="../img/web/inputpage1/plus.svg" onclick="addForm1()">
+									<img src="../img/web/inputpage1/minus.svg" onclick="delForm1()">
+								</div>
+							</div>
+
+							<div class="inner_menu1">
+								<p class="p_tag1">3. 공사 희망일</p>
+								<label class="label123">
+									<div class="div1">
+										<input class="building" type="radio" name="userHope" value="1~2개월" required>
+										1개월 이내
+									</div>
+								</label>
+
+								<label class="label123">
+									<div class="div1">
+										<input class="building" type="radio" name="userHope" value="3개월 이후">
+										1개월 이후
+									</div>
+								</label>
+
+								<label class="label123">
+									<div class="div1">
+										<input class="building" type="radio" name="userHope" value="상담 후 결정">
+										상담 후 결정
+									</div>
+								</label>
+							</div>
+
+							<div class="inner_menu1">
+								<p class="p_tag1">4. 주소</p>
+								<input class="font_size" name="userAddr1" id="sample6_postcode1"
+									style="margin:20px 0 0 30px; width: 130px; height:23px;" type="text" Placeholder="우편번호" required
+									readonly>
+								<input class="GPS_btn" type="button" onclick="sample6_execDaumPostcode1()" value="우편번호 찾기">
+								<input class="font_size" name="userAddr2" id="sample6_address1"
+									style="margin:10px 0 0 30px; width: 260px; height:23px;" type="text" Placeholder="주소" required
+									readonly>
+								<input type="text" id="sample6_detailAddress1" class="font_size" name="userAddr3"
+									style="margin:10px 0 0 30px; width: 260px; height:23px;" Placeholder="상세주소" required>
+
+							</div>
+
+							<div class="inner_menu1">
+								<p class="p_tag1">5. 연락처</p>
+								<div class="font_size1">
+									Mobile<input maxlength="11" class="font_size" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');"
+										style="text-align:center;	margin:0 0 40px 20px; width: 150px; height:22px;" type="text"
+										name="userNumber" Placeholder="'-'를 제외한 연락처를 작성해주세요." required>
+								</div>
+							</div>
+						</div>
+						<div class="btn_div">
+							<button type="submit" class="btn_01">
+								견적 요청
+							</button>
+						</div>
+					</div>
+		</div>
+		<div class="white"></div>
+		<div class="mint"></div>
+		</form>
+		</section>
+	</div>
+
+
+	<section class="section5">
+		<div class="dbox">
+			<div data-aos="fade-up" data-aos-duration="1000" class="st1">
+				<p class="text1">인테리어 사장님, 쉽게 고객님께 다가가세요!</p>
+				<p class="text2">우리와 함께 보장된 서비스를 제공해보세요.</p>
+				<p class="text3">소비자의 기본적인 견적과, 업체 홍보, 소비자 연결 등 모든 서비스를 무료로 제공합니다.</p>
+				<div class="btns">
+					<button><a href="#">Promote</a></button>
+					<button><a href="#">APP Store</a></button>
+					<button><a href="#">Modeler</a></button>
+				</div>
+			</div>
+		</div>
+		</div>
+	</section>
+
+	<div class="footer_menu">
+		<div class="inner">
+			<ul class="cf">
+				<span>ㅣ</span>
+				<li><a href="../html/about.html">회사 소개 </a></li>
+				<span>ㅣ</span>
+				<li><a href="../html/terms.html">이용 약관</a></li>
+				<span>ㅣ</span>
+				<li><a href="../html/alliance.html">제휴 및 광고 문의 </a></li>
+				<span>ㅣ</span>
+				<li><a href="../html/recruits.html">인테리어 구인</a></li>
+				<span>ㅣ</span>
+			</ul>
+		</div>
+	</div>
+	<footer>
+		<div class="webinfo">
+			<div class="infodiv">
+				<div class="fl_1">
+					<table>
+						<tr>
+							<td class="label">상호명</td>
+							<td class="info">주식회사 루캠</td>
+						</tr>
+						<tr>
+							<td class="label">대표이사</td>
+							<td class="info">김창원</td>
+						</tr>
+						<tr>
+							<td class="label">사업자등록번호</td>
+							<td class="info">870-81-01178</td>
+						</tr>
+						<tr>
+							<td class="label">통신판매업신고번호</td>
+							<td class="info">제 2020-경기군포-0869 호</td>
+						</tr>
+						<tr>
+							<td class="label">주소</td>
+							<td class="info">경기도 군포시 군포첨단산업2로
+								22번길 5, 창업지원센터 607호</td>
+						</tr>
+					</table>
+				</div>
+
+
+				<div class="fl_2">
+					<div class="greenbar"></div>
+					<table>
+						<img src="../img/web/고객센터.png">
+						<tr>
+							<td class="label">고객센터</td>
+							<td class="info">010-0000-0000</td>
+						</tr>
+					</table>
+					<table>
+						<img src="../img/web/업무시간.png">
+						<tr>
+							<td class="label">업무시간</td>
+							<td class="info">09:00~ 18:30</td>
+						</tr>
+					</table>
+				</div>
+
+				<div class="fl_3">주식회사 루캠은 통신판매 중개자 및 플랫폼 사업자로서, 고객님과 시공업체 사장님들이 연결되도록 돕습니다. <br>
+					따라서 시공업체에서 제공하는 일련의 견적 상담과 시공 서비스에 대해서는 책임을 지지 않음을 알려드립니다. <br>
+					ⓒ 2020 Rooftop Camping Corp., All rights reserved.
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Script -->
+
+
+	<script>AOS.init()</script>
+	<script type="text/javascript" src="../JS/select.js"></script>
+	<script type="text/javascript" src="../JS/modal.js"></script>
+	<script type="text/javascript" src="../JS/kakao.js"></script>
+	<script type="text/javascript" src="../JS/plus.js"></script>
+	<script type="text/javascript" src="../JS/scroll.js"></script>
+	<script type="text/javascript" src="../JS/kakao_GPS.js"></script>
+
+
+
+
+
+
+
+</body>
+
+</html>
