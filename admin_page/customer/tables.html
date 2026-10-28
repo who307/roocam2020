@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>관리자 페이지 - 윈플</title>
+
+  <!--favicon 적용-->
+  <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../../img/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+
+
+  <!-- Bootstrap -->
+  <link href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+  <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- iCheck -->
+  <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  <!-- Datatables -->
+
+  <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+  <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Theme Style -->
+  <link href="../build/css/custom.min.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="../../index.html" class="site_title"><span>Window Care Plus+</span></a>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <!-- menu profile quick info -->
+          <div class="profile clearfix">
+            <div class="profile_pic">
+            </div>
+
+          </div>
+          <!-- /menu profile quick info -->
+
+          <br />
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <h3>관리자</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-home"></i>조회 <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="../customer/tables.html">고객 조회</a></li>
+                    <li><a href="../company/tables.html">업체 조회</a></li>
+                    <li><a href="../html/estimate.html">견적 계산</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+          <!-- /sidebar menu -->
+
+          <!-- /menu footer buttons -->
+          <div class="sidebar-footer hidden-small">
+            <a data-toggle="tooltip" data-placement="top" title="Logout" href="../../index.html">
+              <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </a>
+          </div>
+          <!-- /menu footer buttons -->
+        </div>
+      </div>
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu">
+          <div class="nav toggle">
+            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <div class="">
+          <div class="page-title">
+            <div class="title_left">
+              <h3>고객 조회</h3><p style="margin:4px 0 0;color:#888;font-size:13px">데모 페이지입니다. 표의 데이터는 모두 예시입니다.</p>
+
+            </div>
+          </div>
+
+          <div class="col-md-12 col-sm-12 ">
+            <div class="x_panel">
+              <div class="x_content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card-box table-responsive">
+                      <table id="datatable-responsive" class="jambo_table table table-striped table-bordered nowrap"
+                        cellspacing="0" width="100%">
+                        <thead>
+                          <tr class="headings">
+                            <th style="min-width: 100px;" class="column-title">수정 / 삭제</th>
+                            <th style="min-width: 100px;" class="column-title">연락처</th>
+                            <th style="min-width: 80px;" class="column-title">건물유형</th>
+                            <th style="min-width: 100px;" class="column-title">공사희망일</th>
+                            <th style="min-width: 400px;" class="column-title">주소</th>
+                            <th style="min-width: 100px;" class="column-title">작성날짜</th>
+                            <th style="min-width: 104px;" class="column-title">가로사이즈1</th>
+                            <th style="min-width: 104px;" class="column-title">세로사이즈1</th>
+                            <th style="min-width: 80px;" class="column-title">위치1</th>
+                            <th style="min-width: 104px;" class="column-title">가로사이즈2</th>
+                            <th style="min-width: 104px;" class="column-title">세로사이즈2</th>
+                            <th style="min-width: 80px;" class="column-title">위치2</th>
+                            <th style="min-width: 104px;" class="column-title">가로사이즈3</th>
+                            <th style="min-width: 104px;" class="column-title">세로사이즈3</th>
+                            <th style="min-width: 80px;" class="column-title">위치3</th>
+                            <th style="min-width: 104px;" class="column-title">가로사이즈4</th>
+                            <th style="min-width: 104px;" class="column-title">세로사이즈4</th>
+                            <th style="min-width: 80px;" class="column-title">위치4</th>
+                            <th style="min-width: 104px;" class="column-title">가로사이즈5</th>
+                            <th style="min-width: 104px;" class="column-title">세로사이즈5</th>
+                            <th style="min-width: 80px;" class="column-title">위치5</th>
+                            <th style="min-width: 104px;" class="column-title">가로사이즈6</th>
+                            <th style="min-width: 104px;" class="column-title">세로사이즈6</th>
+                            <th style="min-width: 80px;" class="column-title">위치6</th>
+                            <th style="min-width: 104px;" class="column-title">가로사이즈7</th>
+                            <th style="min-width: 104px;" class="column-title">세로사이즈7</th>
+                            <th style="min-width: 80px;" class="column-title">위치7</th>
+                            <th style="min-width: 104px;" class="column-title">가로사이즈8</th>
+                            <th style="min-width: 104px;" class="column-title">세로사이즈8</th>
+                            <th style="min-width: 80px;" class="column-title">위치8</th>
+                            <th style="min-width: 104px;" class="column-title">가로사이즈9</th>
+                            <th style="min-width: 104px;" class="column-title">세로사이즈9</th>
+                            <th style="min-width: 80px;" class="column-title">위치9</th>
+                            <th style="min-width: 104px;" class="column-title">가로사이즈10</th>
+                            <th style="min-width: 104px;" class="column-title">세로사이즈10</th>
+                            <th style="min-width: 80px;" class="column-title">위치10</th>
+                            <th style="min-width: 104px;" class="column-title">가로사이즈11</th>
+                            <th style="min-width: 104px;" class="column-title">세로사이즈11</th>
+                            <th style="min-width: 80px;" class="column-title">위치11</th>
+                            <th style="min-width: 104px;" class="column-title">가로사이즈12</th>
+                            <th style="min-width: 104px;" class="column-title">세로사이즈12</th>
+                            <th style="min-width: 80px;" class="column-title">위치12</th>
+                            <th style="min-width: 104px;" class="column-title">가로사이즈13</th>
+                            <th style="min-width: 104px;" class="column-title">세로사이즈13</th>
+                            <th style="min-width: 80px;" class="column-title">위치13</th>
+                            <th style="min-width: 104px;" class="column-title">가로사이즈14</th>
+                            <th style="min-width: 104px;" class="column-title">세로사이즈14</th>
+                            <th style="min-width: 80px;" class="column-title">위치14</th>
+                            <th style="min-width: 104px;" class="column-title">가로사이즈15</th>
+                            <th style="min-width: 104px;" class="column-title">세로사이즈15</th>
+                            <th style="min-width: 80px;" class="column-title">위치15</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr><td><a href="javascript:alert('데모 페이지에서는 수정·삭제가 동작하지 않습니다.')">수정</a> / <a href="javascript:alert('데모 페이지에서는 수정·삭제가 동작하지 않습니다.')">삭제</a></td><td>010-0000-1001</td><td>아파트</td><td>2020-12-21</td><td>(04524) 서울특별시 중구 예시로 12, 101동 1001호</td><td>2020-12-10</td><td>180cm</td><td>120cm</td><td>거실</td><td>90cm</td><td>120cm</td><td>안방</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td><a href="javascript:alert('데모 페이지에서는 수정·삭제가 동작하지 않습니다.')">수정</a> / <a href="javascript:alert('데모 페이지에서는 수정·삭제가 동작하지 않습니다.')">삭제</a></td><td>010-0000-1002</td><td>단독주택</td><td>2020-12-28</td><td>(13494) 경기도 성남시 분당구 샘플길 34</td><td>2020-12-11</td><td>240cm</td><td>150cm</td><td>거실</td><td>60cm</td><td>90cm</td><td>주방</td><td>90cm</td><td>120cm</td><td>작은방</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td><a href="javascript:alert('데모 페이지에서는 수정·삭제가 동작하지 않습니다.')">수정</a> / <a href="javascript:alert('데모 페이지에서는 수정·삭제가 동작하지 않습니다.')">삭제</a></td><td>010-0000-1003</td><td>빌라</td><td>2021-01-05</td><td>(48058) 부산광역시 해운대구 데모로 56, 302호</td><td>2020-12-12</td><td>150cm</td><td>120cm</td><td>베란다</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- /page content -->
+
+  <!-- footer content -->
+  <footer>
+    <div class="pull-right">
+      <a href="../../index.html">Window Care Plus+ by roocam </a>
+    </div>
+    <div class="clearfix"></div>
+  </footer>
+  <!-- /footer content -->
+  </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- FastClick -->
+  <script src="../vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="../vendors/nprogress/nprogress.js"></script>
+  <!-- iCheck -->
+  <script src="../vendors/iCheck/icheck.min.js"></script>
+  <!-- Datatables -->
+  <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+  <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+  <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+  <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+  <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+  <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+  <script src="../vendors/jszip/dist/jszip.min.js"></script>
+  <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+  <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom.min.js"></script>
+
+</body>
+
+</html>
