@@ -1,5 +1,16 @@
 ## roocam2020  창호, 샷시 견적 역경매 사이트
-## 주소 http://wincare.kr
+정부 지원 산학협력 프로젝트로 제작·배포한 창호 역경매 웹 서비스(WindowCare+)입니다. 실제 서비스(wincare.kr)는 종료됐습니다.
+
+## 데모 (프론트엔드)
+PHP·DB 없이 화면만 볼 수 있는 데모입니다. 폼 제출과 관리자 수정·삭제는 동작하지 않으며, 관리자 페이지의 데이터는 예시입니다.
+
+| 구분 | 링크 |
+| --- | --- |
+| 메인 | https://who307.github.io/roocam2020/ |
+| 관리자 · 고객 조회 | https://who307.github.io/roocam2020/admin_page/customer/tables.html |
+| 관리자 · 업체 조회 | https://who307.github.io/roocam2020/admin_page/company/tables.html |
+| 관리자 · 견적 계산 | https://who307.github.io/roocam2020/admin_page/html/estimate.html |
+
 
 ## 2020.12.11
 1. 관리자 페이지(견적 계산 페이지) 모바일버전 인풋태그 추가 삭제 기능 완성
